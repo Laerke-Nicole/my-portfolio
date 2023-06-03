@@ -23,6 +23,57 @@
                 </div>
             </div>
         </div>
+
+        
+        <!-- text sliding animation -->
+        <div class="services">
+            <div class="servicesScrollBox">
+                <div class="servicesScrollText">
+                    <h2>Service</h2>
+                    <hr>
+                    <h2>Service</h2>
+                    <hr>
+                    <h2>Service</h2>
+                    <hr>
+                    <h2>Service</h2>
+                    <hr>
+                    <h2>Service</h2>
+                    <hr>
+                    <h2>Service</h2>
+                    <hr>
+                    <h2 id="last">Service</h2>
+                    <hr>
+                </div>
+                <div class="servicesScrollText">
+                    <h2>Service</h2>
+                    <hr>
+                    <h2>Service</h2>
+                    <hr>
+                    <h2>Service</h2>
+                    <hr>
+                    <h2>Service</h2>
+                    <hr>
+                    <h2>Service</h2>
+                    <hr>
+                    <h2>Service</h2>
+                    <hr>
+                    <h2 id="last">Service</h2>
+                    <hr>
+                </div>
+            </div>
+            
+            
+            <!-- the services i offer -->
+            <div class="servicesBorder">
+                <div class="servicesbox">
+                    <h1 class="servicesFirstH1">Foto & videoredigering</h1>
+                    <h1>Webdesign & development</h1>
+                    <h1>UI/UX design</h1>
+                    <h1>Grafisk design</h1>
+                    <h1 class="servicesLastH1">User Experience</h1>
+                </div>
+            </div>
+        </div>
     </main>
 </template>
 
@@ -95,6 +146,89 @@ font-size: 17px;
 /* vertical specialties end */
 
 
+/* services */
+.servicesScrollBox {
+  display: flex;
+  width: 100%;
+  background-color: var(--white-headline);
+  overflow: hidden;
+  border-top: var(--dark-border);
+  border-bottom: var(--dark-border);
+}
+
+.servicesScrollBox .servicesScrollText {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: all 1s ease;
+  gap: 2rem;
+  display: flex;
+  animation: animate_text 30s linear infinite;
+}
+  
+.servicesScrollBox .servicesScrollText h2 {
+  margin: 0;
+  font-size: 50px;
+  color: var(--primary-color);
+  transition: all 2s ease;
+  font-family: rift, sans-serif;
+  font-style: normal;
+  font-weight: bold; 
+}
+
+.servicesScrollText hr {
+    display: block;
+    border-width: 0;
+    height: 2px;
+    width: 3rem;
+    transform: rotate(90deg);
+    background-color: var(--primary-color);
+    align-self: center;
+}
+
+#last {
+    padding-right: 2rem;
+}
+
+@keyframes animate_text {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+}   
+
+.servicesBorder {
+    padding: 15px;
+    background-color: var(--secondary-color);
+}
+
+.servicesbox {
+    background-color: var(--secondary-color);
+    border: var(--bright-border);
+}
+
+.services h1 {
+    font-family: rift, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--white-headline);
+    text-align: center;
+    padding-bottom: 18px;
+    font-size: 50px;
+}
+
+.servicesFirstH1 {
+    padding-top: 45px;
+}
+
+.servicesLastH1 {
+    padding-bottom: 45px !important;
+}
+/* services end */
+
+
 /* responsive */
 @media only screen and (max-width: 1030px) {
     .about {
@@ -147,6 +281,17 @@ font-size: 17px;
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .servicesScrollBox .servicesScrollText h2 {
+        font-size: 40px;
+    }
+
+    .servicesScrollText hr {
+        height: 2px;
+        width: 2rem;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     .about {
         height: 125vh;
@@ -155,6 +300,10 @@ font-size: 17px;
     iframe {
         width: 100%;
         height: 100%;
+    }
+
+    .servicesbox h1 {
+        font-size: 35px;
     }
 }
 
@@ -169,6 +318,12 @@ font-size: 17px;
     .video {
         width: 336px;
         height: 140px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .servicesbox h1 {
+        font-size: 24px;
     }
 }
 

@@ -30,7 +30,7 @@
       
       <!-- my logo in right corner -->
       <div class="frontpageLogo">
-        <hr><img src="../assets/logo-dark.svg" height="60" alt="">
+        <hr><img src="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/logos%2Flogo-dark.svg?alt=media&token=ba702079-f71d-43f3-9c5e-ee67049d4bbc&_gl=1*1fakgsk*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDcwMjguMC4wLjA." height="60" alt="">
       </div>
     </div>
 
@@ -79,7 +79,7 @@ const isActive = ref(true)
 <style scoped>
 /*frontpage*/
 .frontpage {
-  padding-top: 140px;
+  padding-top: 100px;
   padding-left: 8%;
   clip-path: polygon(51% 0, 100% 36%, 100% 100%, 0 100%, 0 0);
   background-color: var(--white-headline);
@@ -165,6 +165,7 @@ button {
   justify-content: flex-end;
   top: -60px;
   right: 100px;
+  height: 60px;
 }
 /* styling my logo in right corner end */
 

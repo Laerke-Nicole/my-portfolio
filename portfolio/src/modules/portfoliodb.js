@@ -4,8 +4,8 @@ const getPortfolio = () => {
     const state = ref([
         {
             id: 'product-one',
-            image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/webpage-1.jpg?alt=media&token=ea7c501f-a3e4-4985-a0d2-cae6537e6537',
-            video: 'https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/webpage-1.mp4?alt=media&token=5bd078cc-8b70-459f-a5d4-f749d3083846',
+            image: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fwebpage-1.jpg?alt=media&token=a182d58e-a66c-440e-a7e7-988cf9e45e03&_gl=1*1ruh9ty*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0NjkuMC4wLjA.',
+            video: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fwebpage-1.mp4?alt=media&token=293bd0c5-c0e7-488a-9178-e23a39d9a25f&_gl=1*1azdz94*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0ODkuMC4wLjA.',
             number: '.01',
             title: 'Overwatch',
             category: 'Webdesign- & development',
@@ -22,8 +22,8 @@ const getPortfolio = () => {
         },
         {
             id: 'product-two',
-            image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/photo-1.jpg?alt=media&token=5fb1a38e-fcef-4ea2-8a30-2243912585dc',
-            detail: 'https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/photo-1.jpg?alt=media&token=5fb1a38e-fcef-4ea2-8a30-2243912585dc',
+            image: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fphoto-1.jpg?alt=media&token=5f8b994c-06e1-4e84-93cc-f54474a9c530&_gl=1*7b13uc*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0MjYuMC4wLjA.',
+            detail: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fphoto-1.jpg?alt=media&token=5f8b994c-06e1-4e84-93cc-f54474a9c530&_gl=1*7b13uc*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0MjYuMC4wLjA.',
             number: '.02',
             title: 'Confusing Creature',
             category: 'Fotografering & fotoredigering',
@@ -38,8 +38,8 @@ const getPortfolio = () => {
         },
         {
             id: 'product-three',
-            image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/illustration-1.svg?alt=media&token=91aae6bd-2c7a-4707-9b80-da6dedc7460f',
-            detail: 'https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/illustration-1.svg?alt=media&token=91aae6bd-2c7a-4707-9b80-da6dedc7460f',
+            image: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fillustration-1.svg?alt=media&token=1916cbca-4225-4cf1-932c-f9a8331eaf29&_gl=1*f7hknb*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDYzNDkuMC4wLjA.',
+            detail: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fillustration-1.svg?alt=media&token=1916cbca-4225-4cf1-932c-f9a8331eaf29&_gl=1*f7hknb*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDYzNDkuMC4wLjA.',
             number: '.03',
             title: 'Mini me',
             category: 'Grafisk Design',
@@ -54,8 +54,8 @@ const getPortfolio = () => {
         },
         {
             id: 'product-four',
-            image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/plakat-1.jpg?alt=media&token=de883980-2405-445e-8ac1-b7a9a9e8d002',
-            detail: 'https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/plakat-1.jpg?alt=media&token=de883980-2405-445e-8ac1-b7a9a9e8d002',
+            image: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fplakat-1.jpg?alt=media&token=a4628e6b-2fe9-490f-8ad9-907787086e29&_gl=1*qclej6*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0NDYuMC4wLjA.',
+            detail: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fplakat-1.jpg?alt=media&token=a4628e6b-2fe9-490f-8ad9-907787086e29&_gl=1*qclej6*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0NDYuMC4wLjA.',
             number: '.04',
             title: 'Poster',
             category: 'Grafisk Design',
@@ -72,8 +72,8 @@ const getPortfolio = () => {
         },
         {
             id: 'product-five',
-            image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/music-video-thumbnail.jpg?alt=media&token=02735bc7-7b42-4b02-ab80-33a4d8e5b37f',
-            video: 'https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/music-video-1.mp4?alt=media&token=37fee229-9b01-4527-88a5-313145316f14',
+            image: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmusic-video-thumbnail.jpg?alt=media&token=061d5bb2-e019-42c2-87b5-44dec4524a07&_gl=1*jy8sp2*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0MTIuMC4wLjA.',
+            video: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmusic-video-1.mp4?alt=media&token=10e86b07-5e9d-4980-8af5-12c8d1135405&_gl=1*19vj71z*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDYzODYuMC4wLjA.',
             number: '.05',
             title: 'Musik Video',
             category: 'Videooptagning- & redigering',
