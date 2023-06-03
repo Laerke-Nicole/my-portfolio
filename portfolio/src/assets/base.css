@@ -1,0 +1,57 @@
+
+/* font-family */
+
+/* Headlines: rift */
+/*  font-family: rift, sans-serif;
+    font-style: normal;
+    font-weight: 300; */
+
+/* Text: condor */
+/*  font-family: condor, sans-serif;
+    font-style: normal;
+    font-weight: 200; */
+
+
+/*color swatches for my color palette*/
+:root {
+    /* main colors */
+    --primary-color: #265952;
+    --secondary-color: #437361;
+    --tertiary-color: #B8561A; 
+  
+    /* hover color */
+    --primary-hover: #fbc8a9;
+    --secondary-hover: #914211;
+  
+    /*color for text*/
+    --white-headline: #fff5e8; /*color used for background and text*/
+    --white-text: #f9f9f9;
+  
+    --black-headline: #333333;
+    --black-text: #404040;
+  
+    /*background color*/
+    --background-color: #f9f9f9;
+  }
+  
+  /* border */
+  :root {
+    --dark-border: 1px solid var(--primary-color);
+    --bright-border: 1px solid var(--white-headline);
+    --complementary-border: 1px solid var(--tertiary-color);
+  }
+  
+  /* section styling */
+  :root {
+    --section-gap: 160px;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    font-weight: normal;
+  }
+  

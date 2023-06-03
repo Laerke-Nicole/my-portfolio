@@ -3,3 +3,86 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* styling of body to have less work */
+body {
+min-height: 100vh;
+color: var(--color-text);
+background: var(--background-color);
+transition: color 0.5s, background-color 0.5s;
+line-height: 1.6;
+font-family: rift, sans-serif;
+font-style: normal;
+list-style-type: none;
+text-rendering: optimizeLegibility;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+/*styling text*/
+h1 {
+font-size: 25px;
+font-family: rift, sans-serif;
+font-style: normal;
+font-weight: bold; 
+color: var(--black-headline);
+}
+
+p {
+font-size: 16px;
+color: var(--black-text);
+font-family: "condor", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+/* making all p responsive for smaller screens */
+@media only screen and (max-width: 850px) {
+    p {
+    font-size: 15px;
+    }
+}
+
+/*styling button*/
+#button1 {
+cursor: pointer;
+background-color: var(--tertiary-color);
+color: var(--white-headline);
+border: 0;
+transition: 0.3s;
+font-family: rift, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+text-decoration: none;
+padding: 10px 30px; 
+overflow: hidden;
+text-align: center;
+z-index: 1;
+}
+
+#button1::before {
+content: '';
+width: 0;
+height: 300%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) rotate(45deg);
+background: var(--secondary-hover);
+transition: .5s ease;
+display: block;
+z-index: -1;
+transition: 0.5s;
+}
+
+#button1:hover::before {
+width: 105%;
+}
+
+/* responsive button */
+@media only screen and (max-width: 850px) {
+    #button1 {
+        font-size: 15px;
+    }
+}

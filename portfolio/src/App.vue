@@ -16,20 +16,31 @@ const mobileMenuOpen = ref(false)
 
 <template>
 
-  <header class="bg-white">
+  <header>
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+
+      <!-- logo in top left corner -->
       <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
+        <RouterLink to='/'>
+          <div>
+            <img class="h-12 w-auto" src="https://firebasestorage.googleapis.com/v0/b/kanten-web.appspot.com/o/logo-standart-small.svg?alt=media&token=33e9c95c-fad9-4827-ae1e-5032e7d9070d" alt="kantens logo" />
+          </div>
+        </RouterLink>
+        <!-- <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
           <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-        </a>
+        </a> -->
       </div>
+
+      <!-- hamburgerbar icon -->
       <div class="flex lg:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = true">
           <span class="sr-only">Open main menu</span>
           <Bars3Icon class="h-6 w-6" aria-hidden="true" />
         </button>
       </div>
+
+      <!-- links in navigation -->
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/contact">Kontakt</RouterLink>
@@ -38,20 +49,30 @@ const mobileMenuOpen = ref(false)
         <RouterLink to="/about">Om mig</RouterLink>
       </PopoverGroup>
     </nav>
-    
+
+    <!-- mobile navigation -->
     <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
       <div class="fixed inset-0 z-10" />
       <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+
+        <!-- top part with Kantens logo -->
         <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
+          <RouterLink to='/' class="-m-1.5 p-1.5">
+            <img class="h-8 w-auto" src="https://firebasestorage.googleapis.com/v0/b/kanten-web.appspot.com/o/logo-standart-small.svg?alt=media&token=33e9c95c-fad9-4827-ae1e-5032e7d9070d" alt="kantens logo" />
+          </RouterLink>
+          <!-- <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
             <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-          </a>
+          </a> -->
+
+          <!-- x button to close menu -->
           <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = false">
             <span class="sr-only">Close menu</span>
             <XMarkIcon class="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
+
+        <!-- links in hamburger menu -->
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
@@ -69,8 +90,191 @@ const mobileMenuOpen = ref(false)
 
 
   <RouterView />
+
+
+  
+  <!-- footer -->
+  <footer>
+    <h1>Lad os arbejde sammen!</h1>
+    <RouterLink to="/contact">
+        <button id="button1" class="button">Kontakt mig</button>
+    </RouterLink>
+
+    <!-- links in footer -->
+    <div class="footerContent">
+      <div class="footerMyName">
+        <h2>Lærke Nicole Nielsen</h2>
+        <h2>Lærke Nicole Nielsen</h2>
+        <h2>Lærke Nicole Nielsen</h2>
+      </div>
+
+        <ul>          
+          <RouterLink to="//www.linkedin.com/in/laerke-nicole-nielsen/" target="_blank"><li>LinkedIn</li></RouterLink>
+          <RouterLink to="//github.com/Laerke-Nicole" target="_blank"><li>Github</li></RouterLink>
+        </ul>
+
+        <ul>
+          <RouterLink to="/contact"><li>Kontakt</li></RouterLink>
+          <RouterLink to="/portfolio"><li>Portfolio</li></RouterLink>
+          <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/cv.pdf?alt=media&token=179e9337-fe02-4611-8c69-f0914fbd36bb" target="_blank"><li>CV &nearr;</li></a>
+          <RouterLink to="/about"><li>Om mig</li></RouterLink>
+        </ul>
+    </div>
+
+    <!-- my mail in footer -->
+    <div class="mail">
+      <h4>laenie01@easv365.dk</h4>
+      <hr>
+    </div>
+  </footer>
 </template>
 
-<style scoped>
 
+<style scoped>
+header {
+  background-color: var(--background-color);
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+
+/* footer */
+footer {
+  background-color: var(--primary-color);
+  padding-bottom: 45px;
+}
+
+footer h1 {
+  color: var(--white-headline);
+  font-family: "condor", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 16px;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer .footerMyName h2 {
+  color: var(--white-headline);
+  font-family: rift, sans-serif;
+  font-style: normal;
+  font-weight: bold; 
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px auto;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  display: flex;
+  flex-direction: column;
+  color: var(--white-headline);
+  font-family: rift, sans-serif;
+  font-style: normal;
+  font-weight: bold; 
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+footer li:hover {
+  color: var(--primary-hover);
+}
+
+.mail {
+  display: flex;
+  color: var(--white-headline);
+  font-family: "condor", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  gap: 18px;
+  justify-content: center;
+  padding: 18px 0 60px 0;
+}
+
+.mail hr {
+  display: block;
+  border-width: 0;
+  height: 2px;
+  width: 62%;
+  background-color: var(--white-headline);
+  align-self: center;
+}
+/* footer end */
+
+
+
+/* responsive */
+@media only screen and (max-width: 780px) {
+  footer h1 {
+    font-size: 35px;
+  }
+
+  footer .footerMyName h2 {
+    font-size: 24px;
+  }
+
+  footer li {
+    font-size: 24px;
+  }
+
+  .mail hr {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footerContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footerMyName {
+    display: none;
+  }
+
+  footer ul {
+    padding: 12px 0;
+  }
+
+  .mail {
+    font-size: 16px;
+  }
+
+  .mail hr {
+    width: 52%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  footer h1 {
+    font-size: 24px;
+  }
+
+  .mail hr {
+    width: 48%;
+  }
+}
+
+/* responsive end */
 </style>
