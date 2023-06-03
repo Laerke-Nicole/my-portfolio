@@ -30,7 +30,7 @@
       
       <!-- my logo in right corner -->
       <div class="frontpageLogo">
-        <hr><img src="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/logos%2Flogo-dark.svg?alt=media&token=ba702079-f71d-43f3-9c5e-ee67049d4bbc&_gl=1*1fakgsk*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDcwMjguMC4wLjA." height="60" alt="">
+        <hr><img src="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/logos%2Flogo-light.svg?alt=media&token=85a18e37-c67c-461d-9d1f-78490a26fa28&_gl=1*kraw86*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgyNzc5My40NC4xLjE2ODU4Mjc4MTIuMC4wLjA." height="60" alt="">
       </div>
     </div>
 
@@ -66,21 +66,56 @@
       </div>
     </div>
 
+
+    <div class="portfolioViewBorder">
+            <div class="portfolio-item-container">
+
+                <!-- making a loop for all of my projects -->
+                <div v-for="item in state" :key="item" class="portfolio-item">
+
+                    <!-- container for projects -->
+                    <div class="portfolio-content" :class="item.id">
+
+                        <!-- adding the information i want to show -->
+                        <RouterLink :to="{ name: 'portfoliodetails', params:{id: item.id}}">
+                            <div class="zoomImg">
+                                <img :src="item.image" class="product-image">
+                            </div>
+                        </RouterLink>
+
+                        <h4 class="p-number" :class="item.number">{{ item.number }}</h4>
+                        <h1 class="p-category" :class="item.category">{{ item.category }}</h1>
+                        <h3>{{ item.title }}</h3>
+                        <p>{{ item.description }}</p>
+                        <RouterLink :to="{ name: 'portfoliodetails', params:{id: item.id}}">
+                            <button id="button1">Se mit arbejde</button>
+                        </RouterLink>
+                    </div>
+                </div>
+            </div>
+        </div>
   </main>
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import portfoliodb from '../modules/portfoliodb'
+    const { state } = portfoliodb()
 
 </script>
 
 <style scoped>
+
+main {
+  padding-top: 10vh;
+}
+
 /*frontpage*/
 .frontpage {
-  padding-top: 100px;
+  padding-top: 90px;
   padding-left: 8%;
   clip-path: polygon(51% 0, 100% 36%, 100% 100%, 0 100%, 0 0);
-  background-color: var(--white-headline);
+  background-color: var(--primary-color);
   max-height: 90vh;
 }
 
@@ -89,12 +124,12 @@ import { ref } from 'vue'
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
-  color: var(--secondary-color);
+  color: var(--white-headline);
   text-transform: uppercase;
 }
 
 .frontpage h1 {
-  color: var(--secondary-color);
+  color: var(--white-headline);
   font-size: 50px;
   text-transform: uppercase;
 }
@@ -103,7 +138,7 @@ import { ref } from 'vue'
   font-family: rift, sans-serif;
   font-style: normal;
   font-weight: 200;
-  color: var(--secondary-color);
+  color: var(--white-headline);
   font-size: 50px;
   text-transform: uppercase;
   line-height: 1;
@@ -123,11 +158,12 @@ import { ref } from 'vue'
   height: 2px;
   max-width: 460px;
   margin: 16px 0;
-  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
 }
 
 .passionBox p {
   margin-bottom: 18px;
+  color: var(--white-text);
 }
 /* explaining what my passion is end */
 
@@ -154,7 +190,7 @@ button {
   border-width: 0;
   height: 2px;
   width: 175px;
-  background-color: var(--secondary-color);
+  background-color: var(--white-headline);
   transform: rotate(90deg);
 }
 
@@ -223,7 +259,141 @@ button {
 /* scrollbar of my specialty of subjects end */ 
 
 
+
+/* making container of projects */
+.portfolioViewBorder {
+    padding: 15px;
+    background-color: var(--white-headline);
+}
+
+.portfolio-item-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    background-color: var(--white-headline);
+    padding: 0 8%;
+    padding-top: 45px;
+    padding-bottom: 60px;
+    border: var(--dark-border);
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0;
+}
+/* making container of projects end */
+
+
+/* styling position of portfolios */
+.product-two {
+    padding: 60px 0 0 400px;
+}
+
+.product-three {
+    padding: 60px 0 0 120px;
+}
+
+.product-four {
+    padding: 60px 0 0 560px;
+}
+
+.product-five {
+    padding: 60px 0 0 0;
+}
+/* styling position of portfolios end */
+
+
+/* stying image */
+.zoomImg {
+    overflow: hidden;
+    height: 350px;
+}
+
+.portfolio-item-container img {
+    height: 350px;
+    overflow: hidden;
+    transition: transform .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-item-container img:hover {
+    transform: scale(1.2);
+    height: 350px;
+}
+/* stying image end */
+
+
+/* styling portfolio text */
+.p-number {
+    padding-top: 6px;
+}
+
+.portfolio-content p {
+    padding-top: 16px;
+    padding-bottom: 12px;
+}
+/* styling portfolio text end */
+
+
 /* responsive */
+@media only screen and (max-width: 1200px) {
+    .product-two {
+    padding: 60px 0 0 350px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .product-two {
+    padding: 60px 0 0 250px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .product-two {
+        padding-top: 100px;
+        padding-left: 0;
+    }
+
+    .product-three {
+        padding-top: 100px;
+        padding-left: 0;
+    }
+
+    .product-four {
+        padding-top: 100px;
+        padding-left: 0;
+    }
+    
+    .product-five {
+        padding-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .portfolio-item-container {
+        padding-top: 0;
+    }
+
+    .product-one {
+        padding-top: 0;
+    }
+
+    .product-two {
+        padding-top: 50px;
+    }
+
+    .product-image {
+        max-inline-size: 100%;
+        block-size: auto;
+        object-fit: contain;
+    }
+}
+
 @media only screen and (max-width: 850px) {
 .frontpageLogo {
   top: -60px;
@@ -292,6 +462,12 @@ button {
     display: none;
   }
 
+}
+
+@media only screen and (max-width: 420px) {
+  .passionBox hr {
+    max-width: 260px;
+  }
 }
 /* responsive end*/
 

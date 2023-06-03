@@ -110,8 +110,6 @@ const mobileMenuOpen = ref(false)
     <div class="footerContent">
       <div class="footerMyName">
         <h2>Lærke Nicole Nielsen</h2>
-        <h2>Lærke Nicole Nielsen</h2>
-        <h2>Lærke Nicole Nielsen</h2>
       </div>
 
         <ul>          
@@ -170,6 +168,7 @@ header a:hover {
   color: var(--white-text);
   border-radius: 0;
 }
+
 
 /* footer */
 footer {
@@ -264,6 +263,7 @@ footer li:hover {
 
   footer h1 {
     text-align: left;
+    padding-bottom: 6px;
   }
 
   footer .button {
@@ -282,6 +282,10 @@ footer li:hover {
 
   footer ul {
     padding: 12px 0;
+  }
+
+  footer li {
+    font-size: 22px;
   }
 
   .mail {
@@ -304,5 +308,16 @@ footer li:hover {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .mail hr {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .mail hr {
+    width: 35%;
+  }
+}
 /* responsive end */
 </style>
