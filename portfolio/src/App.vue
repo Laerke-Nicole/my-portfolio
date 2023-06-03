@@ -31,11 +31,14 @@ const mobileMenuOpen = ref(false)
         </button>
       </div>
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/contact">Kontakt</RouterLink>
+        <RouterLink to="/portfolio">Portfolio</RouterLink>  
+        <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/cv.pdf?alt=media&token=179e9337-fe02-4611-8c69-f0914fbd36bb" target="_blank"><li>CV &nearr;</li></a>
+        <RouterLink to="/about">Om mig</RouterLink>
       </PopoverGroup>
     </nav>
+    
     <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
       <div class="fixed inset-0 z-10" />
       <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -52,9 +55,11 @@ const mobileMenuOpen = ref(false)
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+              <RouterLink to="/" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</RouterLink>
+              <RouterLink to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kontakt</RouterLink>
+              <RouterLink to="/portfolio" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Portfolio</RouterLink>  
+              <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/cv.pdf?alt=media&token=179e9337-fe02-4611-8c69-f0914fbd36bb" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"><li>CV &nearr;</li></a>
+              <RouterLink to="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Om mig</RouterLink>
             </div>
           </div>
         </div>
