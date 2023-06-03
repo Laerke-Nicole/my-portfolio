@@ -11,6 +11,8 @@ import {
 } from '@heroicons/vue/24/outline'
 
 const mobileMenuOpen = ref(false)
+
+
 </script>
 
 
@@ -42,22 +44,25 @@ const mobileMenuOpen = ref(false)
 
       <!-- links in navigation -->
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/contact">Kontakt</RouterLink>
-        <RouterLink to="/portfolio">Portfolio</RouterLink>  
-        <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/cv.pdf?alt=media&token=179e9337-fe02-4611-8c69-f0914fbd36bb" target="_blank"><li>CV &nearr;</li></a>
-        <RouterLink to="/about">Om mig</RouterLink>
+        <RouterLink to="/" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</RouterLink>
+        <RouterLink to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kontakt</RouterLink>
+        <RouterLink to="/portfolio" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Portfolio</RouterLink>  
+        <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/cv.pdf?alt=media&token=179e9337-fe02-4611-8c69-f0914fbd36bb" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">CV <span aria-hidden="true">&nearr;</span></a>
+        <RouterLink to="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Om mig</RouterLink>
       </PopoverGroup>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">English</a>
+      </div>
     </nav>
 
     <!-- mobile navigation -->
     <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
       <div class="fixed inset-0 z-10" />
-      <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <DialogPanel class="mobilenav fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
 
         <!-- top part with Kantens logo -->
         <div class="flex items-center justify-between">
-          <RouterLink to='/' class="-m-1.5 p-1.5">
+          <RouterLink to='/' class="logo-hamburgerbar -m-1.5 p-1.5">
             <img class="h-8 w-auto" src="https://firebasestorage.googleapis.com/v0/b/kanten-web.appspot.com/o/logo-standart-small.svg?alt=media&token=33e9c95c-fad9-4827-ae1e-5032e7d9070d" alt="kantens logo" />
           </RouterLink>
           <!-- <a href="#" class="-m-1.5 p-1.5">
@@ -79,8 +84,11 @@ const mobileMenuOpen = ref(false)
               <RouterLink to="/" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</RouterLink>
               <RouterLink to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kontakt</RouterLink>
               <RouterLink to="/portfolio" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Portfolio</RouterLink>  
-              <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/cv.pdf?alt=media&token=179e9337-fe02-4611-8c69-f0914fbd36bb" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"><li>CV &nearr;</li></a>
+              <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/cv.pdf?alt=media&token=179e9337-fe02-4611-8c69-f0914fbd36bb" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">CV <span aria-hidden="true">&nearr;</span></a>
               <RouterLink to="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Om mig</RouterLink>
+            </div>
+            <div class="py-6">
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">English</a>
             </div>
           </div>
         </div>
@@ -138,6 +146,32 @@ header {
   width: 100%;
 }
 
+header a {
+  color: var(--black-text);
+}
+
+header a:hover {
+  color: var(--tertiary-color);
+}
+
+.mobilenav {
+  background-color: var(--background-color);
+  z-index: 1000;
+}
+
+.logo-hamburgerbar:hover {
+  background-color: transparent !important;
+}
+
+.mobilenav a {
+  color: var(--black-text);
+}
+
+.mobilenav a:hover {
+  background-color: var(--tertiary-color);
+  color: var(--white-text);
+  border-radius: 0;
+}
 
 /* footer */
 footer {
