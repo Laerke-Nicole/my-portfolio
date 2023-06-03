@@ -122,7 +122,7 @@ const mobileMenuOpen = ref(false)
         <ul>
           <RouterLink to="/contact"><li>Kontakt</li></RouterLink>
           <RouterLink to="/portfolio"><li>Portfolio</li></RouterLink>
-          <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-5a046.appspot.com/o/cv.pdf?alt=media&token=179e9337-fe02-4611-8c69-f0914fbd36bb" target="_blank"><li>CV &nearr;</li></a>
+          <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2FCV-screen-1.pdf?alt=media&token=ae679620-480e-4aee-a30e-8f8943522814&_gl=1*1dnpjkh*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDU4NzUuMC4wLjA." target="_blank"><li>CV &nearr;</li></a>
           <RouterLink to="/about"><li>Om mig</li></RouterLink>
         </ul>
     </div>
@@ -257,28 +257,23 @@ footer li:hover {
 
 
 /* responsive */
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 800px) {
+  footer {
+    padding-left: 8%;
+  }
+
   footer h1 {
-    font-size: 35px;
+    text-align: left;
   }
 
-  footer .footerMyName h2 {
-    font-size: 24px;
+  footer .button {
+    margin: 0;
+    margin-bottom: 24px;
   }
 
-  footer li {
-    font-size: 24px;
-  }
-
-  .mail hr {
-    width: 55%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
   .footerContent {
     flex-direction: column;
-    text-align: center;
+    text-align: flex-start;
   }
 
   .footerMyName {
@@ -291,6 +286,7 @@ footer li:hover {
 
   .mail {
     font-size: 16px;
+    justify-content: flex-start;
   }
 
   .mail hr {
