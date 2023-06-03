@@ -22,10 +22,6 @@
         <RouterLink to="/contact">
           <button id="button1" class="button">Kontakt mig</button>
         </RouterLink>
-
-        <RouterLink to="/portfolio">
-          <button id="button1" class="button2">Portfolio</button>
-        </RouterLink>
       </div>
       
       <!-- my logo in right corner -->
@@ -171,11 +167,6 @@ main {
 /* styling position of buttons */
 button {
   margin-bottom: 60px;
-}
-
-.button2 {
-  margin-bottom: 60px;
-  margin-left: 12px;
 }
 /* styling position of buttons end */
 
