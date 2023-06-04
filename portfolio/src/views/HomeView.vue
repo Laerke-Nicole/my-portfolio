@@ -158,7 +158,7 @@ main {
   font-style: normal;
   font-weight: 200;
   color: var(--white-headline);
-  font-size: 50px;
+  font-size: 42px;
   text-transform: uppercase;
   line-height: 1;
 }
@@ -371,6 +371,7 @@ button {
   .frontpage {
     padding-top: 60px;
   }
+
   .frontpage-top-content {
     flex-direction: column;
   }
@@ -380,7 +381,7 @@ button {
   }
 
   .frontpage h2{
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .frontpage-button {
@@ -430,13 +431,6 @@ button {
   }    
 }
 
-@media only screen and (max-width: 850px) {
-.frontpageLogo {
-  top: -60px;
-  right: 60px;
-}
-}
-
 @media only screen and (max-width: 800px) {
   .specialties .scroll-text span {
     font-size: 40px;
@@ -447,37 +441,9 @@ button {
   }
 }
 
-@media only screen and (max-width: 730px) {
-.frontpageLogo {
-  top: -60px;
-  right: 40px;
-}
-}
-
-@media only screen and (max-width: 670px) {
-  .frontpage .frontpageLogo hr {
-  display: none;
-  }
-  .frontpageLogo {
-  top: -40px;
-  }
-}
-
 @media only screen and (max-width: 580px) {
   .frontpage h3 {
     font-size: 18px;
-  }
-
-  .frontpage h1 {
-    font-size: 36px;
-  }
-
-  .frontpage h2 {
-    font-size: 36px;
-  }
-
-  .passionBox hr {
-    max-width: 330px;
   }
 
   .passionBox p {
@@ -489,24 +455,13 @@ button {
   }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 550px) {
   .frontpage h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
-  
+
   .frontpage h2 {
-  font-size: 28px;
-}
-
-  .frontpageLogo {
-    display: none;
-  }
-
-}
-
-@media only screen and (max-width: 420px) {
-  .passionBox hr {
-    max-width: 260px;
+    font-size: 20px;
   }
 }
 
