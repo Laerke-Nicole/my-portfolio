@@ -302,7 +302,7 @@ button {
 #portfolioSection1 {
   background-color: var(--white-headline);
   border: var(--dark-border);
-  height: 600px;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -320,7 +320,7 @@ button {
 /* right side portfolio */
 .portfolioBorder2 {
   width: 50%;
-  padding: 15px 15px 15px 15px;
+  padding: 15px;
   background-color: var(--secondary-color);
 }
 
@@ -329,7 +329,7 @@ button {
   display: flex;
   flex-direction: row;
   border: var(--bright-border);
-  height: 600px;
+  height: 75vh;
 }
 
 #portfolioSection2 .portfolioSection2Content {
@@ -344,7 +344,12 @@ button {
 
 /* stying image */
 .portfolioSection1Content img {
-  max-height: 510px;
+  max-height: 60vh;
+}
+
+.portfolioSection1Content img:hover {
+  box-shadow:  9px 9px 18px #b5b5b5,
+             -9px -9px 18px #ffffff;
 }
 /* stying image end */
 
@@ -372,30 +377,7 @@ button {
 
 
 /* responsive */
-@media only screen and (max-width: 900px) {
-    .product-image {
-        max-inline-size: 100%;
-        block-size: auto;
-        object-fit: contain;
-    }
-}
-
-@media only screen and (max-width: 850px) {
-.frontpageLogo {
-  top: -60px;
-  right: 60px;
-}
-}
-
-@media only screen and (max-width: 800px) {
-  .specialties .scroll-text span {
-    font-size: 40px;
-  }
-  .scroll-text hr {
-  height: 2px;
-  width: 2rem;
-  }
-
+@media only screen and (max-width: 950px) {
   .portfolio-content {
     margin-bottom: 44px;
   }
@@ -414,6 +396,31 @@ button {
 
   #portfolioSection2 {
     height: 35vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .product-image {
+      max-inline-size: 100%;
+      block-size: auto;
+      object-fit: contain;
+  }    
+}
+
+@media only screen and (max-width: 850px) {
+.frontpageLogo {
+  top: -60px;
+  right: 60px;
+}
+}
+
+@media only screen and (max-width: 800px) {
+  .specialties .scroll-text span {
+    font-size: 40px;
+  }
+  .scroll-text hr {
+  height: 2px;
+  width: 2rem;
   }
 }
 

@@ -255,7 +255,7 @@ footer li:hover {
 
 
 /* responsive */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
   footer {
     padding-left: 8%;
   }
@@ -279,6 +279,12 @@ footer li:hover {
     display: none;
   }
 
+  .mail {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 800px) {
   footer ul {
     padding: 12px 0;
   }
@@ -289,7 +295,6 @@ footer li:hover {
 
   .mail {
     font-size: 16px;
-    justify-content: flex-start;
   }
 
   .mail hr {
