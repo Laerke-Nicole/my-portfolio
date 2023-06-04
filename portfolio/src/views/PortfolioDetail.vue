@@ -132,7 +132,7 @@ main {
 
 /* styling the either image or video */
 .p-detail {
-    padding: 70px 0 45px 0;
+    padding: 70px 0 20px 0;
 }
 
 img {
@@ -315,6 +315,10 @@ video {
 @media only screen and (max-width: 500px) {
     video {
         max-width: 300px;
+    }
+
+    .p-detail {
+        padding-bottom: 0;
     }
 }
 /* responsive end */

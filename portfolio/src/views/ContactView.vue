@@ -198,7 +198,7 @@ font-style: normal;
 
 @media only screen and (max-width: 460px) {
     .contactSection1Content {
-    padding: 0 30px 60px 30px;
+    padding: 45px 30px 60px 30px;
     }
 
     .contactPage h1 {
@@ -214,7 +214,7 @@ font-style: normal;
     }
 
     #contactSection2 .contactSection2Content {
-        padding: 0 30px 60px 30px;
+        padding: 45px 30px 60px 30px;
     }
 
     #contactSection2 h1 {

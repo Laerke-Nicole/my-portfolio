@@ -415,12 +415,16 @@ button {
     width: 100%;
   }
 
+  .p-number {
+    padding-top: 45px;
+  }
+
   .portfolioBorder2 {
     width: 100%;
   }
 
   #portfolioSection2 {
-    height: 35vh;
+    height: auto;
   }
 }
 
