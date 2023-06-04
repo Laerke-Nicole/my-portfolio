@@ -79,7 +79,7 @@
 
 <style>
 main {
-padding-top: 16vh;
+    padding-top: 96px;
 }
 
 /* border for container */

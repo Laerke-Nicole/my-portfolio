@@ -43,7 +43,7 @@
 /* contact container */
 .contactPage {
     display: flex;
-    padding-top: 16vh;
+    padding-top: 96px;
 }
 
 .contactBorder1 {

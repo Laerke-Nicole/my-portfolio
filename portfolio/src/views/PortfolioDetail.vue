@@ -111,7 +111,7 @@ const portfolioDetails = computed(() => {
 
 <style scoped>
 main {
-    padding-top: 16vh;
+    padding-top: 96px;
 }
 
 /* first section styling of container */

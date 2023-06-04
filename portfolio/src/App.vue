@@ -146,7 +146,13 @@ header a {
 }
 
 header a:hover {
-  color: var(--tertiary-color);
+  color: var(--white-text);
+  background-color: var(--tertiary-color);
+  border-radius: 0;
+}
+
+header img:hover {
+  background-color: var(--background-color);
 }
 
 .mobilenav {

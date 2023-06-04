@@ -1,35 +1,44 @@
 <template>
   <main>
     <!-- frontpage -->
-    <div class="frontpage">
+    <div class="frontpage-border">
+      <div class="frontpage">
 
-      <!-- introduction -->
-      <h3>Hej, jeg er</h3>
-      <h1>Lærke Nicole Nielsen</h1>
-      <h2>Og er Multimediedesigner</h2>
+        <div class="flex">
+          <!-- introduction -->
+          <div class="w-6/12">
+            <h3>Hej, jeg er</h3>
+            <h1>Lærke Nicole Nielsen</h1>
+            <h2>Og er Multimediedesigner</h2>
+            <!-- button to go straight to contact -->
+            <div class="frontpage-buttons pt-5">
+              <RouterLink to="/portfolio">
+                <button id="button1" class="button">Kontakt mig</button>
+              </RouterLink>
+            </div>
+          </div>
+          
+          <div class="my-portrait w-6/12 flex justify-end pb-10">
+            <img src="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fbeige-background.jpg?alt=media&token=c6fe6e6b-1287-453a-91cf-cc99746bc4b0&_gl=1*t2doc5*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTg4OTg1MS40OC4xLjE2ODU4ODk5MDkuMC4wLjA." alt="portrait-me" width="200">
+          </div>
+        </div>
+        
 
-      <div class="passionBox">
-        <hr>
-        <p>
-          Med en passion for at bringe mine 
-          kreative ideer til virkelighed <br>gennem 
-          fotografering, videoredigering & webdevelopment
-        </p>
-      </div>
-      
-      <!-- buttons to go straight to portfolio or portfolio -->
-      <div class="frontpage-buttons">
-        <RouterLink to="/portfolio">
-          <button id="button1" class="button">Kontakt mig</button>
-        </RouterLink>
-      </div>
-      
-      <!-- my logo in right corner -->
-      <div class="frontpageLogo">
-        <hr><img src="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/logos%2Flogo-light.svg?alt=media&token=85a18e37-c67c-461d-9d1f-78490a26fa28&_gl=1*kraw86*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgyNzc5My40NC4xLjE2ODU4Mjc4MTIuMC4wLjA." height="60" alt="">
+        
+
+        <div class="passionBox flex text-right justify-end">
+          <div>
+            <p>
+              Med en passion for at bringe mine 
+              kreative ideer til virkelighed <br>gennem 
+              fotografering, videoredigering & webdevelopment
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-
+    
+    
     <!-- scrolling text with my specialties -->
     <div class="specialties">
       <div class="scroll-text">
@@ -106,24 +115,26 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import portfoliodb from '../modules/portfoliodb'
-    const { state } = portfoliodb()
-
+const { state } = portfoliodb()
 </script>
 
 <style scoped>
 
 main {
-  padding-top: 10vh;
+  padding-top: 96px;
 }
 
 /*frontpage*/
+.frontpage-border {
+  padding: 15px;
+  background-color: var(--primary-color);
+}
 .frontpage {
   padding-top: 90px;
   padding-left: 8%;
-  clip-path: polygon(51% 0, 100% 36%, 100% 100%, 0 100%, 0 0);
   background-color: var(--primary-color);
+  border: var(--bright-border);
   max-height: 90vh;
 }
 
@@ -132,7 +143,7 @@ main {
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
-  color: var(--white-headline);
+  color: var(--white-text);
   text-transform: uppercase;
 }
 
@@ -156,21 +167,12 @@ main {
 
 /* explaining what my passion is */
 .passionBox {
-  display: flex;
-  flex-direction: column;
-}
-
-.passionBox hr {
-  display: block;
-  border-width: 0;
-  height: 2px;
-  max-width: 460px;
-  margin: 16px 0;
-  background-color: var(--tertiary-color);
+  flex-direction: row;
+  padding-right: 8%;
 }
 
 .passionBox p {
-  margin-bottom: 18px;
+  padding-bottom: 60px;
   color: var(--white-text);
 }
 /* explaining what my passion is end */
@@ -183,28 +185,16 @@ button {
 /* styling position of buttons end */
 
 
-/* styling my logo in right corner */
-.frontpage .frontpageLogo hr {
-  display: flex;
-  justify-content: flex-end;
-  top: -125px;
-  left: 117px;
-  display: block;
-  border-width: 0;
-  height: 2px;
-  width: 175px;
-  background-color: var(--white-headline);
-  transform: rotate(90deg);
+/* my portrait */
+.my-portrait {
+  padding-right: 8%;
 }
 
-.frontpageLogo {
-  display: flex;
-  justify-content: flex-end;
-  top: -60px;
-  right: 100px;
-  height: 60px;
+.my-portrait img {
+  object-fit: cover;
+  object-position: center;
 }
-/* styling my logo in right corner end */
+/* my portrait end */
 
 
 /* scrollbar of my specialty of subjects */ 
