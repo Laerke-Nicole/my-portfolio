@@ -157,6 +157,15 @@ header img:hover {
   background-color: var(--background-color);
 }
 
+nav a.router-link-exact-active  {
+  color: var(--tertiary-color);
+  border-radius: 0;
+}
+
+nav a.router-link-exact-active:hover  {
+  color: var(--white-text);
+}
+
 .mobilenav {
   background-color: var(--background-color);
   z-index: 1000;
