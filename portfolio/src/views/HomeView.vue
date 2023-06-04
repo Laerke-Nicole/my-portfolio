@@ -131,7 +131,7 @@ main {
   background-color: var(--primary-color);
 }
 .frontpage {
-  padding-top: 90px;
+  padding-top: 45px;
   padding-left: 8%;
   background-color: var(--primary-color);
   border: var(--bright-border);

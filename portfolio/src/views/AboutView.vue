@@ -79,15 +79,15 @@ main {
 
 /* border for container */
 .aboutBorder1 {
-padding: 15px 15px 15px 15px;
+padding: 15px;
 background-color: var(--white-headline);
 }
 
 /* text about me */
 .about {
 background-color: var(--white-headline);
-padding: 45px 8%;
-height: 75vh;
+padding: 45px 8% 60px 8%;
+
 border: var(--dark-border);
 }
 

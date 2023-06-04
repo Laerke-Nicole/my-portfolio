@@ -195,7 +195,7 @@ video {
 /* problem */
 .infoBorder1 {
     width: 50%;
-    padding: 15px 15px 15px 15px;
+    padding: 15px;
     background-color: var(--primary-color);
 }
 
@@ -208,12 +208,11 @@ video {
 .infoSection1Content {
     display: flex;
     flex-direction: column;
-    padding: 0 60px 50px 60px;
+    padding: 45px 8% 60px 8%;
 }
 
 .infoSection1Content h1 {
     color: var(--white-headline);
-    padding-top: 45px;
     padding-bottom: 12px;
 }
 
@@ -226,7 +225,7 @@ video {
 /* solution */
 .infoBorder2 {
     width: 50%;
-    padding: 15px 15px 15px 15px;
+    padding: 15px;
     background-color: var(--secondary-color);
 }
 
@@ -239,12 +238,11 @@ video {
 }
 
 #infoSection2 .infoSection2Content {
-    padding: 0 60px 45px 60px;
+    padding: 45px 8% 60px 8%;
 }
 
 .infoSection2Content h1 {
     color: var(--white-headline);
-    padding-top: 45px;
     padding-bottom: 12px;
 }
 
@@ -276,7 +274,7 @@ video {
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
     .p-content {
         flex-direction: column;
         padding-right: 45px;
@@ -300,11 +298,11 @@ video {
     }
 
     #infoSection1 {
-        min-height: 400px;
+        min-height: auto;
     }
 
     #infoSection2 {
-        min-height: 400px;
+        min-height: auto;
     }
 }
 

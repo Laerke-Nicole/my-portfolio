@@ -64,13 +64,12 @@
 .contactSection1Content {
     display: flex;
     flex-direction: column;
-    padding: 0 60px 60px 60px;
+    padding: 45px 8% 60px 8%;
 }
 
 .contactSection1Content h1 {
     color: var(--secondary-color);
     font-size: 40px;
-    padding-top: 45px;
 }
 
 .input {
@@ -152,13 +151,12 @@ font-style: normal;
 }
 
 #contactSection2 .contactSection2Content {
-    padding: 0 60px 60px 60px;
+    padding: 45px 8% 60px 8%;
 }
 
 #contactSection2 h1 {
     color: var(--white-headline);
     font-size: 40px;
-    padding-top: 45px;
 }
 
 #contactSection2 h3, p {
