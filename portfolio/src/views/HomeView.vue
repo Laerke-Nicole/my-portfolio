@@ -229,7 +229,7 @@ button {
   
 .specialties .scroll-text span {
   margin: 0;
-  font-size: 50px;
+  font-size: 40px;
   color: var(--primary-color);
   transition: all 2s ease;
   font-family: rift, sans-serif;
@@ -241,7 +241,7 @@ button {
   display: block;
   border-width: 0;
   height: 2px;
-  width: 3rem;
+  width: 2rem;
   transform: rotate(90deg);
   background-color: var(--primary-color);
   align-self: center;
