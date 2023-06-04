@@ -18,7 +18,7 @@ const getPortfolio = () => {
         },
         {
             id: 'product-two',
-            image: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmockup-website-2.png?alt=media&token=134f6c58-8f20-4614-b430-5ab80b12512f&_gl=1*10g95b3*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTg4Mzk3Ny40Ni4xLjE2ODU4ODQ1MjEuMC4wLjA.',
+            image: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmockup-website-2.png?alt=media&token=61b856b8-bdc8-466d-a213-1d7257421830&_gl=1*14ituqp*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTg4NjYzOC40Ny4xLjE2ODU4ODY3MDUuMC4wLjA.',
             video: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fwebpage-1.mp4?alt=media&token=293bd0c5-c0e7-488a-9178-e23a39d9a25f&_gl=1*1azdz94*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0ODkuMC4wLjA.',
             number: '.02',
             title: 'Hjemmeside',

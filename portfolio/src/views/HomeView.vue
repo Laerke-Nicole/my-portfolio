@@ -269,7 +269,7 @@ button {
   flex-direction: column;
   flex-wrap: nowrap;
   overflow: hidden;
-  background-color: var(--background-color);
+  background-color: var(--black-headline);
   padding-bottom: 60px;
   width: 100%;
 }
@@ -279,7 +279,7 @@ button {
   flex-direction: column;
   align-items: flex-start;
   border: 0;
-  background-color: var(--background-color);
+  background-color: var(--black-headline);
   width: 100%;
 }
 
@@ -352,11 +352,11 @@ button {
 /* styling portfolio text */
 .p-number {
   color: var(--white-text);
-  line-height: 0.7;
 }
 
 .p-category {
   color: var(--white-headline);
+  transform: scaleY(1.4)
 }
 
 .p-title {
@@ -395,6 +395,26 @@ button {
   height: 2px;
   width: 2rem;
   }
+
+  .portfolio-content {
+    margin-bottom: 44px;
+  }
+
+  .portfolio-content {
+    flex-direction: column;
+  }
+
+  .portfolioBorder1 {
+    width: 100%;
+  }
+
+  .portfolioBorder2 {
+    width: 100%;
+  }
+
+  #portfolioSection2 {
+    height: 35vh;
+  }
 }
 
 @media only screen and (max-width: 730px) {
@@ -415,24 +435,28 @@ button {
 
 @media only screen and (max-width: 580px) {
   .frontpage h3 {
-  font-size: 18px;
-}
+    font-size: 18px;
+  }
 
-.frontpage h1 {
-  font-size: 36px;
-}
+  .frontpage h1 {
+    font-size: 36px;
+  }
 
-.frontpage h2 {
-  font-size: 36px;
-}
+  .frontpage h2 {
+    font-size: 36px;
+  }
 
-.passionBox hr {
-  max-width: 330px;
-}
+  .passionBox hr {
+    max-width: 330px;
+  }
 
-.passionBox p {
-  padding-right: 40px;
-}
+  .passionBox p {
+    padding-right: 40px;
+  }
+
+  #portfolioSection1 {
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 470px) {
@@ -453,6 +477,14 @@ button {
 @media only screen and (max-width: 420px) {
   .passionBox hr {
     max-width: 260px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .p-category {
+    font-size: 22px;
+    line-height: 1.1;
+    padding: 8px 0;
   }
 }
 /* responsive end*/
