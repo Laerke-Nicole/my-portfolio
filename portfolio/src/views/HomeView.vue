@@ -12,7 +12,7 @@
             <h2 class="multimediedesigner">Og er Multimediedesigner</h2>
             <!-- button to go straight to contact -->
             <div class="frontpage-button pt-5">
-              <RouterLink to="/portfolio">
+              <RouterLink to="/contact">
                 <button id="button1" class="button">Kontakt mig</button>
               </RouterLink>
             </div>
@@ -22,9 +22,6 @@
             <img src="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fbeige-background.jpg?alt=media&token=c6fe6e6b-1287-453a-91cf-cc99746bc4b0&_gl=1*t2doc5*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTg4OTg1MS40OC4xLjE2ODU4ODk5MDkuMC4wLjA." alt="portrait-me" width="200">
           </div>
         </div>
-        
-
-        
 
         <div class="passionBox flex text-right justify-end">
           <div>

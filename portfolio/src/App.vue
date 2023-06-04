@@ -141,6 +141,8 @@ header {
   width: 100%;
 }
 
+/* active stuff */
+
 header a {
   color: var(--black-text);
 }
