@@ -8,7 +8,7 @@
                 <!-- content about me -->
                 <div class="aboutMe">
                 <div class="video">
-                    <iframe src="https://www.youtube.com/embed/Z7Z1Q48Qe3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/Z7Z1Q48Qe3o" title="YouTube video player" id="video-cv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 
                 <div class="aboutText">

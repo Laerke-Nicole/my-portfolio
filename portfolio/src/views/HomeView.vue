@@ -4,14 +4,14 @@
     <div class="frontpage-border">
       <div class="frontpage">
 
-        <div class="flex">
+        <div class="frontpage-top-content flex">
           <!-- introduction -->
           <div class="w-6/12">
             <h3>Hej, jeg er</h3>
             <h1>Lærke Nicole Nielsen</h1>
-            <h2>Og er Multimediedesigner</h2>
+            <h2 class="multimediedesigner">Og er Multimediedesigner</h2>
             <!-- button to go straight to contact -->
-            <div class="frontpage-buttons pt-5">
+            <div class="frontpage-button pt-5">
               <RouterLink to="/portfolio">
                 <button id="button1" class="button">Kontakt mig</button>
               </RouterLink>
@@ -368,6 +368,39 @@ button {
 
 /* responsive */
 @media only screen and (max-width: 950px) {
+  .frontpage {
+    padding-top: 60px;
+  }
+  .frontpage-top-content {
+    flex-direction: column;
+  }
+
+  .frontpage h1 {
+    font-size: 36px;
+  }
+
+  .frontpage h2{
+    font-size: 32px;
+  }
+
+  .frontpage-button {
+    padding-top: 12px;
+  }
+  .frontpage button {
+    margin-bottom: 50px;
+    padding-top: 12px;
+  }
+
+  .my-portrait {
+    justify-content: flex-start;
+    padding-bottom: 12px;
+  }
+
+  .passionBox {
+    text-align: left;
+    justify-content: flex-start;
+  }
+
   .portfolio-content {
     margin-bottom: 44px;
   }
