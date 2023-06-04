@@ -7,18 +7,13 @@
 
                 <!-- content about me -->
                 <div class="aboutMe">
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/Z7Z1Q48Qe3o" title="YouTube video player" id="video-cv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                
-                <div class="aboutText">
-                    <h1>Hvem er jeg</h1>
-                    <p>Jeg er lige nu i gang med min multimediedesigneruddannelse på Erhvervsakademiet Sydvest i Esbjerg. Jeg er passioneret for både foto- og videoredigering, samt design og web-udvikling, men har også interesse for grafisk- og UI/UX design. Jeg elsker at lærer nyt og nørde med mit arbejde, ligegyldig hvilken opgave jeg får. Og min detajleorienteret- og samarbejdssans hjælper mig med at give det bedste resultat.</p>
-                </div>
-                <div class="aboutSpecialties">
-                    <p>Design & development</p>
-                    <p>Videoredigering</p>
-                    <p>Fotografering</p>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/Z7Z1Q48Qe3o" title="YouTube video player" id="video-cv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="aboutText">
+                        <h1>Hvem er jeg</h1>
+                        <p>Jeg er lige nu i gang med min multimediedesigneruddannelse på Erhvervsakademiet Sydvest i Esbjerg. Jeg er passioneret for både foto- og videoredigering, samt design og web-udvikling, men har også interesse for grafisk- og UI/UX design. Jeg elsker at lærer nyt og nørde med mit arbejde, ligegyldig hvilken opgave jeg får. Og min detajleorienteret- og samarbejdssans hjælper mig med at give det bedste resultat.</p>
                     </div>
                 </div>
             </div>
@@ -91,9 +86,8 @@ background-color: var(--white-headline);
 /* text about me */
 .about {
 background-color: var(--white-headline);
-padding: 0 8%;
-padding-top: 100px;
-height: 85vh;
+padding: 45px 8%;
+height: 75vh;
 border: var(--dark-border);
 }
 
@@ -128,22 +122,6 @@ max-width: 350px;
 padding-right: 50px;
 }
 /* text about me end */
-
-
-/* vertical specialties */
-.aboutSpecialties {
-writing-mode: vertical-rl;
-display: flex;
-align-items: center;
-position: absolute;
-right: 0;
-gap: 22px;
-}
-
-.aboutSpecialties p {
-font-size: 17px;
-}
-/* vertical specialties end */
 
 
 /* services */
@@ -234,10 +212,6 @@ font-size: 17px;
     .about {
         padding-right: 30px;
     }
-
-    .aboutSpecialties {
-        display: none;
-    }
 }   
 
 @media only screen and (max-width: 980px) {
@@ -248,7 +222,8 @@ font-size: 17px;
 
 @media only screen and (max-width: 970px) {
     .about {
-        height: 150vh;
+        height: auto;
+        padding-bottom: 60px;
     }
 
     .aboutMe {
@@ -275,28 +250,18 @@ font-size: 17px;
     }
 }
 
-@media only screen and (max-width: 850px) {
-    .about {
-        height: 140vh;
-    }
-}
-
 @media only screen and (max-width: 800px) {
     .servicesScrollBox .servicesScrollText h2 {
-        font-size: 40px;
+        font-size: 32px;
     }
 
     .servicesScrollText hr {
         height: 2px;
-        width: 2rem;
+        width: 1.5rem;
     }
 }
 
 @media only screen and (max-width: 700px) {
-    .about {
-        height: 125vh;
-    }
-
     iframe {
         width: 100%;
         height: 100%;

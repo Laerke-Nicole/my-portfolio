@@ -76,7 +76,7 @@
 .input {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 100%;
     background-color: var(--white-text);
     min-height: 40px;
     outline: none;
@@ -96,21 +96,20 @@ input:hover {
 }
 
 input::placeholder{
-  color: var(--black-headline);
-  font-family: "condor", sans-serif;
-font-weight: 400;
-font-style: normal;
+    color: var(--black-headline);
+    font-family: "condor", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 textarea {
-    max-width: 250px;
-    min-width: 250px;
+    width: 100%;
     max-height: 400px;
     min-height: 60px;
     color: var(--black-headline);
     font-family: "condor", sans-serif;
-font-weight: 400;
-font-style: normal;
+    font-weight: 400;
+    font-style: normal;
     background-color: var(--white-text);
     outline: none;
     box-shadow: 0px 10px 20px -18px;
@@ -169,16 +168,7 @@ font-style: normal;
 
 
 /* responsive */
-@media only screen and (max-width: 900px) {
-    .contactPage h1 {
-        font-size: 30px;
-    }
-    #contactSection2 h1 {
-        font-size: 30px;
-    }
-}
-
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 950px) {
     .contactPage {
         flex-direction: column;
         width: 100%;

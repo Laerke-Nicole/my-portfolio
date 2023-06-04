@@ -6,7 +6,7 @@
 
         <div class="frontpage-top-content flex">
           <!-- introduction -->
-          <div class="w-6/12">
+          <div class="frontpage-content w-6/12">
             <h3>Hej, jeg er</h3>
             <h1>Lærke Nicole Nielsen</h1>
             <h2 class="multimediedesigner">Og er Multimediedesigner</h2>
@@ -376,6 +376,10 @@ button {
     flex-direction: column;
   }
 
+  .frontpage-content {
+    width: 100%;
+  }
+
   .frontpage h1 {
     font-size: 36px;
   }
@@ -433,11 +437,11 @@ button {
 
 @media only screen and (max-width: 800px) {
   .specialties .scroll-text span {
-    font-size: 40px;
+    font-size: 32px;
   }
   .scroll-text hr {
   height: 2px;
-  width: 2rem;
+  width: 1.5rem;
   }
 }
 
@@ -457,11 +461,21 @@ button {
 
 @media only screen and (max-width: 550px) {
   .frontpage h1 {
-    font-size: 24px;
+    font-size: 34px;
   }
 
   .frontpage h2 {
-    font-size: 20px;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .frontpage h1 {
+    font-size: 28px;
+  }
+
+  .frontpage h2 {
+    font-size: 23px;
   }
 }
 
