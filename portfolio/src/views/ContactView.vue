@@ -5,7 +5,7 @@
         <div class="contactBorder1">
             <div id="contactSection1">
                 <div class="contactSection1Content">
-                    <h1>Kom og sig hej</h1>
+                    <h2>Kom og sig hej</h2>
                     <div class="contactInput">
                         <input class="input" name="name" placeholder="Navn" type="name">
                         <input class="input" name="email" placeholder="E-mail" type="email">
@@ -26,7 +26,7 @@
         <div class="contactBorder2">
             <div id="contactSection2">
                 <div class="contactSection2Content">
-                    <h1>Arbejdshenvendelser</h1>
+                    <h2>Arbejdshenvendelser</h2>
                     <h3>Kontakt mig venligst på</h3>
                     <p>laenie01@easv365.dk</p>
                 </div>
@@ -64,12 +64,14 @@
 .contactSection1Content {
     display: flex;
     flex-direction: column;
-    padding: 45px 8% 60px 8%;
+    padding: 60px 8% 60px 8%;
 }
 
-.contactSection1Content h1 {
+.contactSection1Content h2 {
     color: var(--secondary-color);
     font-size: 40px;
+    font-style: normal;
+    font-weight: bold; 
 }
 
 .input {
@@ -151,12 +153,14 @@ font-style: normal;
 }
 
 #contactSection2 .contactSection2Content {
-    padding: 45px 8% 60px 8%;
+    padding: 60px 8% 60px 8%;
 }
 
-#contactSection2 h1 {
+#contactSection2 h2 {
     color: var(--white-headline);
     font-size: 40px;
+    font-style: normal;
+    font-weight: bold; 
 }
 
 #contactSection2 h3, p {
@@ -175,7 +179,7 @@ font-style: normal;
         width: 100%;
     }
 
-    .contactPage h1 {
+    .contactPage h2 {
         font-size: 40px;
     }
 
@@ -191,17 +195,17 @@ font-style: normal;
         width: 100%;
     }
 
-    #contactSection2 h1 {
+    #contactSection2 h2 {
         font-size: 40px;
     }
 }
 
 @media only screen and (max-width: 460px) {
     .contactSection1Content {
-    padding: 45px 30px 60px 30px;
+    padding: 60px 30px 60px 30px;
     }
 
-    .contactPage h1 {
+    .contactPage h2 {
         font-size: 30px;
     }
 
@@ -214,10 +218,10 @@ font-style: normal;
     }
 
     #contactSection2 .contactSection2Content {
-        padding: 45px 30px 60px 30px;
+        padding: 60px 30px 60px 30px;
     }
 
-    #contactSection2 h1 {
+    #contactSection2 h2 {
         font-size: 30px;
     }
     #contactSection2 p {

@@ -96,7 +96,7 @@
                 <div id="portfolioSection2">
                     <div class="portfolioSection2Content">
                       <h4 class="p-number" :class="item.number">{{ item.number }}</h4>
-                      <h1 class="p-category" :class="item.category">{{ item.category }}</h1>
+                      <h3 class="p-category" :class="item.category">{{ item.category }}</h3>
                       <h3 class="p-title">{{ item.title }}</h3>
                       <p>{{ item.description }}</p>
                       <RouterLink :to="{ name: 'portfoliodetails', params:{id: item.id}}">
@@ -128,11 +128,11 @@ main {
   background-color: var(--primary-color);
 }
 .frontpage {
-  padding-top: 45px;
+  padding-top: 60px;
   padding-left: 8%;
   background-color: var(--primary-color);
   border: var(--bright-border);
-  max-height: 90vh;
+  height: 80vh;
 }
 
 .frontpage h3 {
@@ -300,7 +300,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 45px 8%;
+  padding: 60px 8%;
 }
 
 
@@ -348,7 +348,10 @@ button {
 
 .p-category {
   color: var(--white-headline);
-  transform: scaleY(1.4)
+  transform: scaleY(1.4);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: bold; 
 }
 
 .p-title {
@@ -366,9 +369,8 @@ button {
 /* responsive */
 @media only screen and (max-width: 950px) {
   .frontpage {
-    padding-top: 60px;
+    height: auto;
   }
-
   .frontpage-top-content {
     flex-direction: column;
   }
@@ -416,7 +418,7 @@ button {
   }
 
   .p-number {
-    padding-top: 45px;
+    padding-top: 60px;
   }
 
   .portfolioBorder2 {

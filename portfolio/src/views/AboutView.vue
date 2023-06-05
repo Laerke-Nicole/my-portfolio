@@ -24,35 +24,35 @@
         <div class="services">
             <div class="servicesScrollBox">
                 <div class="servicesScrollText">
-                    <h2>Service</h2>
+                    <h5>Service</h5>
                     <hr>
-                    <h2>Service</h2>
+                    <h5>Service</h5>
                     <hr>
-                    <h2>Service</h2>
+                    <h5>Service</h5>
                     <hr>
-                    <h2>Service</h2>
+                    <h5>Service</h5>
                     <hr>
-                    <h2>Service</h2>
+                    <h5>Service</h5>
                     <hr>
-                    <h2>Service</h2>
+                    <h5>Service</h5>
                     <hr>
-                    <h2 id="last">Service</h2>
+                    <h5 id="last">Service</h5>
                     <hr>
                 </div>
                 <div class="servicesScrollText">
-                    <h2>Service</h2>
+                    <h5>Service</h5>
                     <hr>
-                    <h2>Service</h2>
+                    <h5>Service</h5>
                     <hr>
-                    <h2>Service</h2>
+                    <h5>Service</h5>
                     <hr>
-                    <h2>Service</h2>
+                    <h5>Service</h5>
                     <hr>
-                    <h2>Service</h2>
+                    <h5>Service</h5>
                     <hr>
-                    <h2>Service</h2>
+                    <h5>Service</h5>
                     <hr>
-                    <h2 id="last">Service</h2>
+                    <h5 id="last">Service</h5>
                     <hr>
                 </div>
             </div>
@@ -61,11 +61,11 @@
             <!-- the services i offer -->
             <div class="servicesBorder">
                 <div class="servicesbox">
-                    <h1 class="servicesFirstH1">Foto & videoredigering</h1>
-                    <h1>Webdesign & development</h1>
-                    <h1>UI/UX design</h1>
-                    <h1>Grafisk design</h1>
-                    <h1 class="servicesLastH1">User Experience</h1>
+                    <h4 class="servicesFirsth4">Webdesign & development</h4>
+                    <h4>Foto & videoredigering</h4>
+                    <h4>UI/UX design</h4>
+                    <h4>Grafisk design</h4>
+                    <h4 class="servicesLasth4">User Experience</h4>
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@ background-color: var(--white-headline);
 /* text about me */
 .about {
 background-color: var(--white-headline);
-padding: 45px 8% 60px 8%;
+padding: 60px 8% 60px 8%;
 
 border: var(--dark-border);
 }
@@ -144,7 +144,7 @@ padding-right: 50px;
   animation: animate_text 30s linear infinite;
 }
   
-.servicesScrollBox .servicesScrollText h2 {
+.servicesScrollBox .servicesScrollText h5 {
   margin: 0;
   font-size: 40px;
   color: var(--primary-color);
@@ -187,7 +187,7 @@ padding-right: 50px;
     border: var(--bright-border);
 }
 
-.services h1 {
+.services h4 {
     font-family: rift, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -197,11 +197,11 @@ padding-right: 50px;
     font-size: 50px;
 }
 
-.servicesFirstH1 {
+.servicesFirsth4 {
     padding-top: 45px;
 }
 
-.servicesLastH1 {
+.servicesLasth4 {
     padding-bottom: 45px !important;
 }
 /* services end */
@@ -213,12 +213,6 @@ padding-right: 50px;
         padding-right: 30px;
     }
 }   
-
-@media only screen and (max-width: 980px) {
-    .about {
-        padding-top: 72.365px;
-    }
-}
 
 @media only screen and (max-width: 970px) {
     .about {
@@ -236,13 +230,9 @@ padding-right: 50px;
         height: 315px;
     }
 
-    iframe {
-        padding-left: 15%;
-    }
-
     .aboutText {
         padding-top: 45px;
-        padding-left: 10%;
+        padding-left: 0;
     }
 
     .aboutText p {
@@ -251,7 +241,7 @@ padding-right: 50px;
 }
 
 @media only screen and (max-width: 800px) {
-    .servicesScrollBox .servicesScrollText h2 {
+    .servicesScrollBox .servicesScrollText h5 {
         font-size: 32px;
     }
 
@@ -267,7 +257,7 @@ padding-right: 50px;
         height: 100%;
     }
 
-    .servicesbox h1 {
+    .servicesbox h4 {
         font-size: 35px;
     }
 }
@@ -287,7 +277,7 @@ padding-right: 50px;
 }
 
 @media only screen and (max-width: 540px) {
-    .servicesbox h1 {
+    .servicesbox h4 {
         font-size: 24px;
     }
 }
@@ -300,18 +290,8 @@ padding-right: 50px;
 }
 
 @media only screen and (max-width: 380px) {
-    .aboutText h1 {
+    .aboutText h4 {
         font-size: 35px;
-    }
-}
-
-@media only screen and (max-width: 370px) {
-    .video {
-        padding-left: 0;
-    }
-
-    iframe {
-        padding: 0 5% 0 8%;
     }
 }
 /* responsive end */

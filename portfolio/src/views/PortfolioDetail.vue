@@ -29,17 +29,17 @@
                             </div>
                             
                             <div>
-                                <h2>Beskrivelse</h2>
+                                <h3>Beskrivelse</h3>
                                 <p>{{ portfolioDetails.description }}</p>
-                                <h2 class="h2Buttom">Status</h2>
+                                <h4 class="h4Buttom">Status</h4>
                                 <p>{{ portfolioDetails.status }}</p>
                             </div>
                             
                             <div>
-                                <h2>Kategori</h2>
+                                <h4>Kategori</h4>
                                 <p :class="portfolioDetails.category">{{ portfolioDetails.category }}</p>
 
-                                <h2 class="h2Buttom">Tech</h2>
+                                <h4 class="h4Buttom">Tech</h4>
                                 <p>{{ portfolioDetails.tech }}</p>
                             </div>
                         </div>
@@ -58,7 +58,7 @@
                 <div class="infoBorder1">
                     <div id="infoSection1">
                         <div class="infoSection1Content">
-                            <h1>Problemer jeg havde</h1>
+                            <h3>Problemer jeg havde</h3>
                             <p>{{ portfolioDetails.problem }}</p>
                             <p>{{ portfolioDetails.problem2 }}</p>
                             <p>{{ portfolioDetails.problem3 }}</p>
@@ -70,7 +70,7 @@
                 <div class="infoBorder2">
                     <div id="infoSection2">
                         <div class="infoSection2Content">
-                            <h1>Løsningen på problemerne</h1>
+                            <h3>Løsningen på problemerne</h3>
                             <p>{{ portfolioDetails.solution }}</p>
                             <p>{{ portfolioDetails.solution2 }}</p>
                             <p>{{ portfolioDetails.solution3 }}</p>
@@ -172,13 +172,19 @@ video {
     padding: 45px 0 70px 0;
 }
 
-.p-content h2 {
+.p-content h3 {
+    font-weight: bold; 
+    font-size: 20px;
+    color: var(--black-headline);
+}
+
+.p-content h4 {
     font-size: 20px;
     font-weight: bold;
     color: var(--black-headline);
 }
 
-.h2Buttom {
+.h4Buttom {
     padding-top: 12px;
 }
 
@@ -211,9 +217,12 @@ video {
     padding: 45px 8% 60px 8%;
 }
 
-.infoSection1Content h1 {
+.infoSection1Content h3 {
     color: var(--white-headline);
     padding-bottom: 12px;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 25px;
 }
 
 .infoSection1Content p {
@@ -241,9 +250,12 @@ video {
     padding: 45px 8% 60px 8%;
 }
 
-.infoSection2Content h1 {
+.infoSection2Content h3 {
     color: var(--white-headline);
     padding-bottom: 12px;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 25px;
 }
 
 .infoSection2Content p {

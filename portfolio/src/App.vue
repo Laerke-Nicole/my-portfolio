@@ -160,6 +160,8 @@ header img:hover {
 nav a.router-link-exact-active  {
   color: var(--tertiary-color);
   border-radius: 0;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 nav a.router-link-exact-active:hover  {
@@ -189,7 +191,7 @@ nav a.router-link-exact-active:hover  {
 /* footer */
 footer {
   background-color: var(--primary-color);
-  padding-bottom: 45px;
+  padding-bottom: 60px;
 }
 
 footer h1 {
@@ -199,7 +201,7 @@ footer h1 {
   font-style: normal;
   font-size: 40px;
   text-align: center;
-  padding-top: 45px;
+  padding-top: 60px;
   padding-bottom: 16px;
 }
 
@@ -223,7 +225,7 @@ footer .button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 45px auto;
 }
 
 footer ul {
