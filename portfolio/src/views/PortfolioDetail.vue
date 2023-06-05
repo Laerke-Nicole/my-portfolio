@@ -30,7 +30,7 @@
                             
                             <div>
                                 <h3>Beskrivelse</h3>
-                                <p>{{ portfolioDetails.description }}</p>
+                                <p class="pr-6">{{ portfolioDetails.description }} <br>Læs nedenfor om problemer og løsninger jeg fandt.</p>
                                 <h4 class="h4Buttom">Status</h4>
                                 <p>{{ portfolioDetails.status }}</p>
                             </div>
@@ -169,7 +169,7 @@ video {
     flex-wrap: nowrap;
     overflow: hidden;
     justify-content: space-around;
-    padding: 45px 0 70px 0;
+    padding: 60px 0 70px 0;
 }
 
 .p-content h3 {
@@ -214,7 +214,7 @@ video {
 .infoSection1Content {
     display: flex;
     flex-direction: column;
-    padding: 45px 8% 60px 8%;
+    padding: 60px 8% 60px 8%;
 }
 
 .infoSection1Content h3 {
@@ -247,7 +247,7 @@ video {
 }
 
 #infoSection2 .infoSection2Content {
-    padding: 45px 8% 60px 8%;
+    padding: 60px 8% 60px 8%;
 }
 
 .infoSection2Content h3 {
@@ -287,10 +287,20 @@ video {
 }
 
 @media only screen and (max-width: 950px) {
+    video {
+        margin: 0;
+        padding-left: 8%;
+    }
+
+    .watchVid {
+        padding-left: 8%;
+        justify-content: flex-start;
+    }
+
     .p-content {
         flex-direction: column;
-        padding-right: 45px;
-        padding-left: 70px;
+        padding-right: 8%;
+        padding-left: 8%;
     }
 
     .p-date {

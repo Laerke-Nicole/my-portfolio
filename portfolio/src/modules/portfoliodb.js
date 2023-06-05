@@ -5,7 +5,7 @@ const getPortfolio = () => {
         {
             id: 'product-one',
             image: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmockup-website-1.png?alt=media&token=40c6408f-8d25-4660-91e0-71cb12d5d8ac&_gl=1*u7fflu*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTg4Mzk3Ny40Ni4xLjE2ODU4ODQyMjUuMC4wLjA.',
-            video: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fkanten-web-vid.mp4?alt=media&token=9592b246-10bb-4870-9492-095cb4fc7a88&_gl=1*tg5kj7*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgxMDI3NC40My4xLjE2ODU4MTA4MjIuMC4wLjA.',
+            video: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fwebsite-video-kanten-1.mp4?alt=media&token=5d93e051-4242-46e3-b13f-c78cc1abcd8c&_gl=1*1szvspr*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTk1ODM2OS41Mi4xLjE2ODU5NTg2MDQuMC4wLjA.',
             number: '.01',
             title: 'Hjemmeside',
             category: 'Webdesign- & development',
@@ -13,8 +13,8 @@ const getPortfolio = () => {
             tech: 'HTML, CSS, Javascript & Vue',
             status: 'Færdig',
             date: '2023',
-            problem: 'Jeg havde en del sektioner jeg ville vise på hjemmesiden, men hvilken rækkefølge skulle de vises i? Størstedelen af målgruppen, der besøger hjemmesiden ville være nye eller eventuelle spillere, som ønsker at forstå mere om spillet. Hvad ville give mest mening overvejede jeg. Brugerne er både nye og gamle spillere, så derfor skal hjemmesiden give mening for begge segmenter, så ingen forbrugerer bliver frustreret. De gamle spillere skal kunne besøge hjemmesiden uden at bladre helt til bunden for at finde relevant informationer for dem.',
-            solution: 'Jeg valgte at fokusere på segmentet ”nye eller potentielle spillere” på hjemmesiden, da segmenterne der allerede spiller spillet, vil tilbringe mest af deres tid på selve spillet. Jeg valgte også at placere ”Latest news” sektionen som en af de første sektioner på hjemmesiden, så de gamle spillere hurtigt finder noget relevant for dem.',
+            // problem: '',
+            // solution: '',
         },
         {
             id: 'product-two',
@@ -23,7 +23,7 @@ const getPortfolio = () => {
             number: '.02',
             title: 'Hjemmeside',
             category: 'Webdesign- & development',
-            description: 'Jeg har designet og kodet min version af Overwatch.com.',
+            description: 'Jeg har designet og kodet min version af hjemmesiden Overwatch.com.',
             tech: 'HTML, CSS & Bootstrap',
             status: 'Færdig',
             date: '2022',
