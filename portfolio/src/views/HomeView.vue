@@ -1,17 +1,17 @@
 <template>
   <main>
-    <!-- frontpage -->
-    <div class="frontpage-border">
-      <div class="frontpage">
+    <!-- primary-frame-inside -->
+    <div class="primary-frame">
+      <div class="primary-frame-inside">
 
-        <div class="frontpage-top-content flex">
+        <div class="primary-frame-inside-top-content flex">
           <!-- introduction -->
-          <div class="frontpage-content w-6/12">
+          <div class="primary-frame-inside-content w-6/12">
             <h3>Hej, jeg er</h3>
             <h1>Lærke Nicole Nielsen</h1>
             <h2 class="multimediedesigner">Og er Multimediedesigner</h2>
             <!-- button to go straight to contact -->
-            <div class="frontpage-button pt-5">
+            <div class="primary-frame-inside-button pt-5">
               <RouterLink to="/contact">
                 <button id="button1" class="button">Kontakt mig</button>
               </RouterLink>
@@ -79,9 +79,9 @@
           <div class="portfolio-content" :class="item.id">
 
             <!-- left portfolio -->
-            <div class="portfolioBorder1">
-              <div id="portfolioSection1">
-                  <div class="portfolioSection1Content">
+            <div class="bright-frame">
+              <div class="bright-frame-inside">
+                  <div class="bright-frame-insideContent">
                     <RouterLink :to="{ name: 'portfoliodetails', params:{id: item.id}}">
                       <div>
                         <img :src="item.image" class="product-image" alt="portfolio-img">
@@ -92,9 +92,9 @@
             </div>
             
             <!-- right portfolio -->
-            <div class="portfolioBorder2">
-                <div id="portfolioSection2">
-                    <div class="portfolioSection2Content">
+            <div class="secondary-frame">
+                <div class="secondary-frame-inside">
+                    <div class="secondary-frame-insideContent">
                       <h4 class="p-number" :class="item.number">{{ item.number }}</h4>
                       <h3 class="p-category" :class="item.category">{{ item.category }}</h3>
                       <h3 class="p-title">{{ item.title }}</h3>
@@ -122,20 +122,13 @@ main {
   padding-top: 96px;
 }
 
-/*frontpage*/
-.frontpage-border {
-  padding: 15px;
-  background-color: var(--primary-color);
-}
-.frontpage {
+/*primary-frame-inside*/
+.primary-frame-inside {
   padding-top: 60px;
   padding-left: 8%;
-  background-color: var(--primary-color);
-  border: var(--bright-border);
-  height: 80vh;
 }
 
-.frontpage h3 {
+.primary-frame-inside h3 {
   font-family: rift, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -144,13 +137,13 @@ main {
   text-transform: uppercase;
 }
 
-.frontpage h1 {
+.primary-frame-inside h1 {
   color: var(--white-headline);
   font-size: 50px;
   text-transform: uppercase;
 }
 
-.frontpage h2 {
+.primary-frame-inside h2 {
   font-family: rift, sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -159,7 +152,7 @@ main {
   text-transform: uppercase;
   line-height: 1;
 }
-/*frontpage end*/
+/*primary-frame-inside end*/
 
 
 /* explaining what my passion is */
@@ -277,25 +270,21 @@ button {
   width: 100%;
 }
 
-.portfolioBorder1 {
+.bright-frame {
   width: 50%;
-  padding: 15px 15px 15px 15px;
-  background-color: var(--white-headline);
 }
 /* portfolio container end */
 
 
 /* left side portfolio */
-#portfolioSection1 {
-  background-color: var(--white-headline);
-  border: var(--dark-border);
-  height: 75vh;
+.bright-frame-inside {
+  height: 65vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.portfolioSection1Content {
+.bright-frame-insideContent {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -305,21 +294,17 @@ button {
 
 
 /* right side portfolio */
-.portfolioBorder2 {
+.secondary-frame {
   width: 50%;
-  padding: 15px;
-  background-color: var(--secondary-color);
 }
 
-#portfolioSection2 {
-  background-color: var(--secondary-color);
+.secondary-frame-inside {
   display: flex;
   flex-direction: row;
-  border: var(--bright-border);
-  height: 75vh;
+  height: 65vh;
 }
 
-#portfolioSection2 .portfolioSection2Content {
+.secondary-frame-inside .secondary-frame-insideContent {
   padding-left: 8%;
   padding-right: 8%;
   display: flex;
@@ -330,11 +315,11 @@ button {
 
 
 /* stying image */
-.portfolioSection1Content img {
+.bright-frame-insideContent img {
   max-height: 60vh;
 }
 
-.portfolioSection1Content img:hover {
+.bright-frame-insideContent img:hover {
   box-shadow:  9px 9px 18px #b5b5b5,
              -9px -9px 18px #ffffff;
 }
@@ -368,29 +353,29 @@ button {
 
 /* responsive */
 @media only screen and (max-width: 950px) {
-  .frontpage {
+  .primary-frame-inside {
     height: auto;
   }
-  .frontpage-top-content {
+  .primary-frame-inside-top-content {
     flex-direction: column;
   }
 
-  .frontpage-content {
+  .primary-frame-inside-content {
     width: 100%;
   }
 
-  .frontpage h1 {
+  .primary-frame-inside h1 {
     font-size: 36px;
   }
 
-  .frontpage h2{
+  .primary-frame-inside h2{
     font-size: 30px;
   }
 
-  .frontpage-button {
+  .primary-frame-inside-button {
     padding-top: 12px;
   }
-  .frontpage button {
+  .primary-frame-inside button {
     margin-bottom: 50px;
     padding-top: 12px;
   }
@@ -413,7 +398,7 @@ button {
     flex-direction: column;
   }
 
-  .portfolioBorder1 {
+  .bright-frame {
     width: 100%;
   }
 
@@ -421,11 +406,11 @@ button {
     padding-top: 60px;
   }
 
-  .portfolioBorder2 {
+  .secondary-frame {
     width: 100%;
   }
 
-  #portfolioSection2 {
+  #secondary-frame-inside {
     height: auto;
   }
 }
@@ -449,7 +434,7 @@ button {
 }
 
 @media only screen and (max-width: 580px) {
-  .frontpage h3 {
+  .primary-frame-inside h3 {
     font-size: 18px;
   }
 
@@ -457,27 +442,27 @@ button {
     padding-right: 40px;
   }
 
-  #portfolioSection1 {
+  #bright-frame-inside {
     height: auto;
   }
 }
 
 @media only screen and (max-width: 550px) {
-  .frontpage h1 {
+  .primary-frame-inside h1 {
     font-size: 34px;
   }
 
-  .frontpage h2 {
+  .primary-frame-inside h2 {
     font-size: 28px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .frontpage h1 {
+  .primary-frame-inside h1 {
     font-size: 28px;
   }
 
-  .frontpage h2 {
+  .primary-frame-inside h2 {
     font-size: 23px;
   }
 }

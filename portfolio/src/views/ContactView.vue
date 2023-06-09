@@ -2,9 +2,9 @@
     <main class="contactPage">
 
         <!-- left contact -->
-        <div class="contactBorder1">
-            <div id="contactSection1">
-                <div class="contactSection1Content">
+        <div class="bright-frame">
+            <div class="bright-frame-inside">
+                <div class="bright-frame-insideContent">
                     <h2>Kom og sig hej</h2>
                     <div class="contactInput">
                         <input class="input" name="name" placeholder="Navn" type="name">
@@ -23,9 +23,9 @@
         </div>
         
         <!-- right contact -->
-        <div class="contactBorder2">
-            <div id="contactSection2">
-                <div class="contactSection2Content">
+        <div class="secondary-frame">
+            <div class="secondary-frame-inside">
+                <div class="secondary-frame-insideContent">
                     <h2>Arbejdshenvendelser</h2>
                     <h3>Kontakt mig venligst på</h3>
                     <p>laenie01@easv365.dk</p>
@@ -46,7 +46,7 @@
     padding-top: 96px;
 }
 
-.contactBorder1 {
+.bright-frame {
     width: 50%;
     padding: 15px 15px 15px 15px;
     background-color: var(--white-headline);
@@ -55,19 +55,19 @@
 
 
 /* left side contact */
-#contactSection1 {
+.bright-frame-inside {
     background-color: var(--white-headline);
     border: var(--dark-border);
     min-height: 475px;
 }
 
-.contactSection1Content {
+.bright-frame-insideContent {
     display: flex;
     flex-direction: column;
     padding: 60px 8% 60px 8%;
 }
 
-.contactSection1Content h2 {
+.bright-frame-insideContent h2 {
     color: var(--secondary-color);
     font-size: 40px;
     font-style: normal;
@@ -138,13 +138,13 @@ font-style: normal;
 /* left side contact end */
 
 /* right side contact */
-.contactBorder2 {
+.secondary-frame {
     width: 50%;
     padding: 15px 15px 15px 15px;
     background-color: var(--secondary-color);
 }
 
-#contactSection2 {
+.secondary-frame-inside {
     background-color: var(--secondary-color);
     display: flex;
     flex-direction: row;
@@ -152,18 +152,18 @@ font-style: normal;
     min-height: 475px;
 }
 
-#contactSection2 .contactSection2Content {
+.secondary-frame-inside .secondary-frame-insideContent {
     padding: 60px 8% 60px 8%;
 }
 
-#contactSection2 h2 {
+.secondary-frame-inside h2 {
     color: var(--white-headline);
     font-size: 40px;
     font-style: normal;
     font-weight: bold; 
 }
 
-#contactSection2 h3, p {
+#secondary-frame-inside h3, p {
     color: var(--white-text);  
 }
 /* right side contact end */
@@ -175,7 +175,7 @@ font-style: normal;
         flex-direction: column;
         width: 100%;
     }
-    .contactBorder1 {
+    .bright-frame {
         width: 100%;
     }
 
@@ -191,17 +191,17 @@ font-style: normal;
         min-width: 100%;
     }
 
-    .contactBorder2 {
+    .secondary-frame {
         width: 100%;
     }
 
-    #contactSection2 h2 {
+    .secondary-frame-inside h2 {
         font-size: 40px;
     }
 }
 
 @media only screen and (max-width: 460px) {
-    .contactSection1Content {
+    .bright-frame-insideContent {
     padding: 60px 30px 60px 30px;
     }
 
@@ -217,14 +217,14 @@ font-style: normal;
         min-width: 100%;
     }
 
-    #contactSection2 .contactSection2Content {
+    .secondary-frame-inside .secondary-frame-insideContent {
         padding: 60px 30px 60px 30px;
     }
 
-    #contactSection2 h2 {
+    .secondary-frame-inside h2 {
         font-size: 30px;
     }
-    #contactSection2 p {
+    .secondary-frame-inside p {
         font-size: 15px;
     }  
 }

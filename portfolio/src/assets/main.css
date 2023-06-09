@@ -71,3 +71,35 @@ z-index: 1;
         font-size: 15px;
     }
 }
+
+/* white colored frame box */
+.bright-frame {
+    background-color: var(--white-headline);
+    padding: 15px;
+}
+
+.bright-frame-inside {
+    border: var(--dark-border);
+}
+
+
+/* primary colored frame box */
+.primary-frame {
+    background-color: var(--primary-color);
+    padding: 15px;
+}
+
+.primary-frame-inside {
+    border: var(--bright-border);
+}
+
+
+/* secondary colored frame box */
+.secondary-frame {
+    background-color: var(--secondary-color);
+    padding: 15px;
+}
+
+.secondary-frame-inside {
+    border: var(--bright-border);
+}

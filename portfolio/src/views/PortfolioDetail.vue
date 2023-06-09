@@ -1,14 +1,11 @@
 <template>
     <main>
-        <div class="portfolioDetailBorder">
-            <div class="portfolioDetailContainer">
                 <div>
                     <!-- button to go back to last page -->
                     <button id="button1" class="button1" @click="goBack()">&larr; Gå tilbage</button>
 
                     <!-- page about each project -->
                     <div v-if="portfolioDetails" class="portfolio-item">
-                        <div class="p-detail">
                             <!-- show image -->
                             <div v-if="portfolioDetails.detail">
                                 <img :src="portfolioDetails.detail">
@@ -16,69 +13,186 @@
 
                             <!-- or show video -->
                             <div v-else="portfolioDetails.video">
-                                <video controls :src="portfolioDetails.video"></video>
-                                <p class="watchVid">&#8593;Klik på videoen for at se hele mit arbejde.</p>
+                                <video autoplay loop muted plays-inline :src="portfolioDetails.video" type="video/mp4"></video>
+                            </div>
+                        
+                        <div class="bright-frame">
+                            <div class="bright-frame-inside">
+                                <!-- further short information about project -->
+                                <h2 class="title">{{ portfolioDetails.title }}</h2>
+
+                                <hr>
+
+                                <div class="p-content">
+                                    <div>
+                                        <h4 class="p-date">{{ portfolioDetails.date }}</h4>
+                                    </div>
+                                    
+                                    <div>
+                                        <h4>Beskrivelse</h4>
+                                        <p class="pr-6">{{ portfolioDetails.description }} <br>Læs nedenfor om problemer og løsninger jeg fandt.</p>
+                                        <h4 class="h4Buttom">Status</h4>
+                                        <p>{{ portfolioDetails.status }}</p>
+                                    </div>
+                                    
+                                    <div>
+                                        <h4>Kategori</h4>
+                                        <p :class="portfolioDetails.category">{{ portfolioDetails.category }}</p>
+
+                                        <h4 class="h4Buttom">Tech</h4>
+                                        <p>{{ portfolioDetails.tech }}</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         
-                        <!-- further short information about project -->
-                        <div class="p-content">
-                            <div>
-                                <h1>{{ portfolioDetails.title }}</h1>
-                                <p class="p-date">{{ portfolioDetails.date }}</p>
-                            </div>
-                            
-                            <div>
-                                <h3>Beskrivelse</h3>
-                                <p class="pr-6">{{ portfolioDetails.description }} <br>Læs nedenfor om problemer og løsninger jeg fandt.</p>
-                                <h4 class="h4Buttom">Status</h4>
-                                <p>{{ portfolioDetails.status }}</p>
-                            </div>
-                            
-                            <div>
-                                <h4>Kategori</h4>
-                                <p :class="portfolioDetails.category">{{ portfolioDetails.category }}</p>
-
-                                <h4 class="h4Buttom">Tech</h4>
-                                <p>{{ portfolioDetails.tech }}</p>
-                            </div>
-                        </div>
                     </div>
 
                     <div v-else>...loading</div>
-                    
+            
+                </div>
+        
+        <!-- information about my design process -->
+        <div v="item in state" :key="item" class="portfolio-item">
+            <div class="secondary-frame">
+                <div class="secondary-frame-inside">
+                    <div class="designProcess flex flex-row">
+                        <div class="problem-solution-box flex flex-col w-3/6">
+                            <!-- problems i had -->
+                            <div>
+                                <h3>.01 Problemer jeg havde</h3>
+                                <p>{{ portfolioDetails.problem }}</p>
+                            </div>
+                            <div class="pt-5">
+                                <!-- solutions to the problems -->
+                                <h3>.01 Løsningen på problemerne</h3>
+                                <p>{{ portfolioDetails.solution }}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex w-3/6">
+                            <img :src="portfolioDetails.image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div v="item in state" :key="item" class="portfolio-item">
+            <div class="primary-frame">
+                <div class="primary-frame-inside">   
+                    <div class="product-demonstration flex flex-col">
+                        <div class="product-demonstration-box flex w-3/6">
+                            <img :src="portfolioDetails.image">
+                        </div>
+                        <div class="product-demonstration-box flex w-3/6">
+                            <img :src="portfolioDetails.image">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <!-- information about my design process -->
-        <div v="item in state" :key="item" class="portfolio-item">
-            <div class="designProcess">
-                <!-- problems i had -->
-                <div class="infoBorder1">
-                    <div id="infoSection1">
-                        <div class="infoSection1Content">
-                            <h3>Problemer jeg havde</h3>
-                            <p>{{ portfolioDetails.problem }}</p>
-                            <p>{{ portfolioDetails.problem2 }}</p>
-                            <p>{{ portfolioDetails.problem3 }}</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- solutions to the problems -->
-                <div class="infoBorder2">
-                    <div id="infoSection2">
-                        <div class="infoSection2Content">
-                            <h3>Løsningen på problemerne</h3>
-                            <p>{{ portfolioDetails.solution }}</p>
-                            <p>{{ portfolioDetails.solution2 }}</p>
-                            <p>{{ portfolioDetails.solution3 }}</p>
+            <div v="item in state" :key="item" class="portfolio-item">
+                <div class="secondary-frame">
+                    <div class="secondary-frame-inside">
+                        <div class="designProcess flex flex-row"> 
+                            <div class="flex w-3/6">
+                                <img :src="portfolioDetails.image">
+                            </div>
+
+                            <div class="problem-solution-box flex flex-col w-3/6">
+                                <!-- problems i had -->
+                                <div>
+                                    <h3>.02 Problemer jeg havde</h3>
+                                    <p>{{ portfolioDetails.problem2 }}</p>
+                                </div>
+                                <div class="pt-5">
+                                    <!-- solutions to the problems -->
+                                    <h3>.02 Løsningen på problemerne</h3>
+                                    <p>{{ portfolioDetails.solution2 }}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div v="item in state" :key="item" class="portfolio-item">
+                <div class="primary-frame">
+                    <div class="primary-frame-inside">   
+                        <div class="product-demonstration flex flex-col">
+                            <div class="product-demonstration-box flex w-3/6">
+                                <img :src="portfolioDetails.image">
+                            </div>
+                            <div class="product-demonstration-box flex w-3/6">
+                                <img :src="portfolioDetails.image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div v="item in state" :key="item" class="portfolio-item">
+                <div class="secondary-frame">
+                    <div class="secondary-frame-inside">
+                        <div class="designProcess flex flex-row">
+                            <div class="problem-solution-box flex flex-col w-3/6">
+                                <!-- problems i had -->
+                                <div>
+                                    <h3>.03 Problemer jeg havde</h3>
+                                    <p>{{ portfolioDetails.problem3 }}</p>
+                                </div>
+                                <div class="pt-5">
+                                    <!-- solutions to the problems -->
+                                    <h3>.03 Løsningen på problemerne</h3>
+                                    <p>{{ portfolioDetails.solution3 }}</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex w-3/6">
+                                <img :src="portfolioDetails.image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div v="item in state" :key="item" class="portfolio-item">
+                <div class="bright-frame">
+                    <div class="bright-frame-inside">
+                        <div>
+                            <div>
+                                <h4>Næste projekt</h4>
+                                <h3>{{ portfolioDetails.title }}</h3>
+                            </div>
+
+                            <div>
+                                <button>Se alle projekter</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img :src="portfolioDetails.image" alt="next-project-img">
+                        </div>
+
+                        <div>
+                            <!-- arrow -->
+                            <!-- <img src="" alt=""> --> 
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     </main>  
 </template>
@@ -115,26 +229,12 @@ main {
 }
 
 /* first section styling of container */
-.portfolioDetailBorder {
-    padding: 15px;
-    background-color: var(--white-headline);
-}
-
-.portfolioDetailContainer {
-    border: var(--dark-border);
-    background-color: var(--white-headline);
-}
-
 .button1 {
     margin: 10px;
     position: fixed;
 }
 
 /* styling the either image or video */
-.p-detail {
-    padding: 70px 0 20px 0;
-}
-
 img {
     display: flex;
     margin: 0 auto;
@@ -147,29 +247,39 @@ img {
 
 video {
     display: flex;
-    margin: 0 auto;
-    max-width: 600px;
+    width: 100%;
     height: auto;
     overflow: hidden;
     cursor: pointer;
 }
 /* styling the either image or video end */
 
-.watchVid {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding-top: 12px;
-}
-
 
 /* further short information about project */
+.title {
+    font-size: 28px;
+    font-family: rift, sans-serif;
+    font-weight: bold; 
+    color: var(--black-headline);
+    padding: 100px 8% 12px 8%;
+}
+
+hr {
+    display: flex;
+    display: block;
+    border-width: 0;
+    height: 1px;
+    width: 84%;
+    margin: 0 auto;
+    background-color: #8a8a8a;
+}
+
 .p-content {
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
     justify-content: space-around;
-    padding: 60px 0 70px 0;
+    padding: 24px 0 100px 0;
 }
 
 .p-content h3 {
@@ -193,95 +303,59 @@ video {
 
 /* design process */
 .designProcess{
-    display: flex;
-    flex-direction: row;
     overflow: hidden;
 }
 
-/* problem */
-.infoBorder1 {
-    width: 50%;
-    padding: 15px;
-    background-color: var(--primary-color);
-}
-
-#infoSection1 {
-    background-color: var(--primary-color);
-    border: var(--bright-border);
-    min-height: 750px;
-}
-
-.infoSection1Content {
+/* problems and solution 1 */
+.problem-solution-box {
     display: flex;
     flex-direction: column;
-    padding: 60px 8% 60px 8%;
+    padding: 100px 8%;
 }
 
-.infoSection1Content h3 {
+.problem-solution-box h3 {
     color: var(--white-headline);
-    padding-bottom: 12px;
+    padding-bottom: 6px;
     font-style: normal;
     font-weight: bold; 
     font-size: 25px;
 }
 
-.infoSection1Content p {
+.problem-solution-box p {
     color: var(--white-text);
     padding-bottom: 16px;
 }
 
-
-/* solution */
-.infoBorder2 {
-    width: 50%;
-    padding: 15px;
-    background-color: var(--secondary-color);
-}
-
-#infoSection2 {
-    background-color: var(--secondary-color);
-    display: flex;
-    flex-direction: row;
-    border: var(--bright-border);
-    min-height: 750px;
-}
-
-#infoSection2 .infoSection2Content {
-    padding: 60px 8% 60px 8%;
-}
-
-.infoSection2Content h3 {
-    color: var(--white-headline);
-    padding-bottom: 12px;
-    font-style: normal;
-    font-weight: bold; 
-    font-size: 25px;
-}
-
-.infoSection2Content p {
-    color: var(--white-text);
-    padding-bottom: 16px;
-}
 /* design process end */
 
 
+/* product demonstration */
+.product-demonstration {
+    padding: 100px 8%;
+    gap: 200px;
+}
+.product-demonstration-box {
+    margin: 0 auto;
+    width: 100%;
+}
+
 /* responsive */
 @media only screen and (max-width: 1030px) {
-    #infoSection1 {
+    #primary-frame-inside {
         min-height: 900px;
     }
 
-    #infoSection2 {
+    #secondary-frame-inside {
         min-height: 900px;
     }
 }
 
 @media only screen and (max-width: 970px) {
-    #infoSection1 {
+    #primary-frame-inside {
         min-height: 950px;
     }
 
-    #infoSection2 {
+    #secondary-frame-inside {
         min-height: 950px;
     }
 }
@@ -290,11 +364,6 @@ video {
     video {
         margin: 0;
         padding-left: 8%;
-    }
-
-    .watchVid {
-        padding-left: 8%;
-        justify-content: flex-start;
     }
 
     .p-content {
@@ -311,19 +380,19 @@ video {
     flex-direction: column;
     }
 
-    .infoBorder1 {
+    .primary-frame {
         width: 100%;
     }
 
-    .infoBorder2 {
+    .secondary-frame {
         width: 100%;
     }
 
-    #infoSection1 {
+    #primary-frame-inside {
         min-height: auto;
     }
 
-    #infoSection2 {
+    #secondary-frame-inside {
         min-height: auto;
     }
 }
@@ -337,10 +406,6 @@ video {
 @media only screen and (max-width: 500px) {
     video {
         max-width: 300px;
-    }
-
-    .p-detail {
-        padding-bottom: 0;
     }
 }
 /* responsive end */

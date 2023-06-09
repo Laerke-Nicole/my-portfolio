@@ -2,8 +2,8 @@
     <main>
 
         <!-- about container -->
-        <div class="aboutBorder1">
-            <div class="about">
+        <div class="bright-frame">
+            <div class="bright-frame-inside">
 
                 <!-- content about me -->
                 <div class="aboutMe">
@@ -78,17 +78,14 @@ main {
 }
 
 /* border for container */
-.aboutBorder1 {
+.bright-frame {
 padding: 15px;
 background-color: var(--white-headline);
 }
 
 /* text about me */
-.about {
-background-color: var(--white-headline);
-padding: 60px 8% 60px 8%;
-
-border: var(--dark-border);
+.bright-frame-inside {
+padding: 100px 8%;
 }
 
 .aboutMe {
@@ -209,13 +206,13 @@ padding-right: 50px;
 
 /* responsive */
 @media only screen and (max-width: 1030px) {
-    .about {
+    .bright-frame-inside {
         padding-right: 30px;
     }
 }   
 
 @media only screen and (max-width: 970px) {
-    .about {
+    .bright-frame-inside {
         height: auto;
         padding-bottom: 60px;
     }

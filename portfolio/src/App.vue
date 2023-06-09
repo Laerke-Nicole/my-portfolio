@@ -258,7 +258,7 @@ footer li:hover {
   font-size: 18px;
   gap: 18px;
   justify-content: center;
-  padding: 18px 0 60px 0;
+  padding-top: 18px;
 }
 
 .mail hr {
