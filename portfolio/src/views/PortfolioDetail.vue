@@ -71,7 +71,7 @@
                         </div>
                         
                         <div class="flex w-3/6">
-                            <img :src="portfolioDetails.image">
+                            <img :src="portfolioDetails.image1">
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                     <div class="secondary-frame-inside">
                         <div class="designProcess flex flex-row"> 
                             <div class="flex w-3/6">
-                                <img :src="portfolioDetails.image">
+                                <img :src="portfolioDetails.image2">
                             </div>
 
                             <div class="problem-solution-box flex flex-col w-3/6">
@@ -126,7 +126,7 @@
                                 <img :src="portfolioDetails.image">
                             </div>
                             <div class="product-demonstration-box flex w-3/6">
-                                <img :src="portfolioDetails.image">
+                                <img :src="portfolioDetails.product4">
                             </div>
                         </div>
                     </div>
@@ -161,7 +161,7 @@
                             </div>
                             
                             <div class="flex w-3/6">
-                                <img :src="portfolioDetails.image">
+                                <img :src="portfolioDetails.image3">
                             </div>
                         </div>
                     </div>
