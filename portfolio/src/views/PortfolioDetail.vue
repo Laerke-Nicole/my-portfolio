@@ -60,7 +60,7 @@
                         <div class="problem-solution-box flex flex-col w-3/6">
                             <!-- problems i had -->
                             <div>
-                                <h3>.01 Problemer jeg havde</h3>
+                                <h3>.01 Problemer jeg havde med denne {{ portfolioDetails.title }}</h3>
                                 <p>{{ portfolioDetails.problem }}</p>
                             </div>
                             <div class="pt-5">
@@ -104,7 +104,7 @@
                             <div class="problem-solution-box flex flex-col w-3/6">
                                 <!-- problems i had -->
                                 <div>
-                                    <h3>.02 Problemer jeg havde</h3>
+                                    <h3>.02 Problemer jeg havde med denne {{ portfolioDetails.title }}</h3>
                                     <p>{{ portfolioDetails.problem2 }}</p>
                                 </div>
                                 <div class="pt-5">
@@ -150,7 +150,7 @@
                             <div class="problem-solution-box flex flex-col w-3/6">
                                 <!-- problems i had -->
                                 <div>
-                                    <h3>.03 Problemer jeg havde</h3>
+                                    <h3>.03 Problemer jeg havde med denne {{ portfolioDetails.title }}</h3>
                                     <p>{{ portfolioDetails.problem3 }}</p>
                                 </div>
                                 <div class="pt-5">
