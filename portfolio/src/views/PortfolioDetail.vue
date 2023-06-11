@@ -7,17 +7,17 @@
                     <!-- page about each project -->
                     <div v-if="portfolioDetails" class="portfolio-item">
                             <!-- show image -->
-                            <div v-if="portfolioDetails.detail">
-                                <img :src="portfolioDetails.detail">
+                            <div v-if="portfolioDetails.detailimg">
+                                <img :src="portfolioDetails.detailimg">
                             </div>
 
                             <!-- or show video -->
-                            <div v-else="portfolioDetails.video">
-                                <video autoplay loop muted plays-inline :src="portfolioDetails.video" type="video/mp4"></video>
+                            <div v-else="portfolioDetails.detailvid">
+                                <video autoplay loop muted plays-inline :src="portfolioDetails.detailvid" type="video/mp4"></video>
                             </div>
                         
                         <div class="bright-frame">
-                            <div class="bright-frame-inside">
+                            <div class="bright-frame-inside content">
                                 <!-- further short information about project -->
                                 <h2 class="title">{{ portfolioDetails.title }}</h2>
 
@@ -70,7 +70,7 @@
                             </div>
                         </div>
                         
-                        <div class="flex w-3/6">
+                        <div class=" problem-solution-image flex w-3/6 items-center">
                             <img :src="portfolioDetails.image1">
                         </div>
                     </div>
@@ -81,13 +81,26 @@
         <div v="item in state" :key="item" class="portfolio-item">
             <div class="primary-frame">
                 <div class="primary-frame-inside">   
-                    <div class="product-demonstration flex flex-col">
-                        <div class="product-demonstration-box flex w-3/6">
-                            <img :src="portfolioDetails.image">
+                    <div class="product-demonstration flex flex-col gap-16">
+
+                        <!-- show image -->
+                        <div v-if="portfolioDetails.product1" class="product-demonstration-box flex w-3/6">
+                            <img :src="portfolioDetails.product1">
                         </div>
-                        <div class="product-demonstration-box flex w-3/6">
-                            <img :src="portfolioDetails.image">
+
+                        <div v-if="portfolioDetails.product2" class="product-demonstration-box flex w-3/6">
+                            <img :src="portfolioDetails.product2">
                         </div>
+
+                        <!-- or show video -->
+                        <div v-if="portfolioDetails.video1" class="product-demonstration-box flex w-3/6">
+                            <video autoplay loop muted plays-inline :src="portfolioDetails.video1" type="video/mp4"></video>
+                        </div>
+
+                        <div v-if="portfolioDetails.video2" class="product-demonstration-box flex w-3/6">
+                            <video autoplay loop muted plays-inline :src="portfolioDetails.video2" type="video/mp4"></video>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -96,8 +109,8 @@
             <div v="item in state" :key="item" class="portfolio-item">
                 <div class="secondary-frame">
                     <div class="secondary-frame-inside">
-                        <div class="designProcess flex flex-row"> 
-                            <div class="flex w-3/6">
+                        <div class="designProcess psi-flip flex flex-row"> 
+                            <div class="problem-solution-image flex w-3/6 items-center">
                                 <img :src="portfolioDetails.image2">
                             </div>
 
@@ -122,12 +135,25 @@
                 <div class="primary-frame">
                     <div class="primary-frame-inside">   
                         <div class="product-demonstration flex flex-col">
-                            <div class="product-demonstration-box flex w-3/6">
-                                <img :src="portfolioDetails.image">
+
+                            <!-- show image -->
+                            <div v-if="portfolioDetails.product3" class="product-demonstration-box flex w-3/6">
+                                <img :src="portfolioDetails.product3">
                             </div>
-                            <div class="product-demonstration-box flex w-3/6">
+
+                            <div v-if="portfolioDetails.product4" class="product-demonstration-box flex w-3/6">
                                 <img :src="portfolioDetails.product4">
                             </div>
+
+                            <!-- or show video -->
+                            <div v-if="portfolioDetails.video3" class="product-demonstration-box flex w-3/6">
+                                <video autoplay loop muted plays-inline :src="portfolioDetails.video3" type="video/mp4"></video>
+                            </div>
+
+                            <div v-if="portfolioDetails.video4" class="product-demonstration-box flex w-3/6">
+                                <video autoplay loop muted plays-inline :src="portfolioDetails.video4" type="video/mp4"></video>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -160,7 +186,7 @@
                                 </div>
                             </div>
                             
-                            <div class="flex w-3/6">
+                            <div class="problem-solution-image flex w-3/6 items-center">
                                 <img :src="portfolioDetails.image3">
                             </div>
                         </div>
@@ -170,26 +196,25 @@
 
             <div v="item in state" :key="item" class="portfolio-item">
                 <div class="bright-frame">
-                    <div class="bright-frame-inside">
-                        <div>
-                            <div>
-                                <h4>Næste projekt</h4>
+                    <div class="bright-frame-inside flex flex-col">
+                        <div class="flex flex-col">
+                            <div class="next-project-title flex flex-col">
+                                <h4>Se næste projekt</h4>
                                 <h3>{{ portfolioDetails.title }}</h3>
                             </div>
+                        </div>
 
-                            <div>
-                                <button>Se alle projekter</button>
+                        <div>
+                            <img :src="portfolioDetails.portfolioimage" alt="next-project-img">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <p class="pl-6 pb-2">eller</p>
+                            <div class="pl-6 pb-6">
+                                <button id="button1">Se alle projekter</button>
                             </div>
                         </div>
-
-                        <div>
-                            <img :src="portfolioDetails.image" alt="next-project-img">
-                        </div>
-
-                        <div>
-                            <!-- arrow -->
-                            <!-- <img src="" alt=""> --> 
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -230,27 +255,30 @@ main {
 
 /* first section styling of container */
 .button1 {
-    margin: 10px;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     position: fixed;
 }
 
 /* styling the either image or video */
-img {
-    display: flex;
-    margin: 0 auto;
-    max-height: 300px;
-    max-inline-size: 100%;
-    block-size: auto;
-    object-fit: contain;
-    overflow: hidden;
-}
+    img {
+        display: flex;
+        margin: 0 auto;
+        max-height: 300px;
+        max-inline-size: 100%;
+        block-size: auto;
+        object-fit: contain;
+        overflow: hidden;
+    }
 
 video {
     display: flex;
     width: 100%;
     height: auto;
     overflow: hidden;
-    cursor: pointer;
 }
 /* styling the either image or video end */
 
@@ -278,8 +306,8 @@ hr {
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    justify-content: space-around;
-    padding: 24px 0 100px 0;
+    justify-content: space-between;
+    padding: 24px 8% 100px 8%;
 }
 
 .p-content h3 {
@@ -332,43 +360,39 @@ hr {
 /* product demonstration */
 .product-demonstration {
     padding: 100px 8%;
-    gap: 200px;
 }
 .product-demonstration-box {
     margin: 0 auto;
     width: 100%;
 }
 
+
+/* next project */
+.next-project-title{
+    padding: 100px 8% 18px 8%;
+}
+
+.next-project-title h4 {
+    font-size: 22px;
+    font-family: "condor", sans-serif;
+}
+
+.next-project-title h3 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+}
+
 /* responsive */
-@media only screen and (max-width: 1030px) {
-    #primary-frame-inside {
-        min-height: 900px;
-    }
-
-    #secondary-frame-inside {
-        min-height: 900px;
-    }
-}
-
-@media only screen and (max-width: 970px) {
-    #primary-frame-inside {
-        min-height: 950px;
-    }
-
-    #secondary-frame-inside {
-        min-height: 950px;
-    }
-}
-
 @media only screen and (max-width: 950px) {
-    video {
-        margin: 0;
-        padding-left: 8%;
+    .title {
+        padding-top: 60px;
     }
 
     .p-content {
         flex-direction: column;
         padding-right: 8%;
+        padding-bottom: 60px;
         padding-left: 8%;
     }
 
@@ -380,6 +404,21 @@ hr {
     flex-direction: column;
     }
 
+    .problem-solution-box {
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+
+    .psi-flip {
+        flex-direction: column-reverse;
+    }
+
+    .problem-solution-image {
+        width: 100%;
+        padding-bottom: 60px;
+    }
+
     .primary-frame {
         width: 100%;
     }
@@ -388,24 +427,17 @@ hr {
         width: 100%;
     }
 
-    #primary-frame-inside {
+    .primary-frame-inside {
         min-height: auto;
     }
 
-    #secondary-frame-inside {
+    .secondary-frame-inside {
         min-height: auto;
     }
-}
 
-@media only screen and (max-width: 800px) {
-    video {
-        max-width: 400px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    video {
-        max-width: 300px;
+    .product-demonstration {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 /* responsive end */

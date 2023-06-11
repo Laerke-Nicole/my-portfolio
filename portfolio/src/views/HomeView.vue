@@ -84,7 +84,7 @@
                   <div class="bright-frame-insideContent">
                     <RouterLink :to="{ name: 'portfoliodetails', params:{id: item.id}}">
                       <div>
-                        <img :src="item.image" class="product-image" alt="portfolio-img">
+                        <img :src="item.portfolioimage" class="product-image" alt="portfolio-img">
                       </div>   
                     </RouterLink>
                   </div>

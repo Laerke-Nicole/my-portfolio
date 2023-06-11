@@ -4,7 +4,7 @@ const getPortfolio = () => {
     const state = ref([
         {
             id: 'product-one',
-            image: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmockup-website-1.png?alt=media&token=40c6408f-8d25-4660-91e0-71cb12d5d8ac&_gl=1*u7fflu*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTg4Mzk3Ny40Ni4xLjE2ODU4ODQyMjUuMC4wLjA.',
+            portfolioimage: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmockup-website-1.png?alt=media&token=40c6408f-8d25-4660-91e0-71cb12d5d8ac&_gl=1*u7fflu*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTg4Mzk3Ny40Ni4xLjE2ODU4ODQyMjUuMC4wLjA.',
             video: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fwebsite-video-kanten-1.mp4?alt=media&token=5d93e051-4242-46e3-b13f-c78cc1abcd8c&_gl=1*1szvspr*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTk1ODM2OS41Mi4xLjE2ODU5NTg2MDQuMC4wLjA.',
             number: '.01',
             title: 'Hjemmeside',
@@ -18,11 +18,17 @@ const getPortfolio = () => {
         },
         {
             id: 'product-two',
-            image: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmockup-website-2.png?alt=media&token=61b856b8-bdc8-466d-a213-1d7257421830&_gl=1*14ituqp*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTg4NjYzOC40Ny4xLjE2ODU4ODY3MDUuMC4wLjA.',
-            video: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fwebpage-1.mp4?alt=media&token=293bd0c5-c0e7-488a-9178-e23a39d9a25f&_gl=1*1azdz94*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0ODkuMC4wLjA.',
+            portfolioimage: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmockup-website-2.png?alt=media&token=61b856b8-bdc8-466d-a213-1d7257421830&_gl=1*14ituqp*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTg4NjYzOC40Ny4xLjE2ODU4ODY3MDUuMC4wLjA.',
+            detailimg: '',
+            detailvid: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Ffront-page.mp4?alt=media&token=db3d0215-2a62-4166-b583-c3df46d00076&_gl=1*1s3l21j*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQ5NjQ4Ni41NS4xLjE2ODY0OTgyNDYuMC4wLjA.',
+            video1: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Fnews-page.mp4?alt=media&token=35a75415-5496-4853-be11-5386828fc643&_gl=1*uxdz4c*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQ5NjQ4Ni41NS4xLjE2ODY0OTgyODQuMC4wLjA.',
+            video2: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Fwelcome-page.mp4?alt=media&token=65eeab4d-09a0-4364-aef1-291f49b58023&_gl=1*1w8zkd7*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQ5NjQ4Ni41NS4xLjE2ODY0OTgyOTIuMC4wLjA.',
             image1: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Fnews.png?alt=media&token=a825c7a8-c1b0-4123-a83e-a9c128c887f7&_gl=1*e8hyv3*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQyOTk0NC41NC4xLjE2ODY0MzA3MjkuMC4wLjA.',
             image2: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Fchoose.png?alt=media&token=d2b0895e-872a-4bf5-9037-4d88468bfce2&_gl=1*1sbt228*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQyOTk0NC41NC4xLjE2ODY0MzA3NDcuMC4wLjA.',
             image3: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Fjoin.png?alt=media&token=60be9608-0390-48e6-99ba-a6728d1d7c0d&_gl=1*tre7p4*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQyOTk0NC41NC4xLjE2ODY0MzA3NjIuMC4wLjA.',
+            product1: '',
+            product2: '',
+            product3: '',
             product4: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Ffooter.png?alt=media&token=14048ae9-ce7b-4b0d-9022-d5a869dc83f3&_gl=1*1o43sk7*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQyOTk0NC41NC4xLjE2ODY0MzA4MjYuMC4wLjA.',
             number: '.02',
             title: 'Hjemmeside',
@@ -40,7 +46,7 @@ const getPortfolio = () => {
         },
         {
             id: 'product-three',
-            image: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fphoto-1.jpg?alt=media&token=5f8b994c-06e1-4e84-93cc-f54474a9c530&_gl=1*7b13uc*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0MjYuMC4wLjA.',
+            portfolioimage: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fphoto-1.jpg?alt=media&token=5f8b994c-06e1-4e84-93cc-f54474a9c530&_gl=1*7b13uc*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0MjYuMC4wLjA.',
             detail: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fphoto-1.jpg?alt=media&token=5f8b994c-06e1-4e84-93cc-f54474a9c530&_gl=1*7b13uc*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0MjYuMC4wLjA.',
             number: '.03',
             title: 'Confusing Creature',
@@ -56,7 +62,7 @@ const getPortfolio = () => {
         },
         {
             id: 'product-four',
-            image: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fplakat-1.jpg?alt=media&token=a4628e6b-2fe9-490f-8ad9-907787086e29&_gl=1*qclej6*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0NDYuMC4wLjA.',
+            portfolioimage: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fplakat-1.jpg?alt=media&token=a4628e6b-2fe9-490f-8ad9-907787086e29&_gl=1*qclej6*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0NDYuMC4wLjA.',
             detail: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fplakat-1.jpg?alt=media&token=a4628e6b-2fe9-490f-8ad9-907787086e29&_gl=1*qclej6*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0NDYuMC4wLjA.',
             number: '.04',
             title: 'Poster',
@@ -74,7 +80,7 @@ const getPortfolio = () => {
         },
         {
             id: 'product-five',
-            image: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmusic-video-thumbnail.jpg?alt=media&token=061d5bb2-e019-42c2-87b5-44dec4524a07&_gl=1*jy8sp2*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0MTIuMC4wLjA.',
+            portfolioimage: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmusic-video-thumbnail.jpg?alt=media&token=061d5bb2-e019-42c2-87b5-44dec4524a07&_gl=1*jy8sp2*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0MTIuMC4wLjA.',
             video: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmusic-video-1.mp4?alt=media&token=10e86b07-5e9d-4980-8af5-12c8d1135405&_gl=1*19vj71z*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDYzODYuMC4wLjA.',
             number: '.05',
             title: 'Musik Video',
