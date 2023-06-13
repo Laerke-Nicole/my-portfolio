@@ -76,7 +76,7 @@
         <div v-for="item in state" :key="item" class="portfolio-item">
 
           <!-- container for projects -->
-          <div class="portfolio-content" :class="item.id">
+          <div class="portfolio-content" :class="item.id" id="portfolio-view">
 
             <!-- left portfolio -->
             <div class="bright-frame">
@@ -112,8 +112,16 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
 import portfoliodb from '../modules/portfoliodb'
 const { state } = portfoliodb()
+
+
+onMounted(() => {
+  window.scrollTo(0, 0)
+})
+
+
 </script>
 
 <style scoped>
