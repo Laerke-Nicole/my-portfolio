@@ -67,7 +67,7 @@
                         </div>
                     </div>
                     
-                    <div class=" problem-solution-image flex w-3/6 items-center">
+                    <div class="problem-solution-image right-image flex w-3/6 items-center">
                         <img :src="portfolioDetails.image1">
                     </div>
                 </div>
@@ -107,7 +107,7 @@
             <div class="secondary-frame">
                 <div class="secondary-frame-inside">
                     <div class="designProcess psi-flip flex flex-row"> 
-                        <div class="problem-solution-image flex w-3/6 items-center">
+                        <div class="problem-solution-image left-image flex w-3/6 items-center">
                             <img :src="portfolioDetails.image2">
                         </div>
 
@@ -184,7 +184,7 @@
                                 </div>
                             </div>
                             
-                            <div class="problem-solution-image flex w-3/6 items-center">
+                            <div class="problem-solution-image right-image flex w-3/6 items-center">
                                 <img :src="portfolioDetails.image3">
                             </div>
                         </div>
@@ -352,6 +352,14 @@ hr {
 .problem-solution-box p {
     color: var(--white-text);
     padding-bottom: 16px;
+}
+
+.right-image {
+    padding-right: 8%;
+}
+
+.left-image {
+    padding-left: 8%;
 }
 
 /* design process end */

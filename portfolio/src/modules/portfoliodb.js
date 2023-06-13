@@ -6,6 +6,7 @@ const getPortfolio = () => {
             id: 'product-one',
             portfolioimage: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmockup-website-1.png?alt=media&token=40c6408f-8d25-4660-91e0-71cb12d5d8ac&_gl=1*u7fflu*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTg4Mzk3Ny40Ni4xLjE2ODU4ODQyMjUuMC4wLjA.',
             video: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fwebsite-video-kanten-1.mp4?alt=media&token=5d93e051-4242-46e3-b13f-c78cc1abcd8c&_gl=1*1szvspr*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTk1ODM2OS41Mi4xLjE2ODU5NTg2MDQuMC4wLjA.',
+            product1: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2F1.jpg?alt=media&token=10799db2-9a50-423f-a84f-1f5c8a9e1169',
             number: '.01',
             title: 'Hjemmeside',
             category: 'Webdesign- & development',
