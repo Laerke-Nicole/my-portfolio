@@ -5,7 +5,7 @@
                 <div v-if="portfolioDetails" class="portfolio-item">
                         <!-- show image -->
                         <div v-if="portfolioDetails.detailimg">
-                            <img :src="portfolioDetails.detailimg">
+                            <img :src="portfolioDetails.detailimg" id="detail img">
                         </div>
 
                         <!-- or show video -->
@@ -68,7 +68,7 @@
                     </div>
                     
                     <div class="problem-solution-image right-image flex w-3/6 items-center">
-                        <img :src="portfolioDetails.image1">
+                        <img :src="portfolioDetails.image1" id="image about the problem/issue">
                     </div>
                 </div>
             </div>
@@ -83,11 +83,11 @@
 
                         <!-- show image -->
                         <div v-if="portfolioDetails.product1" class="product-demonstration-box flex w-3/6">
-                            <img :src="portfolioDetails.product1">
+                            <img :src="portfolioDetails.product1" id="image showing product 1">
                         </div>
 
                         <div v-if="portfolioDetails.product2" class="product-demonstration-box flex w-3/6">
-                            <img :src="portfolioDetails.product2">
+                            <img :src="portfolioDetails.product2" id="image showing product 2">
                         </div>
 
                         <!-- or show video -->
@@ -111,7 +111,7 @@
                 <div class="secondary-frame-inside">
                     <div class="designProcess psi-flip flex flex-row"> 
                         <div class="problem-solution-image left-image flex w-3/6 items-center">
-                            <img :src="portfolioDetails.image2">
+                            <img :src="portfolioDetails.image2" id="image about the problem/issue">
                         </div>
 
                         <div class="problem-solution-box flex flex-col w-3/6">
@@ -135,15 +135,15 @@
             <div v="item in state" :key="item" class="portfolio-item">
                 <div class="primary-frame">
                     <div class="primary-frame-inside">   
-                        <div class="product-demonstration flex flex-col">
+                        <div class="product-demonstration flex flex-col gap-16">
 
                             <!-- show image -->
                             <div v-if="portfolioDetails.product3" class="product-demonstration-box flex w-3/6">
-                                <img :src="portfolioDetails.product3">
+                                <img :src="portfolioDetails.product3" id="image showing product 3">
                             </div>
 
                             <div v-if="portfolioDetails.product4" class="product-demonstration-box flex w-3/6">
-                                <img :src="portfolioDetails.product4">
+                                <img :src="portfolioDetails.product4" id="image showing product 4">
                             </div>
 
                             <!-- or show video -->
@@ -191,7 +191,7 @@
                             </div>
                             
                             <div class="problem-solution-image right-image flex w-3/6 items-center">
-                                <img :src="portfolioDetails.image3">
+                                <img :src="portfolioDetails.image3" id="image about the problem/issue">
                             </div>
                         </div>
                     </div>
@@ -210,7 +210,7 @@
                     </div>
 
                     <div>
-                        <img :src="portfolioDetails.portfolioimage" alt="next-project-img">
+                        <img :src="portfolioDetails.portfolioimage" alt="next project image">
                     </div>
 
                     <div class="flex flex-col">
@@ -273,8 +273,7 @@ main {
 img {
     display: flex;
     margin: 0 auto;
-    max-height: 600px;
-    max-inline-size: 100%;
+    width: 100%;
     block-size: auto;
     object-fit: contain;
     overflow: hidden;
