@@ -75,33 +75,36 @@
         </div>
     </div>
 
-    <div v="item in state" :key="item" class="portfolio-item">
-        <div class="primary-frame">
-            <div class="primary-frame-inside">   
-                <div class="product-demonstration flex flex-col gap-16">
+    <div v-if="portfolioDetails.product1 || portfolioDetails.product2 || portfolioDetails.video1 || portfolioDetails.video2">
+        <div v="item in state" :key="item" class="portfolio-item">
+            <div class="primary-frame">
+                <div class="primary-frame-inside">   
+                    <div class="product-demonstration flex flex-col gap-16">
 
-                    <!-- show image -->
-                    <div v-if="portfolioDetails.product1" class="product-demonstration-box flex w-3/6">
-                        <img :src="portfolioDetails.product1">
+                        <!-- show image -->
+                        <div v-if="portfolioDetails.product1" class="product-demonstration-box flex w-3/6">
+                            <img :src="portfolioDetails.product1">
+                        </div>
+
+                        <div v-if="portfolioDetails.product2" class="product-demonstration-box flex w-3/6">
+                            <img :src="portfolioDetails.product2">
+                        </div>
+
+                        <!-- or show video -->
+                        <div v-if="portfolioDetails.video1" class="product-demonstration-box flex w-3/6">
+                            <video autoplay loop muted plays-inline :src="portfolioDetails.video1" type="video/mp4"></video>
+                        </div>
+
+                        <div v-if="portfolioDetails.video2" class="product-demonstration-box flex w-3/6">
+                            <video autoplay loop muted plays-inline :src="portfolioDetails.video2" type="video/mp4"></video>
+                        </div>
+
                     </div>
-
-                    <div v-if="portfolioDetails.product2" class="product-demonstration-box flex w-3/6">
-                        <img :src="portfolioDetails.product2">
-                    </div>
-
-                    <!-- or show video -->
-                    <div v-if="portfolioDetails.video1" class="product-demonstration-box flex w-3/6">
-                        <video autoplay loop muted plays-inline :src="portfolioDetails.video1" type="video/mp4"></video>
-                    </div>
-
-                    <div v-if="portfolioDetails.video2" class="product-demonstration-box flex w-3/6">
-                        <video autoplay loop muted plays-inline :src="portfolioDetails.video2" type="video/mp4"></video>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
+    
     
         <div v="item in state" :key="item" class="portfolio-item">
             <div class="secondary-frame">
@@ -128,33 +131,36 @@
             </div>
         </div>
 
-        <div v="item in state" :key="item" class="portfolio-item">
-            <div class="primary-frame">
-                <div class="primary-frame-inside">   
-                    <div class="product-demonstration flex flex-col">
+        <div v-if="portfolioDetails.product3 || portfolioDetails.product4 || portfolioDetails.video3 || portfolioDetails.video4">
+            <div v="item in state" :key="item" class="portfolio-item">
+                <div class="primary-frame">
+                    <div class="primary-frame-inside">   
+                        <div class="product-demonstration flex flex-col">
 
-                        <!-- show image -->
-                        <div v-if="portfolioDetails.product3" class="product-demonstration-box flex w-3/6">
-                            <img :src="portfolioDetails.product3">
+                            <!-- show image -->
+                            <div v-if="portfolioDetails.product3" class="product-demonstration-box flex w-3/6">
+                                <img :src="portfolioDetails.product3">
+                            </div>
+
+                            <div v-if="portfolioDetails.product4" class="product-demonstration-box flex w-3/6">
+                                <img :src="portfolioDetails.product4">
+                            </div>
+
+                            <!-- or show video -->
+                            <div v-if="portfolioDetails.video3" class="product-demonstration-box flex w-3/6">
+                                <video autoplay loop muted plays-inline :src="portfolioDetails.video3" type="video/mp4"></video>
+                            </div>
+
+                            <div v-if="portfolioDetails.video4" class="product-demonstration-box flex w-3/6">
+                                <video autoplay loop muted plays-inline :src="portfolioDetails.video4" type="video/mp4"></video>
+                            </div>
+
                         </div>
-
-                        <div v-if="portfolioDetails.product4" class="product-demonstration-box flex w-3/6">
-                            <img :src="portfolioDetails.product4">
-                        </div>
-
-                        <!-- or show video -->
-                        <div v-if="portfolioDetails.video3" class="product-demonstration-box flex w-3/6">
-                            <video autoplay loop muted plays-inline :src="portfolioDetails.video3" type="video/mp4"></video>
-                        </div>
-
-                        <div v-if="portfolioDetails.video4" class="product-demonstration-box flex w-3/6">
-                            <video autoplay loop muted plays-inline :src="portfolioDetails.video4" type="video/mp4"></video>
-                        </div>
-
                     </div>
                 </div>
             </div>
         </div>
+        
 
         <div>
             <div>
@@ -264,15 +270,15 @@ main {
 /* first section styling of container */
 
 /* styling the either image or video */
-    img {
-        display: flex;
-        margin: 0 auto;
-        max-height: 300px;
-        max-inline-size: 100%;
-        block-size: auto;
-        object-fit: contain;
-        overflow: hidden;
-    }
+img {
+    display: flex;
+    margin: 0 auto;
+    max-height: 600px;
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: contain;
+    overflow: hidden;
+}
 
 video {
     display: flex;
