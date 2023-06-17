@@ -13,7 +13,7 @@
                     
                     <div class="aboutText">
                         <h1>Hvem er jeg</h1>
-                        <p>Jeg er lige nu i gang med min multimediedesigneruddannelse på Erhvervsakademiet Sydvest i Esbjerg. Jeg er passioneret for både foto- og videoredigering, samt design og web-udvikling, men har også interesse for grafisk- og UI/UX design. Jeg elsker at lærer nyt og nørde med mit arbejde, ligegyldig hvilken opgave jeg får. Og min detajleorienteret- og samarbejdssans hjælper mig med at give det bedste resultat.</p>
+                        <p class="pt-3">Jeg er lige nu i gang med min multimediedesigneruddannelse på Erhvervsakademiet Sydvest i Esbjerg. Jeg er passioneret for både foto- og videoredigering, samt design og web-udvikling, men har også interesse for grafisk- og UI/UX design. Jeg elsker at lærer nyt og nørde med mit arbejde, ligegyldig hvilken opgave jeg får.</p>
                     </div>
                 </div>
             </div>
@@ -24,35 +24,35 @@
         <div class="services">
             <div class="servicesScrollBox">
                 <div class="servicesScrollText">
-                    <h5>Service</h5>
+                    <h5>Hvad jeg kan</h5>
                     <hr>
-                    <h5>Service</h5>
+                    <h5>Hvad jeg kan</h5>
                     <hr>
-                    <h5>Service</h5>
+                    <h5>Hvad jeg kan</h5>
                     <hr>
-                    <h5>Service</h5>
+                    <h5>Hvad jeg kan</h5>
                     <hr>
-                    <h5>Service</h5>
+                    <h5>Hvad jeg kan</h5>
                     <hr>
-                    <h5>Service</h5>
+                    <h5>Hvad jeg kan</h5>
                     <hr>
-                    <h5 id="last">Service</h5>
+                    <h5 id="last">Hvad jeg kan</h5>
                     <hr>
                 </div>
                 <div class="servicesScrollText">
-                    <h5>Service</h5>
+                    <h5>Hvad jeg kan</h5>
                     <hr>
-                    <h5>Service</h5>
+                    <h5>Hvad jeg kan</h5>
                     <hr>
-                    <h5>Service</h5>
+                    <h5>Hvad jeg kan</h5>
                     <hr>
-                    <h5>Service</h5>
+                    <h5>Hvad jeg kan</h5>
                     <hr>
-                    <h5>Service</h5>
+                    <h5>Hvad jeg kan</h5>
                     <hr>
-                    <h5>Service</h5>
+                    <h5>Hvad jeg kan</h5>
                     <hr>
-                    <h5 id="last">Service</h5>
+                    <h5 id="last">Hvad jeg kan</h5>
                     <hr>
                 </div>
             </div>
@@ -92,12 +92,11 @@ background-color: var(--white-headline);
 }
 
 /* text about me */
-.bright-frame-inside {
-padding: 100px 8%;
-}
+
 
 .aboutMe {
 display: flex;
+padding: 100px 8%;
 }
 
 .video {
@@ -112,7 +111,8 @@ height: 100%;
 .aboutText {
 display: flex;
 flex-direction: column;
-padding: 0 24px;
+padding: 0 24px 0 44px;
+width: 40%;
 }
 
 .aboutText h1 {
@@ -121,11 +121,6 @@ font-size: 50px;
 line-height: 0.7;
 }
 
-.aboutText p {
-margin-top: 12px;
-max-width: 350px;
-padding-right: 50px;
-}
 /* text about me end */
 
 
@@ -213,16 +208,9 @@ padding-right: 50px;
 
 
 /* responsive */
-@media only screen and (max-width: 1030px) {
-    .bright-frame-inside {
-        padding-right: 30px;
-    }
-}   
-
 @media only screen and (max-width: 970px) {
     .bright-frame-inside {
         height: auto;
-        padding-bottom: 60px;
     }
 
     .aboutMe {
@@ -231,11 +219,17 @@ padding-right: 50px;
     }
 
     .video {
-        width: 560px;
-        height: 315px;
+        width: 100%;
+        height: 200%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
     }
 
     .aboutText {
+        width: 70%;
         padding-top: 45px;
         padding-left: 0;
     }
@@ -257,27 +251,18 @@ padding-right: 50px;
 }
 
 @media only screen and (max-width: 700px) {
-    iframe {
-        width: 100%;
-        height: 100%;
-    }
-
     .servicesbox h4 {
         font-size: 35px;
     }
-}
 
-@media only screen and (max-width: 770px) {
-    .video {
-        width: 448px;
-        height: 200px;
+    .servicesScrollBox .servicesScrollText {
+        gap: 1rem;
     }
 }
 
-@media only screen and (max-width: 650px) {
-    .video {
-        width: 336px;
-        height: 140px;
+@media only screen and (max-width: 570px) {
+    iframe {
+        height: 200px;
     }
 }
 
@@ -287,16 +272,25 @@ padding-right: 50px;
     }
 }
 
-@media only screen and (max-width: 470px) {
-    .video {
-        width: 252px;
-        height: 120px;
+@media only screen and (max-width: 490px) {
+    iframe {
+        height: 150px;
+    }
+
+    .aboutText {
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 380px) {
     .aboutText h4 {
         font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    iframe {
+        height: 130px;
     }
 }
 /* responsive end */

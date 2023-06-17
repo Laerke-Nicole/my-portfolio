@@ -441,6 +441,12 @@ button {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  .specialties .scroll-text {
+    gap: 1rem;
+  }
+}
+
 @media only screen and (max-width: 580px) {
   .primary-frame-inside h3 {
     font-size: 18px;
