@@ -27,7 +27,7 @@
                                 
                                 <div>
                                     <h4>Beskrivelse</h4>
-                                    <p class="pr-6">{{ portfolioDetails.description }} <br>Læs nedenfor om problemer og løsninger jeg fandt.</p>
+                                    <p class="pr-6">{{ portfolioDetails.description }} <br> Læs nedenfor om problemer og løsninger jeg fandt.</p>
                                     <h4 class="h4Buttom">Status</h4>
                                     <p>{{ portfolioDetails.status }}</p>
                                 </div>
@@ -67,8 +67,16 @@
                         </div>
                     </div>
                     
-                    <div class="problem-solution-image right-image flex w-3/6 items-center">
+                    <div class="problem-solution-image right-image flex flex-col w-3/6 items-center gap-4">
                         <img :src="portfolioDetails.image1" id="image about the problem/issue">
+
+                        <div v-if="portfolioDetails.image11">
+                            <img :src="portfolioDetails.image11" alt="">
+                        </div>
+
+                        <div v-if="portfolioDetails.image12">
+                            <img :src="portfolioDetails.image12" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,6 +161,10 @@
 
                             <div v-if="portfolioDetails.video4" class="product-demonstration-box flex w-3/6">
                                 <video autoplay loop muted plays-inline :src="portfolioDetails.video4" type="video/mp4"></video>
+                            </div>
+
+                            <div>
+                                <img :src="portfolioDetails.footerImg" alt="footer image">
                             </div>
 
                         </div>
@@ -360,11 +372,11 @@ hr {
 }
 
 .right-image {
-    padding-right: 8%;
+    padding: 100px 8% 100px 0;
 }
 
 .left-image {
-    padding-left: 8%;
+    padding: 100px 0 100px 8%;
 }
 
 /* design process end */
