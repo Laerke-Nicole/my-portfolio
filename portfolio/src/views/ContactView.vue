@@ -27,8 +27,11 @@
             <div class="secondary-frame-inside">
                 <div class="secondary-frame-insideContent">
                     <h2>Arbejdshenvendelser</h2>
-                    <h3>Kontakt mig venligst på</h3>
+                    <p>Kontakt mig venligst på</p>
                     <p>laenie01@easv365.dk</p>
+                    <p class="pt-2 pb-2">eller</p>
+                    <a href="https://www.linkedin.com/in/l%C3%A6rke-nicole-nielsen/" target="_blank"><p class="linkedin-link underline">Linkedin</p></a>
+                    
                 </div>
             </div>
         </div>
@@ -169,6 +172,10 @@ font-style: normal;
 
 #secondary-frame-inside h3, p {
     color: var(--white-text);  
+}
+
+.linkedin-link:hover {
+    color: var(--primary-hover);
 }
 /* right side contact end */
 
