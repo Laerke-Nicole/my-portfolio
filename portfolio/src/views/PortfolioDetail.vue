@@ -172,17 +172,6 @@
                 </div>
             </div>
         </div>
-        
-
-        <div>
-            <div>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
 
         <div v-if="portfolioDetails.problem3">
             <div v="item in state" :key="item" class="portfolio-item">
@@ -217,13 +206,76 @@
                     <div class="flex flex-col">
                         <div class="next-project-title flex flex-col">
                             <h4>Se næste projekt</h4>
-                            <h3>{{ portfolioDetails.title }}</h3>
+
+                            <!-- Title of next project -->
+                            <!-- page one -->
+                            <div v-if="portfolioDetails.id == 'productOne'">
+                                <h3>Hjemmeside</h3>
+                            </div>
+
+                            <!-- page two -->
+                            <div v-if="portfolioDetails.id == 'productTwo'">
+                                <h3>Fotografi</h3>
+                            </div>
+
+                            <!-- page three -->
+                            <div v-if="portfolioDetails.id == 'productThree'">
+                                <h3>Poster</h3>
+                            </div>
+
+                            <!-- page four -->
+                            <div v-if="portfolioDetails.id == 'productFour'">
+                                <h3>Musik Video</h3>
+                            </div>
+
+                            <!-- page five -->
+                            <div v-if="portfolioDetails.id == 'productFive'">
+                                <h3>Hjemmeside</h3>
+                            </div>
                         </div>
                     </div>
 
-                    <div>
-                        <img :src="portfolioDetails.portfolioimage" alt="next project image">
+
+                    <div class="next-project-img">
+                        <!-- page one -->
+                        <div v-if="portfolioDetails.id == 'productOne'">
+                            <RouterLink to="productTwo">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmockup-website-2.png?alt=media&token=61b856b8-bdc8-466d-a213-1d7257421830&_gl=1*14ituqp*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTg4NjYzOC40Ny4xLjE2ODU4ODY3MDUuMC4wLjA." alt="next-project-image">
+                            </RouterLink>
+                            
+                        </div>
+
+                        <!-- page two -->
+                        <div v-if="portfolioDetails.id == 'productTwo'">
+                            <RouterLink to="productThree">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-3%2Fphoto-1.jpg?alt=media&token=8c87d53f-c523-4edb-8c5f-525e17465458" alt="next-project-image">
+                            </RouterLink>
+                        </div>
+
+                        <!-- page three -->
+                        <div v-if="portfolioDetails.id == 'productThree'">
+                            <RouterLink to="productFour">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fplakat-1.jpg?alt=media&token=a4628e6b-2fe9-490f-8ad9-907787086e29&_gl=1*qclej6*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0NDYuMC4wLjA." alt="next-project-image">
+                            </RouterLink>
+                        </div>
+
+                        <!-- page four -->
+                        <div v-if="portfolioDetails.id == 'productFour'">
+                            <RouterLink to="productFive">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmusic-video-thumbnail.jpg?alt=media&token=061d5bb2-e019-42c2-87b5-44dec4524a07&_gl=1*jy8sp2*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0MTIuMC4wLjA." alt="next-project-image">
+                            </RouterLink>
+                        </div>
+
+                        <!-- page five -->
+                        <div v-if="portfolioDetails.id == 'productFive'">
+                            <RouterLink to="productOne">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2Fmockup-website-1.png?alt=media&token=c10b471f-0d41-49a5-a8c3-9e6e24a1479b" alt="next-project-image">
+                            </RouterLink>
+                        </div>
                     </div>
+                    
+
+
 
                     <div class="flex flex-col">
                         <p class="pl-6 pb-2">eller</p>
@@ -278,6 +330,7 @@ const portfolioDetails = computed(() => {
 main {
     padding-top: 96px;
 }
+
 
 /* first section styling of container */
 
@@ -407,6 +460,15 @@ hr {
     font-weight: bold;
     line-height: 1;
 }
+
+.next-project-img{
+    padding: 18px 8%;
+}
+
+.next-project-img img {
+    max-height: 600px;
+}
+
 
 /* responsive */
 @media only screen and (max-width: 950px) {

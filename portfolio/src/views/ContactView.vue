@@ -7,7 +7,7 @@
                 <div class="bright-frame-insideContent">
                     <h2>Kom og sig hej</h2>
                     <div class="contactInput">
-                        <input class="input" name="name" placeholder="Navn" type="name">
+                        <input class="input" name="name" placeholder="Fulde navn" type="name">
                         <input class="input" name="email" placeholder="E-mail" type="email">
                         <form>
                             <textarea name="text" placeholder="Hvordan kan jeg hjælpe dig?" type="text"></textarea>

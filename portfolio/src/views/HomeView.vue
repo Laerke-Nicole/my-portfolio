@@ -258,8 +258,8 @@ button {
   flex-wrap: nowrap;
   overflow: hidden;
   background-color: var(--black-headline);
-  padding-bottom: 60px;
   width: 100%;
+  row-gap: 24px;
 }
 
 .portfolio-item {
@@ -274,7 +274,6 @@ button {
 .portfolio-content {
   display: flex;
   flex-direction: row;
-  margin-bottom: 24px;
   width: 100%;
 }
 
@@ -360,6 +359,26 @@ button {
 
 
 /* responsive */
+@media only screen and (max-width: 1150px) {
+  .bright-frame-inside {
+    height: 50vh;
+  }
+
+  .secondary-frame-inside {
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .bright-frame-inside {
+    height: 45vh;
+  }
+
+  .secondary-frame-inside {
+    height: 45vh;
+  }
+}
+
 @media only screen and (max-width: 950px) {
   .primary-frame-inside {
     height: auto;
@@ -388,6 +407,18 @@ button {
     padding-top: 12px;
   }
 
+  .bright-frame-inside {
+    height: auto;
+  }
+
+  .secondary-frame-inside {
+    height: auto;
+  }
+
+  .portfolio-item-container {
+    row-gap: 44px;
+  }
+
   .my-portrait {
     justify-content: flex-start;
     padding-bottom: 12px;
@@ -396,10 +427,6 @@ button {
   .passionBox {
     text-align: left;
     justify-content: flex-start;
-  }
-
-  .portfolio-content {
-    margin-bottom: 44px;
   }
 
   .portfolio-content {

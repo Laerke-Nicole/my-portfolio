@@ -98,37 +98,42 @@ const mobileMenuOpen = ref(false)
 
   
   <!-- footer -->
-  <footer>
-    <h1>Lad os arbejde sammen!</h1>
-    <RouterLink to="/contact">
-        <button id="button1" class="button">Kontakt mig</button>
-    </RouterLink>
+  <div class="primary-frame">
+    <div class="primary-frame-inside">
+      <footer>
+        <h1>Lad os arbejde sammen!</h1>
+        <RouterLink to="/contact">
+            <button id="button1" class="button">Kontakt mig</button>
+        </RouterLink>
 
-    <!-- links in footer -->
-    <div class="footerContent">
-      <div class="footerMyName">
-        <h2>Lærke Nicole Nielsen</h2>
-      </div>
+        <!-- links in footer -->
+        <div class="footerContent">
+          <div class="footerMyName">
+            <h2>Lærke Nicole Nielsen</h2>
+          </div>
 
-        <ul>          
-          <RouterLink to="//www.linkedin.com/in/laerke-nicole-nielsen/" target="_blank"><li>LinkedIn</li></RouterLink>
-          <RouterLink to="//github.com/Laerke-Nicole" target="_blank"><li>Github</li></RouterLink>
-        </ul>
+            <ul>          
+              <RouterLink to="//www.linkedin.com/in/laerke-nicole-nielsen/" target="_blank"><li>LinkedIn</li></RouterLink>
+              <RouterLink to="//github.com/Laerke-Nicole" target="_blank"><li>Github</li></RouterLink>
+            </ul>
 
-        <ul>
-          <RouterLink to="/contact"><li>Kontakt</li></RouterLink>
-          <RouterLink to="/"><li>Portfolio</li></RouterLink>
-          <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2FCV-screen-1.pdf?alt=media&token=ae679620-480e-4aee-a30e-8f8943522814&_gl=1*1dnpjkh*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDU4NzUuMC4wLjA." target="_blank"><li>CV &nearr;</li></a>
-          <RouterLink to="/about"><li>Om mig</li></RouterLink>
-        </ul>
+            <ul>
+              <RouterLink to="/contact"><li>Kontakt</li></RouterLink>
+              <RouterLink to="/"><li>Portfolio</li></RouterLink>
+              <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2FCV-screen-1.pdf?alt=media&token=ae679620-480e-4aee-a30e-8f8943522814&_gl=1*1dnpjkh*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDU4NzUuMC4wLjA." target="_blank"><li>CV &nearr;</li></a>
+              <RouterLink to="/about"><li>Om mig</li></RouterLink>
+            </ul>
+        </div>
+
+        <!-- my mail in footer -->
+        <div class="mail">
+          <h4>laenie01@easv365.dk</h4>
+          <hr>
+        </div>
+      </footer>
     </div>
-
-    <!-- my mail in footer -->
-    <div class="mail">
-      <h4>laenie01@easv365.dk</h4>
-      <hr>
-    </div>
-  </footer>
+  </div>
+  
 </template>
 
 
