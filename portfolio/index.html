@@ -14,22 +14,6 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendEmail(){
-        Email.send({
-          secureToken: "7b1b8d00-a6c2-4940-8b72-eb7012091a65",
-          To : 'laerke.n.nielsen@gmail.com',
-          From : document.getElementById("email").value,
-          Subject : "Ny kontakt form",
-          Body : "Name: " + document.getElementById("name").value
-            + "<br> Email: " + document.getElementById("email").value
-            + "<br> Besked: " + document.getElementById("message").value
-      }).then(
-        message => alert(message)
-      );
-    }
-    </script>
   </body>
 
 </html>
