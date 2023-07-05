@@ -7,16 +7,19 @@
                 <div class="bright-frame-insideContent">
                     <h2>Kom og sig hej</h2>
                     <div class="contactInput">
-                        <input class="input" name="name" placeholder="Fulde navn" type="name" id="name" required>
-                        <input class="input" name="email" placeholder="E-mail" type="email" id="email" required>
-                        <form>
-                            <textarea name="text" placeholder="Hvordan kan jeg hjælpe dig?" type="text" id="message" required></textarea>
-                            <br>
-                        </form>
+                        <form onsubmit="sendEmail(); reset(); return false; ">
+                            <input class="input" name="name" placeholder="Fulde navn" type="name" id="name" required>
+                            <input class="input" name="email" placeholder="E-mail" type="email" id="email" required>
+                                <textarea name="text" placeholder="Hvordan kan jeg hjælpe dig?" type="text" id="message" required></textarea>
+                                <br>
 
-                        <RouterLink to="/">
+                            <!-- <RouterLink to="/"> -->
                             <button id="button1" type="submit">Send</button>
-                        </RouterLink>
+                            <!-- </RouterLink> -->
+                        </form>
+                        
+
+                        
                     </div>
                 </div>
             </div>
