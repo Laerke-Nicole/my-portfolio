@@ -150,7 +150,7 @@
             </div>
         </div>
 
-        <div v-if="portfolioDetails.product3 || portfolioDetails.product4 || portfolioDetails.video3 || portfolioDetails.video4">
+        <div v-if="portfolioDetails.product3 || portfolioDetails.product4 || portfolioDetails.video3 || portfolioDetails.video4 || portfolioDetails.footerImg">
             <div v="item in state" :key="item" class="portfolio-item">
                 <div class="primary-frame">
                     <div class="primary-frame-inside">   
@@ -174,7 +174,7 @@
                                 <video autoplay loop muted plays-inline :src="portfolioDetails.video4" type="video/mp4"></video>
                             </div>
 
-                            <div>
+                            <div v-if="portfolioDetails.footerImg">
                                 <img :src="portfolioDetails.footerImg" alt="footer image">
                             </div>
 
@@ -493,11 +493,22 @@ hr {
     max-height: 600px;
 }
 
+.next-project-img img:hover {
+    box-shadow:  9px 9px 18px #b5b5b5,
+             -9px -9px 18px #ffffff;
+}
+
 
 /* responsive */
 @media only screen and (max-width: 950px) {
-    .title {
+    .top-content {
+        flex-direction: column-reverse;
         padding-top: 60px;
+        gap: 4px;
+    }
+
+    .top-content h5 {
+        font-size: 18px;
     }
 
     .p-content {
@@ -527,7 +538,7 @@ hr {
 
     .problem-solution-image {
         width: 100%;
-        padding-bottom: 60px;
+        padding: 24px 8% 60px 8%;
     }
 
     .primary-frame {
