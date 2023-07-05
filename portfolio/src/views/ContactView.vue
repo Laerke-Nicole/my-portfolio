@@ -7,6 +7,7 @@
                 <div class="bright-frame-insideContent">
                     <h2>Kom og sig hej</h2>
                     <div class="contactInput">
+<<<<<<< HEAD
                         <form onsubmit="sendEmail(); reset(); return false; ">
                             <input class="input" name="name" placeholder="Fulde navn" type="name" id="name" required>
                             <input class="input" name="email" placeholder="E-mail" type="email" id="email" required>
@@ -20,6 +21,18 @@
                         
 
                         
+=======
+                        <input class="input" name="name" placeholder="Fulde navn" type="name">
+                        <input class="input" name="email" placeholder="E-mail" type="email">
+                        <form>
+                            <textarea name="text" placeholder="Hvordan kan jeg hjælpe dig?" type="text"></textarea>
+                            <br>
+                        </form>
+
+                        <RouterLink to="/">
+                            <button id="button1">Send</button>
+                        </RouterLink>
+>>>>>>> parent of 7f01dcf (Contact form)
                     </div>
                 </div>
             </div>
@@ -47,7 +60,6 @@ import { onMounted } from 'vue'
 onMounted(() => {
   window.scrollTo(0, 0)
 })
-
 </script>
 
 <style scoped>
