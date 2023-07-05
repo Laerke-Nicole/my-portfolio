@@ -16,8 +16,19 @@
                     <div class="bright-frame">
                         <div class="bright-frame-inside content">
                             <!-- further short information about project -->
-                            <h2 class="title">{{ portfolioDetails.title }}</h2>
-
+                            <div class="flex justify-between top-content">
+                                <h2 class="title">{{ portfolioDetails.title }}</h2>
+                                <div v-if="portfolioDetails.title == 'Hjemmeside'" class="flex items-end">
+                                    <div v-if="portfolioDetails.id == 'productOne'">
+                                        <a href="https://kanten-web.web.app/" target="_blank"><h5 class="live-server underline">Se hjemmeside live her</h5></a>
+                                    </div>  
+                                    <!-- <div v-if="portfolioDetails.id == 'productTwo'">
+                                        <a href="https://kanten-web.web.app/" target="_blank"><h5 class="live-server underline">Se hjemmeside live her</h5></a>
+                                    </div>  -->
+                                </div>
+                                
+                            </div>
+                            
                             <hr>
 
                             <div class="p-content">
@@ -354,12 +365,25 @@ video {
 
 
 /* further short information about project */
+.top-content{
+    padding: 100px 8% 12px 8%;
+}
 .title {
     font-size: 28px;
     font-family: rift, sans-serif;
     font-weight: bold; 
     color: var(--black-headline);
-    padding: 100px 8% 12px 8%;
+}
+
+.live-server {
+    font-size: 20px;
+    font-family: rift, sans-serif;
+    font-weight: bold; 
+    color: var(--tertiary-color);
+}
+
+.live-server:hover {
+    color: var(--secondary-hover);
 }
 
 hr {
