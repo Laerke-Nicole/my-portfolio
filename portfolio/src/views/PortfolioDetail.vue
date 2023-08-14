@@ -369,15 +369,15 @@ video {
     padding: 100px 8% 12px 8%;
 }
 .title {
-    font-size: 28px;
-    font-family: rift, sans-serif;
+    font-size: 24px;
+    font-family: "signo", sans-serif;
     font-weight: bold; 
     color: var(--black-headline);
 }
 
 .live-server {
-    font-size: 20px;
-    font-family: rift, sans-serif;
+    font-size: 18px;
+    font-family: "signo", sans-serif;
     font-weight: bold; 
     color: var(--tertiary-color);
 }
@@ -411,7 +411,7 @@ hr {
 }
 
 .p-content h4 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: var(--black-headline);
 }
@@ -440,7 +440,7 @@ hr {
     padding-bottom: 6px;
     font-style: normal;
     font-weight: bold; 
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .problem-solution-box p {
@@ -480,7 +480,7 @@ hr {
 }
 
 .next-project-title h3 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: bold;
     line-height: 1;
 }

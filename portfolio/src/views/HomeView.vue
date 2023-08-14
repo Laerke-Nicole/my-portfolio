@@ -137,28 +137,30 @@ main {
 }
 
 .primary-frame-inside h3 {
-  font-family: rift, sans-serif;
+  font-family: "signo", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 18px;
   color: var(--white-text);
-  text-transform: uppercase;
 }
 
 .primary-frame-inside h1 {
   color: var(--white-headline);
-  font-size: 50px;
-  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  transform: scaleY(1.2);
+  margin-bottom: 6px;
 }
 
 .primary-frame-inside h2 {
-  font-family: rift, sans-serif;
+  font-family: "signo", sans-serif;
   font-style: normal;
   font-weight: 200;
   color: var(--white-headline);
-  font-size: 42px;
-  text-transform: uppercase;
+  font-size: 30px;
   line-height: 1;
+  transform: scaleY(1.1);
+  padding-bottom: 8px;
 }
 /*primary-frame-inside end*/
 
@@ -217,10 +219,10 @@ button {
   
 .specialties .scroll-text span {
   margin: 0;
-  font-size: 40px;
+  font-size: 36px;
   color: var(--primary-color);
   transition: all 2s ease;
-  font-family: rift, sans-serif;
+  font-family: "signo", sans-serif;
   font-style: normal;
   font-weight: bold; 
 }
@@ -341,7 +343,7 @@ button {
 .p-category {
   color: var(--white-headline);
   transform: scaleY(1.4);
-  font-size: 25px;
+  font-size: 21px;
   font-style: normal;
   font-weight: bold; 
 }
@@ -458,19 +460,17 @@ button {
   }    
 }
 
-@media only screen and (max-width: 800px) {
-  .specialties .scroll-text span {
-    font-size: 32px;
-  }
-  .scroll-text hr {
-  height: 2px;
-  width: 1.5rem;
-  }
-}
-
 @media only screen and (max-width: 700px) {
   .specialties .scroll-text {
     gap: 1rem;
+  }
+
+  .specialties .scroll-text span {
+    font-size: 28px;
+  }
+  .scroll-text hr {
+  height: 2px;
+  width: 1.4rem;
   }
 }
 

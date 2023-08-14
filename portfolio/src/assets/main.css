@@ -11,9 +11,10 @@ color: var(--color-text);
 background: var(--background-color);
 transition: color 0.5s, background-color 0.5s;
 line-height: 1.6;
-font-family: rift, sans-serif;
+font-family: "signo", sans-serif;
 font-style: normal;
 list-style-type: none;
+font-weight: 400;
 text-rendering: optimizeLegibility;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
@@ -22,9 +23,9 @@ text-rendering: optimizeLegibility;
 /*styling text*/
 h1 {
 font-size: 25px;
-font-family: rift, sans-serif;
+font-family: "signo", sans-serif;
 font-style: normal;
-font-weight: bold; 
+font-weight: 400;
 color: var(--black-headline);
 }
 
@@ -50,9 +51,9 @@ background-color: var(--tertiary-color);
 color: var(--white-headline);
 border: 0;
 transition: 0.3s;
-font-family: rift, sans-serif;
+font-family: "signo", sans-serif;
 font-style: normal;
-font-weight: 300;
+font-weight: 400;
 font-size: 16px;
 text-decoration: none;
 padding: 10px 30px; 

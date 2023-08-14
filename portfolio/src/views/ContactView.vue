@@ -206,7 +206,7 @@ font-style: normal;
 
 .secondary-frame-inside h2 {
     color: var(--white-headline);
-    font-size: 40px;
+    font-size: 32px;
     font-style: normal;
     font-weight: bold; 
 }
@@ -252,10 +252,6 @@ font-style: normal;
         display: block;
         width: 100%;
     }
-
-    .secondary-frame-inside h2 {
-        font-size: 40px;
-    }
 }
 
 @media only screen and (max-width: 460px) {
@@ -280,11 +276,17 @@ font-style: normal;
     }
 
     .secondary-frame-inside h2 {
-        font-size: 30px;
+        font-size: 26px;
     }
     .secondary-frame-inside p {
         font-size: 15px;
     }  
+}
+
+@media only screen and (max-width: 410px) {
+    .secondary-frame-inside h2 {
+        font-size: 22px;
+    }
 }
 /* responsive end */
 

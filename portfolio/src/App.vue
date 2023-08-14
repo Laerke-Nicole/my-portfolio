@@ -44,13 +44,13 @@ const mobileMenuOpen = ref(false)
 
       <!-- links in navigation -->
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
-        <RouterLink to="/portfolio" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Portfolio</RouterLink>
-        <RouterLink to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kontakt</RouterLink>  
-        <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2Fweb-300.pdf?alt=media&token=b466e1df-7da7-491e-9974-4ca3591a449d" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">CV <span aria-hidden="true">&nearr;</span></a>
-        <RouterLink to="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Om mig</RouterLink>
+        <RouterLink to="/portfolio" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Portfolio</RouterLink>
+        <RouterLink to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Kontakt</RouterLink>  
+        <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2Fweb-300.pdf?alt=media&token=b466e1df-7da7-491e-9974-4ca3591a449d" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">CV <span aria-hidden="true">&nearr;</span></a>
+        <RouterLink to="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Om mig</RouterLink>
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">English</a>
+        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">English</a>
       </div>
     </nav>
 
@@ -78,13 +78,13 @@ const mobileMenuOpen = ref(false)
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <RouterLink to="/portfolio" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Portfolio</RouterLink>
-              <RouterLink to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kontakt</RouterLink>
-              <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2Fweb-300.pdf?alt=media&token=b466e1df-7da7-491e-9974-4ca3591a449d" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">CV <span aria-hidden="true">&nearr;</span></a>
-              <RouterLink to="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Om mig</RouterLink>
+              <RouterLink to="/portfolio" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Portfolio</RouterLink>
+              <RouterLink to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Kontakt</RouterLink>
+              <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2Fweb-300.pdf?alt=media&token=b466e1df-7da7-491e-9974-4ca3591a449d" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">CV <span aria-hidden="true">&nearr;</span></a>
+              <RouterLink to="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Om mig</RouterLink>
             </div>
             <div class="py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">English</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base leading-7 text-gray-900 hover:bg-gray-50">English</a>
             </div>
           </div>
         </div>
@@ -150,6 +150,7 @@ header {
 
 header a {
   color: var(--black-text);
+  font-weight: 500px;
 }
 
 header a:hover {
@@ -218,17 +219,17 @@ footer h1 {
 
 footer .footerMyName h2 {
   color: var(--white-headline);
-  font-family: rift, sans-serif;
+  font-family: "signo", sans-serif;
   font-style: normal;
-  font-weight: bold; 
-  font-size: 30px;
+  font-weight: 500; 
+  font-size: 26px;
   display: flex;
   flex-direction: column;
 }
 
 footer .button {
   display: flex;
-  align-items: center;
+  align-items: center;  
   justify-content: center;
   margin: 0 auto 45px auto;
 }
@@ -241,10 +242,10 @@ footer li {
   display: flex;
   flex-direction: column;
   color: var(--white-headline);
-  font-family: rift, sans-serif;
+  font-family: "signo", sans-serif;
   font-style: normal;
-  font-weight: bold; 
-  font-size: 30px;
+  font-weight: 700; 
+  font-size: 26px;
   display: flex;
   flex-direction: column;
   transition: 0.3s;
@@ -299,8 +300,16 @@ footer li:hover {
     text-align: flex-start;
   }
 
+  .footerContent ul {
+    gap: 6px;
+  }
+
   .footerMyName {
     display: none;
+  }
+
+  footer li {
+    font-size: 24px;
   }
 
   .mail {
@@ -314,7 +323,7 @@ footer li:hover {
   }
 
   footer li {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .mail {
@@ -326,11 +335,13 @@ footer li:hover {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 580px) {
   footer h1 {
     font-size: 24px;
   }
+}
 
+@media only screen and (max-width: 500px) {
   .mail hr {
     width: 48%;
   }

@@ -157,11 +157,11 @@ color: var(--white-text);
 }
 
 .p-category {
-color: var(--white-headline);
-transform: scaleY(1.4);
-font-size: 25px;
-font-style: normal;
-font-weight: bold; 
+    color: var(--white-headline);
+    transform: scaleY(1.4);
+    font-size: 21px;
+    font-style: normal;
+    font-weight: bold;  
 }
 
 .p-title {

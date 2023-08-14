@@ -111,14 +111,15 @@ height: 100%;
 .aboutText {
 display: flex;
 flex-direction: column;
-padding: 0 24px 0 44px;
+padding: 0 24px 7% 44px;
 width: 40%;
 }
 
 .aboutText h1 {
 color: var(--secondary-color);
-font-size: 50px;
+font-size: 36px;
 line-height: 0.7;
+font-weight: bold;
 }
 
 /* text about me end */
@@ -146,10 +147,10 @@ line-height: 0.7;
   
 .servicesScrollBox .servicesScrollText h5 {
   margin: 0;
-  font-size: 40px;
+  font-size: 36px;
   color: var(--primary-color);
   transition: all 2s ease;
-  font-family: rift, sans-serif;
+  font-family: "signo", sans-serif;
   font-style: normal;
   font-weight: bold; 
 }
@@ -188,13 +189,13 @@ line-height: 0.7;
 }
 
 .services h4 {
-    font-family: rift, sans-serif;
+    font-family: "signo", sans-serif;
     font-style: normal;
     font-weight: bold;
     color: var(--white-headline);
     text-align: center;
     padding-bottom: 18px;
-    font-size: 50px;
+    font-size: 38px;
 }
 
 .servicesFirsth4 {
@@ -239,17 +240,6 @@ line-height: 0.7;
     }
 }
 
-@media only screen and (max-width: 800px) {
-    .servicesScrollBox .servicesScrollText h5 {
-        font-size: 32px;
-    }
-
-    .servicesScrollText hr {
-        height: 2px;
-        width: 1.5rem;
-    }
-}
-
 @media only screen and (max-width: 700px) {
     .servicesbox h4 {
         font-size: 35px;
@@ -257,6 +247,15 @@ line-height: 0.7;
 
     .servicesScrollBox .servicesScrollText {
         gap: 1rem;
+    }
+
+    .servicesScrollBox .servicesScrollText h5 {
+        font-size: 28px;
+    }
+
+    .servicesScrollText hr {
+        height: 2px;
+        width: 1.4rem;
     }
 }
 
