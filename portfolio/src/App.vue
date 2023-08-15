@@ -46,7 +46,7 @@ const mobileMenuOpen = ref(false)
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
         <RouterLink to="/portfolio" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Portfolio</RouterLink>
         <RouterLink to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Kontakt</RouterLink>  
-        <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2Fweb-300.pdf?alt=media&token=b466e1df-7da7-491e-9974-4ca3591a449d" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">CV <span aria-hidden="true">&nearr;</span></a>
+        <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2Fweb-300.pdf?alt=media&token=ba4aa941-f9e1-4c96-afea-8542336600d3" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">CV <span aria-hidden="true">&nearr;</span></a>
         <RouterLink to="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Om mig</RouterLink>
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -80,7 +80,7 @@ const mobileMenuOpen = ref(false)
             <div class="space-y-2 py-6">
               <RouterLink to="/portfolio" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Portfolio</RouterLink>
               <RouterLink to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Kontakt</RouterLink>
-              <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2Fweb-300.pdf?alt=media&token=b466e1df-7da7-491e-9974-4ca3591a449d" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">CV <span aria-hidden="true">&nearr;</span></a>
+              <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2Fweb-300.pdf?alt=media&token=ba4aa941-f9e1-4c96-afea-8542336600d3" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">CV <span aria-hidden="true">&nearr;</span></a>
               <RouterLink to="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Om mig</RouterLink>
             </div>
             <div class="py-6">
@@ -120,7 +120,7 @@ const mobileMenuOpen = ref(false)
             <ul>
               <RouterLink to="/contact"><li>Kontakt</li></RouterLink>
               <RouterLink to="/"><li>Portfolio</li></RouterLink>
-              <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2Fweb-300.pdf?alt=media&token=b466e1df-7da7-491e-9974-4ca3591a449d" target="_blank"><li>CV &nearr;</li></a>
+              <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2Fweb-300.pdf?alt=media&token=ba4aa941-f9e1-4c96-afea-8542336600d3" target="_blank"><li>CV &nearr;</li></a>
               <RouterLink to="/about"><li>Om mig</li></RouterLink>
             </ul>
         </div>

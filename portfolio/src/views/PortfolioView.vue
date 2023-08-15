@@ -141,7 +141,7 @@ justify-content: flex-end;
 
 /* stying image */
 .bright-frame-insideContent img {
-max-height: 60vh;
+max-height: 50vh;
 }
 
 .bright-frame-insideContent img:hover {
@@ -185,104 +185,114 @@ color: var(--white-text);
 .secondary-frame-inside {
     height: 50vh;
 }
+
+.bright-frame-insideContent img {
+max-height: 40vh;
+}
 }
 
 @media only screen and (max-width: 1000px) {
-.bright-frame-inside {
-    height: 45vh;
-}
+    .bright-frame-inside {
+        height: 45vh;
+    }
 
-.secondary-frame-inside {
-    height: 45vh;
-}
+    .secondary-frame-inside {
+        height: 45vh;
+    }
 }
 
 @media only screen and (max-width: 950px) {
-.bright-frame-inside {
-    height: auto;
-}
+    .bright-frame-inside {
+        height: auto;
+    }
 
-.secondary-frame-inside {
-    height: auto;
-}
+    .secondary-frame-inside {
+        height: auto;
+    }
 
-.portfolio-item-container {
-    row-gap: 44px;
-}
+    .portfolio-item-container {
+        row-gap: 44px;
+    }
 
-.my-portrait {
-    justify-content: flex-start;
-    padding-bottom: 12px;
-}
+    .my-portrait {
+        justify-content: flex-start;
+        padding-bottom: 12px;
+    }
 
-.passionBox {
-    text-align: left;
-    justify-content: flex-start;
-}
+    .passionBox {
+        text-align: left;
+        justify-content: flex-start;
+    }
 
-.portfolio-content {
-    flex-direction: column;
-}
+    .portfolio-content {
+        flex-direction: column;
+    }
 
-.bright-frame {
-    width: 100%;
-}
+    .bright-frame {
+        width: 100%;
+    }
 
-.p-number {
-    padding-top: 60px;
-}
+    .p-number {
+        padding-top: 60px;
+    }
 
-.secondary-frame {
-    width: 100%;
-}
+    .secondary-frame {
+        width: 100%;
+    }
 
-#secondary-frame-inside {
-    height: auto;
-}
+    #secondary-frame-inside {
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 900px) {
-.product-image {
-    max-inline-size: 100%;
-    block-size: auto;
-    object-fit: contain;
-}    
+    .product-image {
+        max-inline-size: 100%;
+        block-size: auto;
+        object-fit: contain;
+    }    
 }
 
 @media only screen and (max-width: 800px) {
-.specialties .scroll-text span {
-    font-size: 32px;
-}
-.scroll-text hr {
-height: 2px;
-width: 1.5rem;
-}
+    .specialties .scroll-text span {
+        font-size: 32px;
+    }
+    .scroll-text hr {
+    height: 2px;
+    width: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 700px) {
-.specialties .scroll-text {
-    gap: 1rem;
-}
+    .specialties .scroll-text {
+        gap: 1rem;
+    }
 }
 
 @media only screen and (max-width: 580px) {
-.passionBox p {
-    padding-right: 40px;
+    .passionBox p {
+        padding-right: 40px;
+    }
+
+    #bright-frame-inside {
+        height: auto;
+    }
 }
 
-#bright-frame-inside {
-    height: auto;
-}
+@media only screen and (max-width: 500px) {
+  .bright-frame-insideContent {
+    padding: 45px 8%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-.p-category {
-    font-size: 22px;
-    line-height: 1.1;
-    padding: 8px 0;
-}
+    .p-category {
+        font-size: 22px;
+        line-height: 1.1;
+        padding: 8px 0;
+    }
 }
 /* responsive end*/
 
   
-  </style>
+</style>

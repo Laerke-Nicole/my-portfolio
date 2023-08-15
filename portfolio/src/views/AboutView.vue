@@ -194,16 +194,16 @@ font-weight: bold;
     font-weight: bold;
     color: var(--white-headline);
     text-align: center;
-    padding-bottom: 18px;
+    padding-bottom: 24px;
     font-size: 38px;
 }
 
 .servicesFirsth4 {
-    padding-top: 45px;
+    padding-top: 100px;
 }
 
 .servicesLasth4 {
-    padding-bottom: 45px !important;
+    padding-bottom: 100px !important;
 }
 /* services end */
 
@@ -231,12 +231,25 @@ font-weight: bold;
 
     .aboutText {
         width: 70%;
-        padding-top: 45px;
-        padding-left: 0;
+        padding: 24px 24px 0 0;
     }
 
     .aboutText p {
         padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .aboutMe {
+    padding: 60px 8% 80px 8%;
+    }
+
+    .servicesFirsth4 {
+    padding-top: 60px;
+    }
+
+    .servicesLasth4 {
+    padding-bottom: 60px !important;
     }
 }
 
@@ -259,15 +272,25 @@ font-weight: bold;
     }
 }
 
+@media only screen and (max-width: 590px) {
+    .servicesbox h4 {
+        font-size: 24px;
+    }
+}
+
 @media only screen and (max-width: 570px) {
     iframe {
         height: 200px;
     }
 }
 
-@media only screen and (max-width: 540px) {
-    .servicesbox h4 {
-        font-size: 24px;
+@media only screen and (max-width: 500px){
+    .aboutMe {
+    padding: 45px 8%;
+    }
+
+    .services h4 {
+    padding-bottom: 18px;
     }
 }
 

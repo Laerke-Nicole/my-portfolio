@@ -325,7 +325,7 @@ button {
 
 /* stying image */
 .bright-frame-insideContent img {
-  max-height: 60vh;
+  max-height: 50vh;
 }
 
 .bright-frame-insideContent img:hover {
@@ -368,6 +368,10 @@ button {
 
   .secondary-frame-inside {
     height: 50vh;
+  }
+
+  .bright-frame-insideContent img {
+    max-height: 40vh;
   }
 }
 
@@ -495,6 +499,20 @@ button {
 
   .primary-frame-inside h2 {
     font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .primary-frame-inside {
+    padding-top: 45px;
+  }
+
+  .passionBox p {
+    padding-bottom: 45px;
+  }
+
+  .bright-frame-insideContent {
+    padding: 45px 8%;
   }
 }
 

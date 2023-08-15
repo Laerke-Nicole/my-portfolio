@@ -168,7 +168,7 @@ font-style: normal;
 
 /* right side contact */
 .framing-contact{
-    padding: 60px 20%;
+    padding: 100px 20%;
 }
 
 .primary-frame-inside {
@@ -178,7 +178,7 @@ font-style: normal;
 }
 
 .primary-frame-inside .primary-frame-insideContent {
-    padding: 60px 8% 80px 8%;
+    padding: 80px 8% 80px 8%;
 }
 
 .primary-frame-inside h2 {

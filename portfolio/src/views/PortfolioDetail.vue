@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     
-                    <div class="problem-solution-image right-image flex flex-col w-3/6 items-center gap-4">
+                    <div class="problem-solution-image right-image flex flex-col w-3/6 justify-center gap-4">
                         <img :src="portfolioDetails.image1" id="image about the problem/issue">
 
                         <div v-if="portfolioDetails.image11">
@@ -505,6 +505,10 @@ hr {
         flex-direction: column-reverse;
         padding-top: 60px;
         gap: 4px;
+    }
+
+    .live-server {
+        font-size: 16px !important;
     }
 
     .top-content h5 {
