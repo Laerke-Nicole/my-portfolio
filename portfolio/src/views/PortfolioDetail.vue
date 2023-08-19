@@ -79,14 +79,14 @@
                     </div>
                     
                     <div class="problem-solution-image right-image flex flex-col w-3/6 justify-center gap-4">
-                        <img :src="portfolioDetails.image1" id="image about the problem/issue">
+                        <img :src="portfolioDetails.probImg1" id="image about the problem/issue">
 
-                        <div v-if="portfolioDetails.image11">
-                            <img :src="portfolioDetails.image11" alt="">
+                        <div v-if="portfolioDetails.probImg12">
+                            <img :src="portfolioDetails.probImg12" alt="">
                         </div>
 
-                        <div v-if="portfolioDetails.image12">
-                            <img :src="portfolioDetails.image12" alt="">
+                        <div v-if="portfolioDetails.probImg13">
+                            <img :src="portfolioDetails.probImg13" alt="">
                         </div>
                     </div>
                 </div>
@@ -129,8 +129,13 @@
             <div class="secondary-frame">
                 <div class="secondary-frame-inside">
                     <div class="designProcess psi-flip flex flex-row"> 
-                        <div class="problem-solution-image left-image flex w-3/6 items-center">
-                            <img :src="portfolioDetails.image2" id="image about the problem/issue">
+                        <div v-if="portfolioDetails.probImg2" class="problem-solution-image left-image flex w-3/6 items-center">
+                            <img :src="portfolioDetails.probImg2" id="image about the problem/issue">
+                        </div>
+
+                        <!-- or show video -->
+                        <div v-if="portfolioDetails.probVideo2" class="product-demonstration-box flex w-3/6">
+                            <video autoplay loop muted plays-inline :src="portfolioDetails.probVideo2" type="video/mp4"></video>
                         </div>
 
                         <div class="problem-solution-box flex flex-col w-3/6">
@@ -203,7 +208,7 @@
                             </div>
                             
                             <div class="problem-solution-image right-image flex w-3/6 items-center">
-                                <img :src="portfolioDetails.image3" id="image about the problem/issue">
+                                <img :src="portfolioDetails.probImg3" id="image about the problem/issue">
                             </div>
                         </div>
                     </div>
