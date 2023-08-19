@@ -7,7 +7,7 @@
         <div class="primary-frame-inside-top-content flex">
           <!-- introduction -->
           <div class="primary-frame-inside-content w-6/12">
-            <h3>Hej, jeg er</h3>
+            <h3>{{ $t("jegEr") }}</h3>
             <h1>Lærke Nicole Nielsen</h1>
             <h2 class="multimediedesigner">Og er Multimediedesigner</h2>
             <!-- button to go straight to contact -->
@@ -120,6 +120,9 @@ const { state } = portfoliodb()
 onMounted(() => {
   window.scrollTo(0, 0)
 })
+
+
+
 
 
 </script>
