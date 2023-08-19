@@ -6,29 +6,19 @@ const getPortfolio = () => {
             id: 'productOne',
             portfolioimage: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2Fmockup-website-1.png?alt=media&token=c10b471f-0d41-49a5-a8c3-9e6e24a1479b',
             detailimg: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2Fimage-1.jpg?alt=media&token=f2244fb0-e700-4bb4-9973-8c3f9155c598',
-            
-            // image or video shown next to problem and solution
-            probImg1: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2FUser_persona.jpg?alt=media&token=6ae79d74-38ef-4d16-a562-f049e1a8341c',
-            probImg12: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2FUser_persona%20%E2%80%93%201.jpg?alt=media&token=58ae19d6-7cce-4ee3-a882-5215237b3496',
-            probImg13: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2FMoSCoW.jpg?alt=media&token=c8489b2e-d117-46ca-852b-ec990a226094',
-            probVideo1: '',
-            probVideo2: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2Feventlist.mp4?alt=media&token=f9c2832d-6605-4735-b2f7-7704b42cab82',
-            probVideo3: '',
-
-            // images or video shown on its own to demonstrate the product without context
+            image1: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2FUser_persona.jpg?alt=media&token=6ae79d74-38ef-4d16-a562-f049e1a8341c',
+            image11: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2FUser_persona%20%E2%80%93%201.jpg?alt=media&token=58ae19d6-7cce-4ee3-a882-5215237b3496',
+            image12: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2FMoSCoW.jpg?alt=media&token=c8489b2e-d117-46ca-852b-ec990a226094',
+            video1: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fwebsite-video-kanten-1.mp4?alt=media&token=5d93e051-4242-46e3-b13f-c78cc1abcd8c&_gl=1*1szvspr*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTk1ODM2OS41Mi4xLjE2ODU5NTg2MDQuMC4wLjA.',
+            video2: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2Fnewsletter.mp4?alt=media&token=80b735e5-7a28-4bc5-ba4a-1c044c6a5962',
+            video3: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2Ftickets-and-location.mp4?alt=media&token=ed594345-f5db-4f11-ab95-66fdbb20a680',
+            video4: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2Fcollage.mp4?alt=media&token=e6ea8e18-d72c-4afa-980a-372127558081',
             product1: '',
             product2: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2Fcommentsection-mockup.png?alt=media&token=2731d8c0-ceca-499d-bb2f-378b2dcdc6d9',
             product3: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2Feventunderside-mockup.png?alt=media&token=ffc7923a-ac08-418d-bd0f-9b77cca4e967',
             product4: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2Fabout-mockup.png?alt=media&token=4f2c10ca-52f9-407a-aac9-6bf50ebb32fc',
             footerImg: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2Ffooter-mockup.png?alt=media&token=33f71b75-e3c0-4855-b0de-a33f6d22f2d7',
             footer: '',
-            // videos
-            video1: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fwebsite-video-kanten-1.mp4?alt=media&token=5d93e051-4242-46e3-b13f-c78cc1abcd8c&_gl=1*1szvspr*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTk1ODM2OS41Mi4xLjE2ODU5NTg2MDQuMC4wLjA.',
-            video2: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2Fnewsletter.mp4?alt=media&token=80b735e5-7a28-4bc5-ba4a-1c044c6a5962',
-            video3: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2Ftickets-and-location.mp4?alt=media&token=ed594345-f5db-4f11-ab95-66fdbb20a680',
-            video4: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-1%2Fcollage.mp4?alt=media&token=e6ea8e18-d72c-4afa-980a-372127558081',
-            
-            // content text
             number: '.01',
             title: 'Hjemmeside',
             category: 'Webdesign- & development',
@@ -39,31 +29,24 @@ const getPortfolio = () => {
             date: '2023',
             problem: 'Virksomheden har to hovedsegmenter i deres målgruppe som er gæsterne og de frivillige. Dette gav et bredt udvalg af funktioner som ville være relevant at lave en hjemmeside over. Dog eftersom at dette er et skoleprojekt med tidsbegrænsning, måtte jeg prioritere hvad der var vigtigst at have med på siden. Og ud fra dette, vælge min persona.',
             solution: 'Jeg opstillede derfor to relevante personaer og lavede derefter user stories som ville være funktioner, der ville ramme personaernes behov og ønsker. Ud fra user storiesene lavede jeg en prioriteringsliste med MoSCoW modellen, for at begrænse mig. Vha. dette værktøj valgte jeg at fokuserer på eventdelen af hjemmesiden og dermed bruge Oscar som min persona, da eventene er Kantens værditilbud, samt begge personaer også søger fællesskabet i Kanten, hvor eventene er hovedfællesskabet.',
-            problem2: 'Eventene er dynamiske. Derfor skal Kanten kunne tilføje og slette events uden at lave et nyt HTML blok for det nye event m.v. hver gang der sker en ændring af eventene.',
-            solution2: 'Jeg brugte derfor javascript til at opsætte en loop og kode HTML og CSS for i princippet ét event, således at så snart Kanten skal have tilføjet et nyt event, så skal de bare udfylde et nyt array. Eller hvis de vil slette et event, så kan de bare slette arrayet og ikke alt HTML til eventet. Dette gør at de sparer en masse tid.',
+            problem2: '',
+            solution2: '',
         },
         {
             id: 'productTwo',
             portfolioimage: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmockup-website-2.png?alt=media&token=61b856b8-bdc8-466d-a213-1d7257421830&_gl=1*14ituqp*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTg4NjYzOC40Ny4xLjE2ODU4ODY3MDUuMC4wLjA.',
             detailimg: '',
             detailvid: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Ffront-page.mp4?alt=media&token=db3d0215-2a62-4166-b583-c3df46d00076&_gl=1*1s3l21j*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQ5NjQ4Ni41NS4xLjE2ODY0OTgyNDYuMC4wLjA.',
-            
-            // image or video shown next to problem and solution
-            probImg1: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Fnews.png?alt=media&token=a825c7a8-c1b0-4123-a83e-a9c128c887f7&_gl=1*e8hyv3*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQyOTk0NC41NC4xLjE2ODY0MzA3MjkuMC4wLjA.',
-            probImg2: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Fchoose.png?alt=media&token=d2b0895e-872a-4bf5-9037-4d88468bfce2&_gl=1*1sbt228*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQyOTk0NC41NC4xLjE2ODY0MzA3NDcuMC4wLjA.',
-            probImg3: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Fjoin.png?alt=media&token=60be9608-0390-48e6-99ba-a6728d1d7c0d&_gl=1*tre7p4*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQyOTk0NC41NC4xLjE2ODY0MzA3NjIuMC4wLjA.',
-            
-            // images or video shown on its own to demonstrate the product without context
+            video1: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Fnews-page.mp4?alt=media&token=35a75415-5496-4853-be11-5386828fc643&_gl=1*uxdz4c*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQ5NjQ4Ni41NS4xLjE2ODY0OTgyODQuMC4wLjA.',
+            video2: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Fwelcome-page.mp4?alt=media&token=65eeab4d-09a0-4364-aef1-291f49b58023&_gl=1*1w8zkd7*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQ5NjQ4Ni41NS4xLjE2ODY0OTgyOTIuMC4wLjA.',
+            image1: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Fnews.png?alt=media&token=a825c7a8-c1b0-4123-a83e-a9c128c887f7&_gl=1*e8hyv3*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQyOTk0NC41NC4xLjE2ODY0MzA3MjkuMC4wLjA.',
+            image2: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Fchoose.png?alt=media&token=d2b0895e-872a-4bf5-9037-4d88468bfce2&_gl=1*1sbt228*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQyOTk0NC41NC4xLjE2ODY0MzA3NDcuMC4wLjA.',
+            image3: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Fjoin.png?alt=media&token=60be9608-0390-48e6-99ba-a6728d1d7c0d&_gl=1*tre7p4*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQyOTk0NC41NC4xLjE2ODY0MzA3NjIuMC4wLjA.',
             product1: '',
             product2: '',
             product3: '',
             product4: '',
             footerImg: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Ffooter.png?alt=media&token=14048ae9-ce7b-4b0d-9022-d5a869dc83f3',
-            // videos
-            video1: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Fnews-page.mp4?alt=media&token=35a75415-5496-4853-be11-5386828fc643&_gl=1*uxdz4c*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQ5NjQ4Ni41NS4xLjE2ODY0OTgyODQuMC4wLjA.',
-            video2: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-2%2Fwelcome-page.mp4?alt=media&token=65eeab4d-09a0-4364-aef1-291f49b58023&_gl=1*1w8zkd7*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NjQ5NjQ4Ni41NS4xLjE2ODY0OTgyOTIuMC4wLjA.',
-            
-            // content text
             number: '.02',
             title: 'Hjemmeside',
             category: 'Webdesign- & development',
@@ -82,15 +65,9 @@ const getPortfolio = () => {
             id: 'productThree',
             portfolioimage: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-3%2Fphoto-1.jpg?alt=media&token=8c87d53f-c523-4edb-8c5f-525e17465458',
             detailimg: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-3%2Fphoto-1.jpg?alt=media&token=8c87d53f-c523-4edb-8c5f-525e17465458',
-            
-            // image or video shown next to problem and solution
-            probImg1: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-3%2Fphoto-1-rot.jpg?alt=media&token=d27f730d-dbcd-48d8-badc-a6a12b42b167',
-            probImg2: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-3%2Fphoto-1-image1.jpg?alt=media&token=0cc6bc3b-0f76-452c-a530-ee5a001baabb',
-            
-            // images or video shown on its own to demonstrate the product without context
+            image1: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-3%2Fphoto-1-rot.jpg?alt=media&token=d27f730d-dbcd-48d8-badc-a6a12b42b167',
+            image2: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-3%2Fphoto-1-image1.jpg?alt=media&token=0cc6bc3b-0f76-452c-a530-ee5a001baabb',
             product1: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fproject-3%2Fphoto-11.png?alt=media&token=6f1f7dbb-3bdb-436d-9bdf-70bd5cecdd29',
-            
-            // context text
             number: '.03',
             title: 'Fotografi',
             category: 'Fotografering & fotoredigering',
@@ -107,11 +84,7 @@ const getPortfolio = () => {
             id: 'productFour',
             portfolioimage: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fplakat-1.jpg?alt=media&token=a4628e6b-2fe9-490f-8ad9-907787086e29&_gl=1*qclej6*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0NDYuMC4wLjA.',
             detailimg: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fplakat-1.jpg?alt=media&token=a4628e6b-2fe9-490f-8ad9-907787086e29&_gl=1*qclej6*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0NDYuMC4wLjA.',
-            
-            // image or video shown next to problem and solution
-            probImg1: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fplakat-1.jpg?alt=media&token=a4628e6b-2fe9-490f-8ad9-907787086e29',
-            
-            // context text
+            image2: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fplakat-1.jpg?alt=media&token=a4628e6b-2fe9-490f-8ad9-907787086e29',
             number: '.04',
             title: 'Poster',
             category: 'Grafisk Design',
@@ -130,12 +103,7 @@ const getPortfolio = () => {
             id: 'productFive',
             portfolioimage: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmusic-video-thumbnail.jpg?alt=media&token=061d5bb2-e019-42c2-87b5-44dec4524a07&_gl=1*jy8sp2*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDY0MTIuMC4wLjA.',
             detailvid: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmusic-video-1.mp4?alt=media&token=10e86b07-5e9d-4980-8af5-12c8d1135405&_gl=1*19vj71z*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDYzODYuMC4wLjA.',
-            
-            // images or video shown on its own to demonstrate the product without context
-            // video
             video1: 'https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fmusic-video-1.mp4?alt=media&token=10e86b07-5e9d-4980-8af5-12c8d1135405&_gl=1*19vj71z*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTgwNTc4MC40Mi4xLjE2ODU4MDYzODYuMC4wLjA.',
-            
-            // context text
             number: '.05',
             title: 'Musik Video',
             category: 'Videooptagning- & redigering',
