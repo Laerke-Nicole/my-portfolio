@@ -29,12 +29,15 @@
                 <div class="primary-frame">
                     <div class="primary-frame-inside">
                         <div class="primary-frame-insideContent">
-                            <h2>Arbejdshenvendelser</h2>
-                            <p>Kontakt mig venligst på</p>
+                            <!-- <h2>Arbejdshenvendelser</h2> -->
+                            <h2>Work related</h2>
+                            <!-- <p>Kontakt mig venligst på</p> -->
+                            <p>Please contact me on</p>
                             <p>laenie01@easv365.dk</p>
-                            <p class="pt-2 pb-2">eller</p>
-                            <a href="https://www.linkedin.com/in/l%C3%A6rke-nicole-nielsen/" target="_blank"><p class="linkedin-link underline">Linkedin</p></a>
-                            
+                            <!-- <p class="pt-2 pb-2">eller</p> -->
+                            <p class="pt-2 pb-2">or</p>
+                            <!-- <a href="https://www.linkedin.com/in/l%C3%A6rke-nicole-nielsen/" target="_blank"><p class="linkedin-link underline">Linkedin</p></a> -->
+                            <a href="https://www.linkedin.com/in/l%C3%A6rke-nicole-nielsen/?locale=en_US" target="_blank"><p class="linkedin-link underline">Linkedin</p></a>
                         </div>
                     </div>
                 </div>
@@ -46,11 +49,16 @@
         <div class="secondary-frame small-screen">
             <div class="secondary-frame-inside">
                 <div class="secondary-frame-insideContent">
-                    <h2>Arbejdshenvendelser</h2>
+                    <!-- <h2>Arbejdshenvendelser</h2>
                     <p>Kontakt mig venligst på</p>
                     <p>laenie01@easv365.dk</p>
                     <p class="pt-2 pb-2">eller</p>
-                    <a href="https://www.linkedin.com/in/l%C3%A6rke-nicole-nielsen/" target="_blank"><p class="linkedin-link underline">Linkedin</p></a>
+                    <a href="https://www.linkedin.com/in/l%C3%A6rke-nicole-nielsen/" target="_blank"><p class="linkedin-link underline">Linkedin</p></a> -->
+                    <h2>Work related</h2>
+                    <p>Please contact me on</p>
+                    <p>laenie01@easv365.dk</p>
+                    <p class="pt-2 pb-2">or</p>
+                    <a href="https://www.linkedin.com/in/l%C3%A6rke-nicole-nielsen/?locale=en_US" target="_blank"><p class="linkedin-link underline">Linkedin</p></a>
                 </div>
             </div>
         </div>

@@ -1,29 +1,55 @@
 <template>
     <main>
+        <div class="primary-frame">
+            <div class="primary-frame-inside">
+                <h5 class="p-5 text-center">Lærke Nicole Nielsen</h5>
+            </div>
+        </div>
 
         <!-- about container -->
-        <div class="bright-frame">
-            <div class="bright-frame-inside">
+        <div class="flex">
+            <!-- <div class="primary-frame sidebar">
+                <div class="primary-frame-inside sidebar-inside p-10">
+                    <h5>Multimedia designer</h5>
+                </div>
+            </div> -->
 
-                <!-- content about me -->
-                <div class="aboutMe">
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/Z7Z1Q48Qe3o" title="YouTube video player" id="video-cv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="primary-frame w-2/5">
+                <div class="primary-frame-inside about-photo">
+                    <div class="flex justify-center">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fbeige-background.jpg?alt=media&token=c6fe6e6b-1287-453a-91cf-cc99746bc4b0&_gl=1*t2doc5*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTg4OTg1MS40OC4xLjE2ODU4ODk5MDkuMC4wLjA." alt="portrait-me" class="flex h-3/5 justify-center items-center">
                     </div>
-                    
-                    <div class="aboutText">
-                        <h1>Hvem er jeg</h1>
-                        <p class="pt-3">Jeg er lige nu i gang med min multimediedesigneruddannelse på Erhvervsakademiet Sydvest i Esbjerg. Jeg er passioneret for både foto- og videoredigering, samt design og web-udvikling, men har også interesse for grafisk- og UI/UX design. Jeg elsker at lærer nyt og nørde med mit arbejde, ligegyldig hvilken opgave jeg får.</p>
+                </div>
+            </div>
+
+            <div class="bright-frame w-3/5">
+                <div class="bright-frame-inside">
+                    <!-- content about me -->
+                    <div class="aboutMe">
+
+                        <!-- <div class="video">
+                            <iframe src="https://www.youtube.com/embed/Z7Z1Q48Qe3o" title="YouTube video player" id="video-cv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div> -->
+
+                        
+                        
+                        <div class="aboutText w-3/5">
+                            <!-- <h1>Hvem er jeg</h1>
+                            <p class="pt-3">Jeg er lige nu i gang med min multimediedesigneruddannelse på Erhvervsakademiet Sydvest i Esbjerg. Jeg er passioneret for både foto- og videoredigering, samt design og web-udvikling, men har også interesse for grafisk- og UI/UX design. Jeg elsker at lærer nyt og nørde med mit arbejde, ligegyldig hvilken opgave jeg får.</p> -->
+                            <h1>Who am I</h1>
+                            <p class="pt-3">I am studying multimedia design at Business Academy SouthWest in the city of Esbjerg. I am passionate about photo, and video editing, web developement, and designing websites, but I am also interested in graphic and UI/UX design on websites and graphic elements. I love to geek with my work no matter the task.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
 
         
         <!-- text sliding animation -->
         <div class="services">
             <div class="servicesScrollBox">
-                <div class="servicesScrollText">
+                <!-- <div class="servicesScrollText">
                     <h5>Hvad jeg kan</h5>
                     <hr>
                     <h5>Hvad jeg kan</h5>
@@ -37,9 +63,27 @@
                     <h5>Hvad jeg kan</h5>
                     <hr>
                     <h5 id="last">Hvad jeg kan</h5>
+                    <hr>
+                </div> -->
+
+                <div class="servicesScrollText">
+                    <h5>What I can do</h5>
+                    <hr>
+                    <h5>What I can do</h5>
+                    <hr>
+                    <h5>What I can do</h5>
+                    <hr>
+                    <h5>What I can do</h5>
+                    <hr>
+                    <h5>What I can do</h5>
+                    <hr>
+                    <h5>What I can do</h5>
+                    <hr>
+                    <h5 id="last">What I can do</h5>
                     <hr>
                 </div>
-                <div class="servicesScrollText">
+
+                <!-- <div class="servicesScrollText">
                     <h5>Hvad jeg kan</h5>
                     <hr>
                     <h5>Hvad jeg kan</h5>
@@ -53,6 +97,23 @@
                     <h5>Hvad jeg kan</h5>
                     <hr>
                     <h5 id="last">Hvad jeg kan</h5>
+                    <hr>
+                </div> -->
+
+                <div class="servicesScrollText">
+                    <h5>What I can do</h5>
+                    <hr>
+                    <h5>What I can do</h5>
+                    <hr>
+                    <h5>What I can do</h5>
+                    <hr>
+                    <h5>What I can do</h5>
+                    <hr>
+                    <h5>What I can do</h5>
+                    <hr>
+                    <h5>What I can do</h5>
+                    <hr>
+                    <h5 id="last">What I can do</h5>
                     <hr>
                 </div>
             </div>
@@ -61,10 +122,15 @@
             <!-- the services i offer -->
             <div class="servicesBorder">
                 <div class="servicesbox">
-                    <h4 class="servicesFirsth4">Webdesign & development</h4>
+                    <!-- <h4 class="servicesFirsth4">Webdesign & development</h4>
                     <h4>Foto & videoredigering</h4>
                     <h4>UI/UX design</h4>
                     <h4>Grafisk design</h4>
+                    <h4 class="servicesLasth4">User Experience</h4> -->
+                    <h4 class="servicesFirsth4">Web design & development</h4>
+                    <h4>Photo & video editing</h4>
+                    <h4>UI/UX design</h4>
+                    <h4>Graphic design</h4>
                     <h4 class="servicesLasth4">User Experience</h4>
                 </div>
             </div>
@@ -99,20 +165,35 @@ display: flex;
 padding: 100px 8%;
 }
 
-.video {
-width: 60%;
+.about-photo {
+    padding: 100px 8%;
 }
 
-iframe {
+/* .sidebar {
+    height: auto;
+}
+
+.sidebar-inside {
+    writing-mode: vertical-lr;
+    color: var(--white-text);
+    font-size: 24px;
+    height: auto;
+} */
+
+/* .video {
+width: 60%;
+} */
+
+/* iframe {
 width: 100%;
 height: 100%;
-}
+} */
 
 .aboutText {
 display: flex;
 flex-direction: column;
-padding: 0 24px 7% 44px;
-width: 40%;
+padding: 0 0 0 44px;
+
 }
 
 .aboutText h1 {

@@ -20,7 +20,8 @@
                                 <h2 class="title">{{ portfolioDetails.title }}</h2>
                                 <div v-if="portfolioDetails.title == 'Hjemmeside'" class="flex items-end">
                                     <div v-if="portfolioDetails.id == 'productOne'">
-                                        <a href="https://kanten-web.web.app/" target="_blank"><h5 class="live-server underline">Se hjemmeside live her</h5></a>
+                                        <!-- <a href="https://kanten-web.web.app/" target="_blank"><h5 class="live-server underline">Se hjemmeside live her</h5></a> -->
+                                        <a href="https://kanten-web.web.app/" target="_blank"><h5 class="live-server underline">See the website live here</h5></a>
                                     </div>  
                                     <!-- <div v-if="portfolioDetails.id == 'productTwo'">
                                         <a href="https://kanten-web.web.app/" target="_blank"><h5 class="live-server underline">Se hjemmeside live her</h5></a>
@@ -37,14 +38,17 @@
                                 </div>
                                 
                                 <div>
-                                    <h4>Beskrivelse</h4>
-                                    <p class="pr-6">{{ portfolioDetails.description }} <br> Læs nedenfor om problemer og løsninger jeg fandt.</p>
+                                    <!-- <h4>Beskrivelse</h4> -->
+                                    <h4>Description</h4>
+                                    <!-- <p class="pr-6">{{ portfolioDetails.description }} <br> Læs nedenfor om problemer og løsninger jeg fandt.</p> -->
+                                    <p class="pr-6">{{ portfolioDetails.description }} <br> Read below about the problems and solutions i had.</p>
                                     <h4 class="h4Buttom">Status</h4>
                                     <p>{{ portfolioDetails.status }}</p>
                                 </div>
                                 
                                 <div>
-                                    <h4>Kategori</h4>
+                                    <!-- <h4>Kategori</h4> -->
+                                    <h4>Category</h4>
                                     <p :class="portfolioDetails.category">{{ portfolioDetails.category }}</p>
 
                                     <h4 class="h4Buttom">Tech</h4>
@@ -68,12 +72,14 @@
                     <div class="problem-solution-box flex flex-col w-3/6">
                         <!-- problems i had -->
                         <div>
-                            <h3>.01 Problemstilling jeg havde med denne {{ portfolioDetails.title }}</h3>
+                            <!-- <h3>.01 Problemstilling jeg havde med denne {{ portfolioDetails.title }}</h3> -->
+                            <h3>.01 A problem I had with this {{ portfolioDetails.title }}</h3>
                             <p>{{ portfolioDetails.problem }}</p>
                         </div>
                         <div class="pt-5">
                             <!-- solutions to the problems -->
-                            <h3>.01 Løsningen på problemet</h3>
+                            <!-- <h3>.01 Løsningen på problemet</h3> -->
+                            <h3>.01 The solution to the problem</h3>
                             <p>{{ portfolioDetails.solution }}</p>
                         </div>
                     </div>
@@ -141,12 +147,14 @@
                         <div class="problem-solution-box flex flex-col w-3/6">
                             <!-- problems i had -->
                             <div>
-                                <h3>.02 Problemstilling jeg havde med denne {{ portfolioDetails.title }}</h3>
+                                <!-- <h3>.02 Problemstilling jeg havde med denne {{ portfolioDetails.title }}</h3> -->
+                                <h3>.02 A problem I had with this {{ portfolioDetails.title }}</h3>
                                 <p>{{ portfolioDetails.problem2 }}</p>
                             </div>
                             <div class="pt-5">
                                 <!-- solutions to the problems -->
-                                <h3>.02 Løsningen på problemet</h3>
+                                <!-- <h3>.02 Løsningen på problemet</h3> -->
+                                <h3>.02 The solution to the problem</h3>
                                 <p>{{ portfolioDetails.solution2 }}</p>
                             </div>
                         </div>
@@ -197,12 +205,14 @@
                             <div class="problem-solution-box flex flex-col w-3/6">
                                 <!-- problems i had -->
                                 <div>
-                                    <h3>.03 Problemstilling jeg havde med denne {{ portfolioDetails.title }}</h3>
+                                    <!-- <h3>.03 Problemstilling jeg havde med denne {{ portfolioDetails.title }}</h3> -->
+                                    <h3>.03 A problem I had with this {{ portfolioDetails.title }}</h3>
                                     <p>{{ portfolioDetails.problem3 }}</p>
                                 </div>
                                 <div class="pt-5">
                                     <!-- solutions to the problems -->
-                                    <h3>.03 Løsningen på problemet</h3>
+                                    <!-- <h3>.03 Løsningen på problemet</h3> -->
+                                    <h3>.03 The solution to the problem</h3>
                                     <p>{{ portfolioDetails.solution3 }}</p>
                                 </div>
                             </div>
@@ -221,32 +231,38 @@
                 <div class="bright-frame-inside flex flex-col">
                     <div class="flex flex-col">
                         <div class="next-project-title flex flex-col">
-                            <h4>Se næste projekt</h4>
+                            <!-- <h4>Se næste projekt</h4> -->
+                            <h4>See next project</h4>
 
                             <!-- Title of next project -->
                             <!-- page one -->
                             <div v-if="portfolioDetails.id == 'productOne'">
-                                <h3>Hjemmeside</h3>
+                                <!-- <h3>Hjemmeside</h3> -->
+                                <h3>Website</h3>
                             </div>
 
                             <!-- page two -->
                             <div v-if="portfolioDetails.id == 'productTwo'">
-                                <h3>Fotografi</h3>
+                                <!-- <h3>Fotografi</h3> -->
+                                <h3>Photography</h3>
                             </div>
 
                             <!-- page three -->
                             <div v-if="portfolioDetails.id == 'productThree'">
+                                <!-- <h3>Poster</h3> -->
                                 <h3>Poster</h3>
                             </div>
 
                             <!-- page four -->
                             <div v-if="portfolioDetails.id == 'productFour'">
-                                <h3>Musik Video</h3>
+                                <!-- <h3>Musik Video</h3> -->
+                                <h3>Music Video</h3>
                             </div>
 
                             <!-- page five -->
                             <div v-if="portfolioDetails.id == 'productFive'">
-                                <h3>Hjemmeside</h3>
+                                <!-- <h3>Hjemmeside</h3> -->
+                                <h3>Website</h3>
                             </div>
                         </div>
                     </div>
@@ -294,11 +310,13 @@
 
 
                     <div class="flex flex-col">
-                        <p class="pl-6 pb-2">eller</p>
+                        <!-- <p class="pl-6 pb-2">eller</p> -->
+                        <p class="pl-6 pb-2">or</p>
                         <div class="pl-6 pb-6">
                             <RouterLink to='/'>
                                 <!-- button to go back to last page -->
-                                <button id="button1" @click="goBack()">&larr; Gå tilbage</button>
+                                <!-- <button id="button1" @click="goBack()">&larr; Gå tilbage</button> -->
+                                <button id="button1" @click="goBack()">&larr; Go back</button>
                             </RouterLink>
                             
                         </div>

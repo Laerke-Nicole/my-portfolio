@@ -7,13 +7,23 @@
         <div class="primary-frame-inside-top-content flex">
           <!-- introduction -->
           <div class="primary-frame-inside-content w-6/12">
-            <h3>Hej, jeg er</h3>
+            <!-- <h3>Hej, jeg er</h3>
             <h1>Lærke Nicole Nielsen</h1>
-            <h2 class="multimediedesigner">Og er Multimediedesigner</h2>
+            <h2 class="multimediedesigner">Og er Multimediedesigner</h2> -->
+            <!-- button to go straight to contact -->
+            <!-- <div class="primary-frame-inside-button pt-5">
+              <RouterLink to="/contact">
+                <button id="button1" class="button">Kontakt mig</button>
+              </RouterLink>
+            </div> -->
+
+            <h3>Hi, I am</h3>
+            <h1>Lærke Nicole Nielsen</h1>
+            <h2 class="multimediedesigner">A multimedia designer</h2>
             <!-- button to go straight to contact -->
             <div class="primary-frame-inside-button pt-5">
               <RouterLink to="/contact">
-                <button id="button1" class="button">Kontakt mig</button>
+                <button id="button1" class="button">Contact me</button>
               </RouterLink>
             </div>
           </div>
@@ -26,9 +36,11 @@
         <div class="passionBox flex text-right justify-end">
           <div>
             <p>
-              Med en passion for at bringe mine 
+              <!-- Med en passion for at bringe mine 
               kreative ideer til virkelighed <br>gennem 
-              fotografering, videoredigering & webdevelopment
+              fotografering, videoredigering & webdevelopment -->
+              With a passion to bring my creative ideas to life <br> 
+              through photography, video editing & web development
             </p>
           </div>
         </div>
@@ -38,7 +50,7 @@
     
     <!-- scrolling text with my specialties -->
     <div class="specialties">
-      <div class="scroll-text">
+      <!-- <div class="scroll-text">
         <span>Design & development</span>
         <hr>
         <span>Videoredigering</span>
@@ -64,6 +76,35 @@
         <span>Videoredigering</span>
         <hr>
         <span id="last">Fotografering</span>
+        <hr>
+      </div> -->
+
+      <div class="scroll-text">
+        <span>Design & development</span>
+        <hr>
+        <span>Video editing</span>
+        <hr>
+        <span>Photography</span>
+        <hr>
+        <span>Design & development</span>
+        <hr>
+        <span>Video editing</span>
+        <hr>
+        <span id="last">Photography</span>
+        <hr>
+      </div>
+      <div class="scroll-text">
+        <span>Design & development</span>
+        <hr>
+        <span>Video editing</span>
+        <hr>
+        <span>Photography</span>
+        <hr>
+        <span>Design & development</span>
+        <hr>
+        <span>Video editing</span>
+        <hr>
+        <span id="last">Photography</span>
         <hr>
       </div>
     </div>
@@ -100,7 +141,8 @@
                       <h3 class="p-title">{{ item.title }}</h3>
                       <p>{{ item.description }}</p>
                       <RouterLink :to="{ name: 'portfoliodetails', params:{id: item.id}}">
-                          <button id="button1">Se mit arbejde</button>
+                        <!-- <button id="button1">Se mit arbejde</button>   -->
+                        <button id="button1">See my work</button>
                       </RouterLink>
                     </div>
                 </div>

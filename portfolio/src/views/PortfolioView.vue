@@ -30,7 +30,8 @@
                     <h3 class="p-title">{{ item.title }}</h3>
                     <p>{{ item.description }}</p>
                     <RouterLink :to="{ name: 'portfoliodetails', params:{id: item.id}}">
-                        <button id="button1">Se mit arbejde</button>
+                        <!-- <button id="button1">Se mit arbejde</button> -->
+                        <button id="button1">See my work</button>
                     </RouterLink>
                     </div>
                 </div>
