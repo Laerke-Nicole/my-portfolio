@@ -1,29 +1,29 @@
 <template>
     <main>
-        <div class="primary-frame">
-            <div class="primary-frame-inside">
-                <h5 class="p-5 text-center">Lærke Nicole Nielsen</h5>
+        <div class="secondary-frame about-me-name-container">
+            <div class="secondary-frame-inside">
+                <h5 class="p-5 text-center about-me-name">Lærke Nicole Nielsen - Multimedia designer</h5>
             </div>
         </div>
 
         <!-- about container -->
-        <div class="flex">
+        <div class="flex about-cols">
             <!-- <div class="primary-frame sidebar">
                 <div class="primary-frame-inside sidebar-inside p-10">
                     <h5>Multimedia designer</h5>
                 </div>
             </div> -->
 
-            <div class="primary-frame w-2/5">
+            <div class="primary-frame w-2/5 left-portrait">
                 <div class="primary-frame-inside about-photo">
-                    <div class="flex justify-center">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fbeige-background.jpg?alt=media&token=c6fe6e6b-1287-453a-91cf-cc99746bc4b0&_gl=1*t2doc5*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTg4OTg1MS40OC4xLjE2ODU4ODk5MDkuMC4wLjA." alt="portrait-me" class="flex h-3/5 justify-center items-center">
+                    <div class="flex justify-center left-my-portrait">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/projects%2Fbeige-background.jpg?alt=media&token=c6fe6e6b-1287-453a-91cf-cc99746bc4b0&_gl=1*t2doc5*_ga*MTk3MzI2MTY1LjE2ODIwNzA2MjE.*_ga_CW55HF8NVT*MTY4NTg4OTg1MS40OC4xLjE2ODU4ODk5MDkuMC4wLjA." alt="portrait-me" class="flex justify-center items-center my-portrait">
                     </div>
                 </div>
             </div>
 
-            <div class="bright-frame w-3/5">
-                <div class="bright-frame-inside">
+            <div class="bright-frame w-3/5 right-portrait">
+                <div class="bright-frame-inside about-about">
                     <!-- content about me -->
                     <div class="aboutMe">
 
@@ -157,16 +157,31 @@ padding: 15px;
 background-color: var(--white-headline);
 }
 
-/* text about me */
+/* top with my name */
+.about-me-name {
+    color: var(--white-text);
+    font-size: 22px;
+}
 
+/* my portrait */
+.my-portrait{
+    height: 50vh;
+}
+
+
+/* text about me */
+.about-about {
+    height: 500px !important;
+}
 
 .aboutMe {
-display: flex;
-padding: 100px 8%;
+    display: flex;
+    padding: 100px 8%;
 }
 
 .about-photo {
     padding: 100px 8%;
+    height: 500px;
 }
 
 /* .sidebar {
@@ -190,17 +205,15 @@ height: 100%;
 } */
 
 .aboutText {
-display: flex;
-flex-direction: column;
-padding: 0 0 0 44px;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .aboutText h1 {
-color: var(--secondary-color);
-font-size: 36px;
-line-height: 0.7;
-font-weight: bold;
+    color: var(--secondary-color);
+    font-size: 36px;
+    line-height: 0.7;
+    font-weight: bold;
 }
 
 /* text about me end */
@@ -312,7 +325,6 @@ font-weight: bold;
 
     .aboutText {
         width: 70%;
-        padding: 24px 24px 0 0;
     }
 
     .aboutText p {
@@ -321,6 +333,38 @@ font-weight: bold;
 }
 
 @media only screen and (max-width: 950px){
+    .about-me-name-container{
+        display: none;
+    }
+
+    .about-cols {
+        flex-direction: column-reverse;
+    }
+
+    .left-portrait {
+        width: 100%;
+    }
+
+    .right-portrait {
+        width: 100%;
+    }
+
+    .about-about {
+        height: auto !important;
+    }
+
+    .about-photo {
+        padding: 60px 8%;
+    }
+
+    .my-portrait{
+        height: 45vh;
+    }
+
+    .about-photo {
+        height: auto;
+    }
+
     .aboutMe {
     padding: 60px 8% 80px 8%;
     }
@@ -365,13 +409,17 @@ font-weight: bold;
     }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px){  
     .aboutMe {
     padding: 45px 8%;
     }
 
     .services h4 {
     padding-bottom: 18px;
+    }
+
+    .about-photo {
+        padding: 45px 8%;
     }
 }
 

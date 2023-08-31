@@ -140,7 +140,7 @@
                         </div>
 
                         <!-- or show video -->
-                        <div v-if="portfolioDetails.probVideo2" class="product-demonstration-box flex w-3/6">
+                        <div v-if="portfolioDetails.probVideo2" class="product-demonstration-box problem-video-two flex w-3/6 items-center justify-center">
                             <video autoplay loop muted plays-inline :src="portfolioDetails.probVideo2" type="video/mp4"></video>
                         </div>
 
@@ -309,10 +309,10 @@
 
 
 
-                    <div class="flex flex-col">
+                    <div class="flex flex-col next-project-btn">
                         <!-- <p class="pl-6 pb-2">eller</p> -->
-                        <p class="pl-6 pb-2">or</p>
-                        <div class="pl-6 pb-6">
+                        <p class="pb-2 text-lg">or you can go back:</p>
+                        <div>
                             <RouterLink to='/'>
                                 <!-- button to go back to last page -->
                                 <!-- <button id="button1" @click="goBack()">&larr; Gå tilbage</button> -->
@@ -479,6 +479,10 @@ hr {
     padding: 100px 0 100px 8%;
 }
 
+.problem-video-two {
+    padding: 0 0 0 8%;
+}
+
 /* design process end */
 
 
@@ -521,6 +525,10 @@ hr {
              -9px -9px 18px #ffffff;
 }
 
+.next-project-btn {
+    padding: 18px 8% 60px 8%;
+}
+
 
 /* responsive */
 @media only screen and (max-width: 950px) {
@@ -559,6 +567,10 @@ hr {
         padding-bottom: 20px;
     }
 
+    .problem-video-two {
+        padding: 24px 8% 60px 8%;
+    }
+
     .psi-flip {
         flex-direction: column-reverse;
     }
@@ -588,7 +600,48 @@ hr {
         padding-top: 60px;
         padding-bottom: 60px;
     }
+
+    .next-project-title{
+        padding-top: 60px;
+    }
 }
+
+@media only screen and (max-width: 500px) {
+    .top-content {
+        padding-top: 45px;
+    }
+
+    .p-content {
+        padding-bottom: 45px;
+    }
+
+    .problem-solution-box {
+        padding-top: 45px;
+    }
+
+    .problem-video-two {
+        padding-bottom: 45px;
+    }
+
+    .problem-solution-image {
+        padding-bottom: 45px;
+    }
+
+    .product-demonstration {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .next-project-title{
+        padding-top: 45px;
+    }
+
+    .next-project-btn {
+        padding-bottom: 45px;
+}
+
+}
+
 /* responsive end */
 
 

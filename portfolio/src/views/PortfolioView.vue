@@ -5,38 +5,38 @@
         <!-- making a loop for all of my projects -->
         <div v-for="item in state" :key="item" class="portfolio-item">
 
-        <!-- container for projects -->
-        <div class="portfolio-content" :class="item.id" id="portfolio-view">
+            <!-- container for projects -->
+            <div class="portfolio-content" :class="item.id" id="portfolio-view">
 
-            <!-- left portfolio -->
-            <div class="bright-frame">
-            <div class="bright-frame-inside">
-                <div class="bright-frame-insideContent">
-                    <RouterLink :to="{ name: 'portfoliodetails', params:{id: item.id}}">
-                    <div>
-                        <img :src="item.portfolioimage" class="product-image" alt="portfolio-img">
-                    </div>   
-                    </RouterLink>
-                </div>
-            </div>
-            </div>
-            
-            <!-- right portfolio -->
-            <div class="secondary-frame">
-                <div class="secondary-frame-inside">
-                    <div class="secondary-frame-insideContent">
-                    <h4 class="p-number" :class="item.number">{{ item.number }}</h4>
-                    <h3 class="p-category" :class="item.category">{{ item.category }}</h3>
-                    <h3 class="p-title">{{ item.title }}</h3>
-                    <p>{{ item.description }}</p>
-                    <RouterLink :to="{ name: 'portfoliodetails', params:{id: item.id}}">
-                        <!-- <button id="button1">Se mit arbejde</button> -->
-                        <button id="button1">See my work</button>
-                    </RouterLink>
+                <!-- left portfolio -->
+                <div class="bright-frame">
+                    <div class="bright-frame-inside">
+                        <div class="bright-frame-insideContent">
+                            <RouterLink :to="{ name: 'portfoliodetails', params:{id: item.id}}">
+                            <div>
+                                <img :src="item.portfolioimage" class="product-image" alt="portfolio-img">
+                            </div>   
+                            </RouterLink>
+                        </div>
                     </div>
                 </div>
-            </div>   
-        </div>
+                
+                <!-- right portfolio -->
+                <div class="secondary-frame">
+                    <div class="secondary-frame-inside">
+                        <div class="secondary-frame-insideContent">
+                            <h4 class="p-number" :class="item.number">{{ item.number }}</h4>
+                            <h3 class="p-category" :class="item.category">{{ item.category }}</h3>
+                            <h3 class="p-title">{{ item.title }}</h3>
+                            <p>{{ item.description }}</p>
+                            <RouterLink :to="{ name: 'portfoliodetails', params:{id: item.id}}">
+                                <!-- <button id="button1">Se mit arbejde</button> -->
+                                <button id="button1">See my work</button>
+                            </RouterLink>
+                        </div>
+                    </div>
+                </div>   
+            </div>
         </div>
     </div>
 </main>
@@ -60,7 +60,6 @@ window.scrollTo(0, 0)
 main {
 padding-top: 96px;
 }
-
 
 
 /* styling position of buttons */

@@ -230,11 +230,13 @@ button {
 /* my portrait */
 .my-portrait {
   padding-right: 8%;
+  height: auto;
 }
 
 .my-portrait img {
   object-fit: cover;
   object-position: center;
+  height: auto;
 }
 /* my portrait end */
 
@@ -303,7 +305,7 @@ button {
   overflow: hidden;
   background-color: var(--black-headline);
   width: 100%;
-  row-gap: 24px;
+  row-gap: 45px;
 }
 
 .portfolio-item {
@@ -380,6 +382,7 @@ button {
 /* styling portfolio text */
 .p-number {
   color: var(--white-text);
+  padding-top: 60px;
 }
 
 .p-category {
@@ -485,10 +488,6 @@ button {
     width: 100%;
   }
 
-  .p-number {
-    padding-top: 60px;
-  }
-
   .secondary-frame {
     width: 100%;
   }
@@ -546,6 +545,10 @@ button {
 
 @media only screen and (max-width: 500px) {
   .primary-frame-inside {
+    padding-top: 45px;
+  }
+
+  .p-number {
     padding-top: 45px;
   }
 

@@ -47,7 +47,7 @@ const mobileMenuOpen = ref(false)
         <RouterLink to="/portfolio" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Portfolio</RouterLink>
         <!-- <RouterLink to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Kontakt</RouterLink>   -->
         <RouterLink to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Contact</RouterLink>  
-        <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2Fweb-300.pdf?alt=media&token=ba4aa941-f9e1-4c96-afea-8542336600d3" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">CV <span aria-hidden="true">&nearr;</span></a>
+        <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2Fenglish-version%2Fweb-300.pdf?alt=media&token=14f953f8-764e-4b41-8f94-8332bc2fbada" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">CV <span aria-hidden="true">&nearr;</span></a>
         <!-- <RouterLink to="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Om mig</RouterLink> -->
         <RouterLink to="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">About me</RouterLink>
       </PopoverGroup>
@@ -83,7 +83,7 @@ const mobileMenuOpen = ref(false)
               <RouterLink to="/portfolio" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Portfolio</RouterLink>
               <!-- <RouterLink to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Kontakt</RouterLink> -->
               <RouterLink to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Contact</RouterLink>
-              <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2Fweb-300.pdf?alt=media&token=ba4aa941-f9e1-4c96-afea-8542336600d3" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">CV <span aria-hidden="true">&nearr;</span></a>
+              <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2Fenglish-version%2Fweb-300.pdf?alt=media&token=14f953f8-764e-4b41-8f94-8332bc2fbada" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">CV <span aria-hidden="true">&nearr;</span></a>
               <!-- <RouterLink to="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">Om mig</RouterLink> -->
               <RouterLink to="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50">About me</RouterLink>
             </div>
@@ -119,7 +119,7 @@ const mobileMenuOpen = ref(false)
           </div>
 
             <ul>          
-              <RouterLink to="//www.linkedin.com/in/laerke-nicole-nielsen/" target="_blank"><li>LinkedIn</li></RouterLink>
+              <RouterLink to="//www.linkedin.com/in/laerke-nicole-nielsen/?locale=en_US" target="_blank"><li>LinkedIn</li></RouterLink>
               <RouterLink to="//github.com/Laerke-Nicole" target="_blank"><li>Github</li></RouterLink>
             </ul>
 
@@ -127,7 +127,7 @@ const mobileMenuOpen = ref(false)
               <!-- <RouterLink to="/contact"><li>Kontakt</li></RouterLink> -->
               <RouterLink to="/contact"><li>Contact</li></RouterLink>
               <RouterLink to="/"><li>Portfolio</li></RouterLink>
-              <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2Fweb-300.pdf?alt=media&token=ba4aa941-f9e1-4c96-afea-8542336600d3" target="_blank"><li>CV &nearr;</li></a>
+              <a href="https://firebasestorage.googleapis.com/v0/b/laerke-nicole-portfolio.appspot.com/o/cv%2Fenglish-version%2Fweb-300.pdf?alt=media&token=14f953f8-764e-4b41-8f94-8332bc2fbada" target="_blank"><li>CV &nearr;</li></a>
               <!-- <RouterLink to="/about"><li>Om mig</li></RouterLink> -->
               <RouterLink to="/about"><li>About me</li></RouterLink>
             </ul>
