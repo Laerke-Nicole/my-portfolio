@@ -48,7 +48,7 @@
                                 
                                 <div>
                                     <!-- <h4>Kategori</h4> -->
-                                    <h4>Category</h4>
+                                    <h4 class="h4Buttom">Category</h4>
                                     <p :class="portfolioDetails.category">{{ portfolioDetails.category }}</p>
 
                                     <h4 class="h4Buttom">Tech</h4>
@@ -311,7 +311,7 @@
 
                     <div class="flex flex-col next-project-btn">
                         <!-- <p class="pl-6 pb-2">eller</p> -->
-                        <p class="pb-2 text-lg">or you can go back:</p>
+                        <p class="pb-2 text-base">or you can go back:</p>
                         <div>
                             <RouterLink to='/'>
                                 <!-- button to go back to last page -->
@@ -435,12 +435,13 @@ hr {
 
 .p-content h4 {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
     color: var(--black-headline);
 }
 
 .h4Buttom {
     padding-top: 12px;
+
 }
 
 /* further short information about project end */
@@ -502,12 +503,12 @@ hr {
 }
 
 .next-project-title h4 {
-    font-size: 22px;
+    font-size: 18px;
     font-family: "condor", sans-serif;
 }
 
 .next-project-title h3 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
     line-height: 1;
 }

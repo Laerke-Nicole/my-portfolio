@@ -229,7 +229,7 @@ footer .footerMyName h2 {
   color: var(--white-headline);
   font-family: "signo", sans-serif;
   font-style: normal;
-  font-weight: 500; 
+  font-weight: 400; 
   font-size: 26px;
   display: flex;
   flex-direction: column;
@@ -252,8 +252,8 @@ footer li {
   color: var(--white-headline);
   font-family: "signo", sans-serif;
   font-style: normal;
-  font-weight: 700; 
   font-size: 26px;
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   transition: 0.3s;

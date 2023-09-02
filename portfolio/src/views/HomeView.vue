@@ -39,8 +39,8 @@
               <!-- Med en passion for at bringe mine 
               kreative ideer til virkelighed <br>gennem 
               fotografering, videoredigering & webdevelopment -->
-              With a passion to bring my creative ideas to life <br> 
-              through photography, video editing & web development
+              With a passion to bring my creative ideas to life through <br>
+              photography, video production, web development and graphic design.
             </p>
           </div>
         </div>
@@ -80,31 +80,47 @@
       </div> -->
 
       <div class="scroll-text">
-        <span>Design & development</span>
+        <span>Web design & development</span>
+        <hr>
+        <span>Video recording</span>
         <hr>
         <span>Video editing</span>
         <hr>
         <span>Photography</span>
         <hr>
-        <span>Design & development</span>
+        <span>Graphic design</span>
+        <hr>
+        <span>Web design & development</span>
+        <hr>
+        <span>Video recording</span>
         <hr>
         <span>Video editing</span>
         <hr>
-        <span id="last">Photography</span>
+        <span>Photography</span>
+        <hr>
+        <span id="last">Graphic design</span>
         <hr>
       </div>
       <div class="scroll-text">
-        <span>Design & development</span>
+        <span>Web design & development</span>
+        <hr>
+        <span>Video recording</span>
         <hr>
         <span>Video editing</span>
         <hr>
         <span>Photography</span>
         <hr>
-        <span>Design & development</span>
+        <span>Graphic design</span>
+        <hr>
+        <span>Web design & development</span>
+        <hr>
+        <span>Video recording</span>
         <hr>
         <span>Video editing</span>
         <hr>
-        <span id="last">Photography</span>
+        <span>Photography</span>
+        <hr>
+        <span id="last">Graphic design</span>
         <hr>
       </div>
     </div>
@@ -290,7 +306,7 @@ button {
       transform: translate3d(0, 0, 0);
     }
     to {
-      transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-60%, 0, 0);
     }
 }
 /* scrollbar of my specialty of subjects end */ 
@@ -305,7 +321,7 @@ button {
   overflow: hidden;
   background-color: var(--black-headline);
   width: 100%;
-  row-gap: 45px;
+  row-gap: 46px;
 }
 
 .portfolio-item {
@@ -454,7 +470,7 @@ button {
     padding-top: 12px;
   }
   .primary-frame-inside button {
-    margin-bottom: 50px;
+    margin-bottom: 24px;
     padding-top: 12px;
   }
 
@@ -572,6 +588,18 @@ button {
 }
 
 @media only screen and (max-width: 400px) {
+  .primary-frame-inside h3 {
+    font-size: 16px;
+  }
+
+  .primary-frame-inside h1 {
+    font-size: 24px;
+  }
+
+  .primary-frame-inside h2 {
+    font-size: 18px;
+  }
+
   .p-category {
     font-size: 22px;
     line-height: 1.1;

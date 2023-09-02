@@ -30,9 +30,9 @@
                     <div class="primary-frame-inside">
                         <div class="primary-frame-insideContent">
                             <!-- <h2>Arbejdshenvendelser</h2> -->
-                            <h2>Work related</h2>
+                            <h2>Please contact me on</h2>
                             <!-- <p>Kontakt mig venligst på</p> -->
-                            <p>Please contact me on</p>
+                            <!-- <p>Please contact me on</p> -->
                             <p>laenie01@easv365.dk</p>
                             <!-- <p class="pt-2 pb-2">eller</p> -->
                             <p class="pt-2 pb-2">or</p>
@@ -54,8 +54,8 @@
                     <p>laenie01@easv365.dk</p>
                     <p class="pt-2 pb-2">eller</p>
                     <a href="https://www.linkedin.com/in/l%C3%A6rke-nicole-nielsen/" target="_blank"><p class="linkedin-link underline">Linkedin</p></a> -->
-                    <h2>Work related</h2>
-                    <p>Please contact me on</p>
+                    <h2>Please contact me on</h2>
+                    <!-- <p>Please contact me on</p> -->
                     <p>laenie01@easv365.dk</p>
                     <p class="pt-2 pb-2">or</p>
                     <a href="https://www.linkedin.com/in/l%C3%A6rke-nicole-nielsen/?locale=en_US" target="_blank"><p class="linkedin-link underline">Linkedin</p></a>

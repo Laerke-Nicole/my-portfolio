@@ -77,7 +77,7 @@ flex-wrap: nowrap;
 overflow: hidden;
 background-color: var(--black-headline);
 width: 100%;
-row-gap: 24px;
+row-gap: 46px;
 }
 
 .portfolio-item {
