@@ -37,7 +37,7 @@
                             <!-- <p class="pt-2 pb-2">eller</p> -->
                             <p class="pt-2 pb-2">or</p>
                             <!-- <a href="https://www.linkedin.com/in/l%C3%A6rke-nicole-nielsen/" target="_blank"><p class="linkedin-link underline">Linkedin</p></a> -->
-                            <a href="https://www.linkedin.com/in/l%C3%A6rke-nicole-nielsen/?locale=en_US" target="_blank"><p class="linkedin-link underline">Linkedin</p></a>
+                            <a href="//www.linkedin.com/in/laerke-nicole-nielsen/?locale=en_US" target="_blank"><p class="linkedin-link underline">Linkedin</p></a>
                         </div>
                     </div>
                 </div>

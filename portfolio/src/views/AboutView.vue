@@ -37,7 +37,7 @@
                             <!-- <h1>Hvem er jeg</h1>
                             <p class="pt-3">Jeg er lige nu i gang med min multimediedesigneruddannelse på Erhvervsakademiet Sydvest i Esbjerg. Jeg er passioneret for både foto- og videoredigering, samt design og web-udvikling, men har også interesse for grafisk- og UI/UX design. Jeg elsker at lærer nyt og nørde med mit arbejde, ligegyldig hvilken opgave jeg får.</p> -->
                             <h1>Who am I</h1>
-                            <p class="pt-3">I am studying multimedia design at Business Academy SouthWest in the city of Esbjerg. I am passionate about photo, and video editing, web developement, and designing websites, but I am also interested in graphic and UI/UX design on websites and graphic elements. I love to geek with my work no matter the task.</p>
+                            <p class="pt-3">Hello! I am currently studying my 3rd semester of multimedia design at Business Academy South West in the city of Esbjerg, Denmark.<br><br>For me, there is nothing better than seeing things come together step by step, whether I am building a website or creating a graphic design. I have an eye for detail and consider myself to be a bit perfectionist.</p>
                         </div>
                     </div>
                 </div>
@@ -128,6 +128,8 @@
                     <h4>Grafisk design</h4>
                     <h4 class="servicesLasth4">User Experience</h4> -->
                     <h4 class="servicesFirsth4">Web design & development</h4>
+                    <h4>Photography</h4>
+                    <h4>Recording videos</h4>
                     <h4>Photo & video editing</h4>
                     <h4>UI/UX design</h4>
                     <h4>Graphic design</h4>
